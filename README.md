@@ -32,14 +32,14 @@ Con este sistema:
 
  Funcionalidades principales
 
-- 🔐 Sistema de autenticación (login)
-- 📦 Registro y gestión de activos
-- 🔄 Seguimiento de trazabilidad
-  - Historial de ubicaciones
-  - Registro de movimientos
-- 📊 Generación de reportes
-- 📤 Exportación de datos
-- 🔍 Consulta de información histórica
+-  Sistema de autenticación (login)
+-  Registro y gestión de activos
+-  Seguimiento de trazabilidad
+-  Historial de ubicaciones
+-  Registro de movimientos
+-  Generación de reportes
+-  Exportación de datos
+-  Consulta de información histórica
 
 ---
 
@@ -76,9 +76,9 @@ El sistema cuenta con interfaz gráfica que permite:
 
 Screenshots
 
-![Dashboard](screenshots/HomeDashboard.png)
-![Dashboard](screenshots/Informacion-Trasabilidad-Documentos.png)
-![Dashboard](screenshots/Exportar-Reportes.png)
+![HomeDashboard](screenshots/HomeDashboard.png)
+![Trasabilidad](screenshots/Informacion-Trasabilidad-Documentos.png)
+![Reportes](screenshots/Exportar-Reportes.png)
 
 
  Instalación y ejecución
