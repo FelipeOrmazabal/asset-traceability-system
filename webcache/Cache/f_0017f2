@@ -1,0 +1,2004 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap CSS -->
+
+
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <title>Inventario Oficina</title>
+    <div class="sticky-top  sticky-offset">
+  <nav class="navbar   navbar-expand-lg " style="background-color:#002da7;">
+
+
+    <button style="color: white;" onclick="history.back()" class="btn btn-lg"><i class="bi bi-arrow-left-circle"></i>
+    </button>
+
+    <a style="color: white;" class="navbar-brand" href="/View/index.php">Inicio</a>
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+      <ul class="navbar-nav mr-auto">
+
+
+
+
+        <li class="nav-item dropdown">
+          <a style="color: white;" class="nav-link nav-item active dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Bienes
+          </a>
+          <div class="dropdown-menu">
+
+
+
+            <a class="dropdown-item" href="/View/Bien.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA">TODOS</a>
+            <div class="dropdown-divider"></div>
+
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=1&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES CURICO CARMEN&comunatodos=1">CURICO CARMEN</a>
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=2&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES LICANTEN&comunatodos=2">LICANTEN</a>
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=3&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES HUALAñE&comunatodos=3">HUALAñE</a>
+            
+
+
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&reporte=no seleccionado&buscar=nada">Reportes <span class="sr-only"></span></a>
+        </li>
+
+      </ul>
+      
+
+
+
+
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href=" /View/Administracion.php?">Administracion <span class="sr-only"></span></a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+</div>
+</head>
+
+
+
+<body>
+    
+  <div id="cargando"  style="  background-color: white; z-index: 1000; height: 100%; width: 100%; position: fixed;   " role="status">
+
+<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;"  class="spinner-border text-primary  " role="status">
+    <span   class="sr-only">Loading...</span>
+  </div>
+</div>
+
+
+
+    <div style="padding-bottom: 20px; padding-top: 20px; " class="form-row col d-flex justify-content-between align-items-center ">
+        <div style="padding-left: 21px;" class="col row">
+            <div class="dropdown  ">
+                <button style="background-color: #0000ff; color: white"  class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    Tipo de reporte
+                </button>
+                <div class="dropdown-menu">
+
+                    <a id="btnOficina" href="../Controller/DeleteAllReporteController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=oficina" class="dropdown-item"> Inventario por ubicacion</a>
+
+
+
+                    <a id="btnRobo" class="dropdown-item"  href="../Controller/DeleteAllReporteController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=robo">Informe de robo </a>
+
+
+                    <a id="btnBaja" class="dropdown-item" href="../Controller/DeleteAllReporteController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=baja">Informe de baja / donacion </a>
+
+
+
+                    <a id="btnIncorporacion" class="dropdown-item"  href="../Controller/DeleteAllReporteController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=incorporacion">Incorporacion de activos </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../ViewReporte/todo.php">Exportar todo </a>
+                    <a id="btnFiltro" class="dropdown-item"  href="../Controller/DeleteAllReporteController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=todo_filtro">Exportar con filtro </a>
+
+                </div>
+
+            </div>
+            <div class="col mt-1"><label for="">
+                    no seleccionado
+
+                </label></div>
+
+        </div>
+        <div style="padding-right: 300px; " class="col row">
+
+            <form method="post" class="form-inline" action="../Controller/BuscarBienController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&pagina=reportes&reporte=no seleccionado">
+                <input style="width: 300px;" required name="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar en resultados: Codigo/Nombre" aria-label="Buscar">
+                <button style="background-color: #0000ff; color: white"  class="btn " type="submit">Buscar</button>
+            </form>
+        </div>
+
+
+        <div class="" id="headingTwo">
+            <label> </label>
+            <p>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="col">
+
+
+
+        
+
+        <div class="">
+
+
+            <table class=" table table-sm  ">
+
+
+                <thead style="background-color: #ff0000;">
+                    <tr>
+                        <th style="color: white;" scope="col">UBICACION</th>
+                        <th style="color: white;" scope="col">BIEN</th>
+                        <th style="color: white;" scope="col">ITEM GASTO</th>
+                        <th style="color: white;" scope="col ">CODIGO</th>
+                        <th style="color: white;" scope="col">N° FACTURA</th>
+                        <th style="color: white;" scope="col">VALOR</th>
+                        <th style="color: white;" scope="col">PROVEEDOR</th>
+                        <th style="color: white;" scope="col">ORIGEN</th>
+                        <th style="color: white;" scope="col">CANTIDAD</th>
+                        <th style="color: white;" scope="col">OBSERVACION</th>
+                        <th style="color: white;" scope="col">Historial</th>
+
+                        
+                    </tr>
+                </thead>
+
+
+
+                <tbody>
+
+
+
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">BIEN</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDN</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 12</td>
+                            <td style="font-size:80%; text-align: center; ">$1.000</td>
+                            <td style="font-size:80%; width: 20%;">LOS PALITOS</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=LOS PALITOS&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=BIEN&cantidad=1                                                &valor=1000&destino=&codigo=CDN                                                &id_bien=261&fecha=2024-11-25&bien_cambio=NO CAMBIO                                                &fecha_compra=2024-11-26&numero_factura=12 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU01001</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 813</td>
+                            <td style="font-size:80%; text-align: center; ">$333.200</td>
+                            <td style="font-size:80%; width: 20%;">DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DEBORA JANETT DEL CARMEN GAJARDO DURAN&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)&cantidad=1                                                &valor=333200&destino=&codigo=CDNCU01001                                                &id_bien=4&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=813 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">KIT 7 PANELES FOTOVOLTAICOS MODELO NETBILLING + 1 CONVERSOR</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU01002</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 83</td>
+                            <td style="font-size:80%; text-align: center; ">$2.860.800</td>
+                            <td style="font-size:80%; width: 20%;">CEC GENERACION</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=CEC GENERACION&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=KIT 7 PANELES FOTOVOLTAICOS MODELO NETBILLING + 1 CONVERSOR&cantidad=1                                                &valor=2860800&destino=&codigo=CDNCU01002                                                &id_bien=3&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=83 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">CAMARA DAHUA 2MP</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU01003</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 48</td>
+                            <td style="font-size:80%; text-align: center; ">$104.000</td>
+                            <td style="font-size:80%; width: 20%;">MELNIX SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=MELNIX SPA&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=CAMARA DAHUA 2MP&cantidad=2                                                &valor=104000&destino=&codigo=CDNCU01003                                                &id_bien=5&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=48 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">CAMARA DAHUA 2MP</td>
+                            <td style=font-size:80%>OPERACIÓN</td>
+                            <td style=font-size:80%>CDNCU01004</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 62</td>
+                            <td style="font-size:80%; text-align: center; ">$83.300</td>
+                            <td style="font-size:80%; width: 20%;">MELNIX SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=MELNIX SPA&item_gasto=OPERACIÓN&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=CAMARA DAHUA 2MP&cantidad=2                                                &valor=83300&destino=&codigo=CDNCU01004                                                &id_bien=6&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=62 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">PORTON ELECTRICO VELOTI ACCESO SECUNDARIO</td>
+                            <td style=font-size:80%>REPARACION Y MANTENCION</td>
+                            <td style=font-size:80%>CDNCU01005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 13</td>
+                            <td style="font-size:80%; text-align: center; ">$479.601</td>
+                            <td style="font-size:80%; width: 20%;">SOCIEDAD DE INVERSIONES DYD LTDA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SOCIEDAD DE INVERSIONES DYD LTDA&item_gasto=REPARACION Y MANTENCION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=PORTON ELECTRICO VELOTI ACCESO SECUNDARIO&cantidad=1                                                &valor=479601&destino=&codigo=CDNCU01005                                                &id_bien=7&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=13 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">BICICLETERO</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU01006</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=BICICLETERO&cantidad=1                                                &valor=0&destino=&codigo=CDNCU01006                                                &id_bien=1&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">BANCA METAL MADERA</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU01007</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=BANCA METAL MADERA&cantidad=2                                                &valor=0&destino=&codigo=CDNCU01007                                                &id_bien=2&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">CILINDRO DE GAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU20027</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 246</td>
+                            <td style="font-size:80%; text-align: center; ">$54.612</td>
+                            <td style="font-size:80%; width: 20%;">INVERSIONES LMC SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=INVERSIONES LMC SPA&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=CILINDRO DE GAS&cantidad=1                                                &valor=54612&destino=&codigo=CDNCU20027                                                &id_bien=250&fecha=2024-11-22&bien_cambio=NO CAMBIO                                                &fecha_compra=2024-11-19&numero_factura=246 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">HORARIO ACRILICO 40X50 CMS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>OFSA01002</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 201</td>
+                            <td style="font-size:80%; text-align: center; ">$80.920</td>
+                            <td style="font-size:80%; width: 20%;">SOCIEDAD INNOVA CHILE LIMITADA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SOCIEDAD INNOVA CHILE LIMITADA&item_gasto=HABILITACION&
+                                                ubicacion=1- EXTERIOR DEL CENTRO&nombre=HORARIO ACRILICO 40X50 CMS&cantidad=1                                                &valor=80920&destino=&codigo=OFSA01002                                                &id_bien=8&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=201 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">1.1. ENTRETECHO</td>
+                            <td style="font-size:80%; width: 20%;">RECEPTOR DE CAMARAS 8 CANALES</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU11101</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 48</td>
+                            <td style="font-size:80%; text-align: center; ">$91.300</td>
+                            <td style="font-size:80%; width: 20%;">MELNIX SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=MELNIX SPA&item_gasto=HABILITACION&
+                                                ubicacion=1.1. ENTRETECHO&nombre=RECEPTOR DE CAMARAS 8 CANALES&cantidad=1                                                &valor=91300&destino=&codigo=CDNCU11101                                                &id_bien=9&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=48 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">MESÓN DE RECEPCIÓN CON LOGO ADHESIVO DEL CENTRO + CAJONERA 2 PUERTAS Y REPISA MURAL 2 PUERTAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02001</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 3</td>
+                            <td style="font-size:80%; text-align: center; ">$289.999</td>
+                            <td style="font-size:80%; width: 20%;">MANUEL EDUARDO GONZALEZ BRAVO</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=MANUEL EDUARDO GONZALEZ BRAVO&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=MESÓN DE RECEPCIÓN CON LOGO ADHESIVO DEL CENTRO + CAJONERA 2 PUERTAS Y REPISA MURAL 2 PUERTAS&cantidad=1                                                &valor=289999&destino=&codigo=CDNCU02001                                                &id_bien=20&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=3 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">TELEVISOR LED SANSUNG 40''</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02003</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 13146</td>
+                            <td style="font-size:80%; text-align: center; ">$249.990</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA MULTIHOGAR S.A</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA MULTIHOGAR S.A&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=TELEVISOR LED SANSUNG 40''&cantidad=1                                                &valor=249990&destino=&codigo=CDNCU02003                                                &id_bien=14&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=13146 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">COMPUTADOR ALL IN ONE HP 205 G8</td>
+                            <td style=font-size:80%>N/A REPOSICION ROBO</td>
+                            <td style=font-size:80%>CDNCU02005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 134</td>
+                            <td style="font-size:80%; text-align: center; ">$2.221.981</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=N/A REPOSICION ROBO&
+                                                ubicacion=2. RECEPCIÓN&nombre=COMPUTADOR ALL IN ONE HP 205 G8&cantidad=1                                                &valor=2221981&destino=REPOSICIÓN ROBO&codigo=CDNCU02005                                                &id_bien=13&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=134 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">SITIALES DE MADERA</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02006</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 89</td>
+                            <td style="font-size:80%; text-align: center; ">$220.000</td>
+                            <td style="font-size:80%; width: 20%;">EAR INGENIERIA SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=EAR INGENIERIA SPA&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=SITIALES DE MADERA&cantidad=2                                                &valor=220000&destino=&codigo=CDNCU02006                                                &id_bien=16&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=89 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">ESTUFA A GAS GRX-4200 URSUS TROTTER</td>
+                            <td style=font-size:80%>MATERIALES DE OFICINA</td>
+                            <td style=font-size:80%>CDNCU02007</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 132</td>
+                            <td style="font-size:80%; text-align: center; ">$155.990</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=MATERIALES DE OFICINA&
+                                                ubicacion=2. RECEPCIÓN&nombre=ESTUFA A GAS GRX-4200 URSUS TROTTER&cantidad=1                                                &valor=155990&destino=&codigo=CDNCU02007                                                &id_bien=12&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=132 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">PORTAFOLLETOS CON LOGO ADHESIVO DEL CENTRO</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02008</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 833</td>
+                            <td style="font-size:80%; text-align: center; ">$90.440</td>
+                            <td style="font-size:80%; width: 20%;">DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DEBORA JANETT DEL CARMEN GAJARDO DURAN&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=PORTAFOLLETOS CON LOGO ADHESIVO DEL CENTRO&cantidad=1                                                &valor=90440&destino=&codigo=CDNCU02008                                                &id_bien=10&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=833 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">EQUIPO DE AIRE ACONDICIONADO CLIMATIZADOR 18000 BTU</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02009</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 1097</td>
+                            <td style="font-size:80%; text-align: center; ">$535.500</td>
+                            <td style="font-size:80%; width: 20%;">GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=EQUIPO DE AIRE ACONDICIONADO CLIMATIZADOR 18000 BTU&cantidad=1                                                &valor=535500&destino=&codigo=CDNCU02009                                                &id_bien=17&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=1097 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">ESTACIONES PARA EQUIPOS DE AUTOCONSULTA</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02010</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 3</td>
+                            <td style="font-size:80%; text-align: center; ">$79.999</td>
+                            <td style="font-size:80%; width: 20%;">MANUEL EDUARDO GONZALEZ BRAVO</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=MANUEL EDUARDO GONZALEZ BRAVO&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=ESTACIONES PARA EQUIPOS DE AUTOCONSULTA&cantidad=1                                                &valor=79999&destino=&codigo=CDNCU02010                                                &id_bien=21&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=3 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">CENTRAL TELEFONICA</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02011</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 146</td>
+                            <td style="font-size:80%; text-align: center; ">$509.999</td>
+                            <td style="font-size:80%; width: 20%;">ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=CENTRAL TELEFONICA&cantidad=1                                                &valor=509999&destino=&codigo=CDNCU02011                                                &id_bien=18&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=146 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">LIMPIAPIES NOMAD CUSHION</td>
+                            <td style=font-size:80%>OPERACIÓN</td>
+                            <td style=font-size:80%>CDNCU02012</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 102</td>
+                            <td style="font-size:80%; text-align: center; ">$380.800</td>
+                            <td style="font-size:80%; width: 20%;">SOCIEDAD INNOVA CHILE LIMITADA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SOCIEDAD INNOVA CHILE LIMITADA&item_gasto=OPERACIÓN&
+                                                ubicacion=2. RECEPCIÓN&nombre=LIMPIAPIES NOMAD CUSHION&cantidad=2                                                &valor=380800&destino=&codigo=CDNCU02012                                                &id_bien=22&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=102 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">EXTINTOR POLVO QUIMICO</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02013</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 3151</td>
+                            <td style="font-size:80%; text-align: center; ">$42.840</td>
+                            <td style="font-size:80%; width: 20%;">JORGE ROBERTO VELIZ INOSTROZA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=JORGE ROBERTO VELIZ INOSTROZA&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=EXTINTOR POLVO QUIMICO&cantidad=1                                                &valor=42840&destino=&codigo=CDNCU02013                                                &id_bien=19&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=3151 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02014</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 281</td>
+                            <td style="font-size:80%; text-align: center; ">$147.679</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=147679&destino=&codigo=CDNCU02014                                                &id_bien=11&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=281 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">MULTIFUNCIONAL BROTHER LASER MFC-L8900CDW.</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU02015</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 71</td>
+                            <td style="font-size:80%; text-align: center; ">$744.024</td>
+                            <td style="font-size:80%; width: 20%;">EAR INGENIERIA SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=EAR INGENIERIA SPA&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=MULTIFUNCIONAL BROTHER LASER MFC-L8900CDW.&cantidad=1                                                &valor=744024&destino=&codigo=CDNCU02015                                                &id_bien=15&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=71 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">TELEFONO INALAMBRICO</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02016</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 241</td>
+                            <td style="font-size:80%; text-align: center; ">$39.497</td>
+                            <td style="font-size:80%; width: 20%;">SKOLL COMPANY SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SKOLL COMPANY SPA&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=TELEFONO INALAMBRICO&cantidad=1                                                &valor=39497&destino=&codigo=CDNCU02016                                                &id_bien=243&fecha=2024-11-22&bien_cambio=NO CAMBIO                                                &fecha_compra=2024-11-21&numero_factura=241 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">TELEVISOR LED SANSUNG 40''</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU03002</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 13146</td>
+                            <td style="font-size:80%; text-align: center; ">$249.990</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA MULTIHOGAR S.A</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA MULTIHOGAR S.A&item_gasto=HABILITACION&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=TELEVISOR LED SANSUNG 40''&cantidad=1                                                &valor=249990&destino=&codigo=CDNCU03002                                                &id_bien=28&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=13146 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">MESA DE REUNION 3,60 X 1,25 MTS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU03003</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 116</td>
+                            <td style="font-size:80%; text-align: center; ">$515.270</td>
+                            <td style="font-size:80%; width: 20%;">MANUEL EDUARDO GONZALEZ BRAVO</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=MANUEL EDUARDO GONZALEZ BRAVO&item_gasto=HABILITACION&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=MESA DE REUNION 3,60 X 1,25 MTS&cantidad=1                                                &valor=515270&destino=&codigo=CDNCU03003                                                &id_bien=30&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=116 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">AIRE ACONDICIONADO PORTATIL MIDEA 12000 BTU MPPD-12KHRN1</td>
+                            <td style=font-size:80%>N/A REPOSICION ROBO</td>
+                            <td style=font-size:80%>CDNCU03004</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 88</td>
+                            <td style="font-size:80%; text-align: center; ">$499.990</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=N/A REPOSICION ROBO&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=AIRE ACONDICIONADO PORTATIL MIDEA 12000 BTU MPPD-12KHRN1&cantidad=1                                                &valor=499990&destino=REPOSICIÓN ROBO&codigo=CDNCU03004                                                &id_bien=27&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=88 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS BLANCAS</td>
+                            <td style=font-size:80%>OPERACIÓN</td>
+                            <td style=font-size:80%>CDNCU03005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 86</td>
+                            <td style="font-size:80%; text-align: center; ">$847.500</td>
+                            <td style="font-size:80%; width: 20%;">EAR INGENIERIA SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">16</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=EAR INGENIERIA SPA&item_gasto=OPERACIÓN&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=SILLAS BLANCAS&cantidad=16                                                &valor=847500&destino=&codigo=CDNCU03005                                                &id_bien=29&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=86 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">IMPRESORA MULTIFUNCIONAL BROTHER MFC J6720 DW</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU03006</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 54345</td>
+                            <td style="font-size:80%; text-align: center; ">$210.500</td>
+                            <td style="font-size:80%; width: 20%;">COMERCIAL INFOLAND LIMITADA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=COMERCIAL INFOLAND LIMITADA&item_gasto=HABILITACION&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=IMPRESORA MULTIFUNCIONAL BROTHER MFC J6720 DW&cantidad=1                                                &valor=210500&destino=&codigo=CDNCU03006                                                &id_bien=26&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=54345 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">MUEBLE TELEVISOR AZUL</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU03007</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=HABILITACION&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=MUEBLE TELEVISOR AZUL&cantidad=1                                                &valor=0&destino=&codigo=CDNCU03007                                                &id_bien=23&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">LOGO ACRILICO CDN CURICÓ</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU03008</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=HABILITACION&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=LOGO ACRILICO CDN CURICÓ&cantidad=2                                                &valor=0&destino=&codigo=CDNCU03008                                                &id_bien=24&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">AIRE ACONDICIONADO</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU03009</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=HABILITACION&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=AIRE ACONDICIONADO&cantidad=1                                                &valor=0&destino=&codigo=CDNCU03009                                                &id_bien=25&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">ACCES POINT UBIQUITI</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU03010</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 241</td>
+                            <td style="font-size:80%; text-align: center; ">$386.555</td>
+                            <td style="font-size:80%; width: 20%;">SKOLL COMPANY SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SKOLL COMPANY SPA&item_gasto=HABILITACION&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=ACCES POINT UBIQUITI&cantidad=1                                                &valor=386555&destino=&codigo=CDNCU03010                                                &id_bien=244&fecha=2024-11-22&bien_cambio=NO CAMBIO                                                &fecha_compra=2024-11-21&numero_factura=241 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">DATASHOW  EPSON POWERLITE 99WHXGA</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04001</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 41475</td>
+                            <td style="font-size:80%; text-align: center; ">$485.404</td>
+                            <td style="font-size:80%; width: 20%;">COMUNICACIONES Y TECNOLOGIA S.A</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=COMUNICACIONES Y TECNOLOGIA S.A&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=DATASHOW  EPSON POWERLITE 99WHXGA&cantidad=1                                                &valor=485404&destino=REPOSICIÓN ROBO&codigo=CDNCU04001                                                &id_bien=36&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=41475 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">PROYECTOR VIEWSONIC PA503</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04003</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 88</td>
+                            <td style="font-size:80%; text-align: center; ">$1.011.990</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=PROYECTOR VIEWSONIC PA503&cantidad=1                                                &valor=1011990&destino=REPOSICIÓN ROBO&codigo=CDNCU04003                                                &id_bien=40&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=88 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                            <td style=font-size:80%>N/A REPOSICION ROBO</td>
+                            <td style=font-size:80%>CDNCU04006</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 134</td>
+                            <td style="font-size:80%; text-align: center; ">$3.361.470</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=N/A REPOSICION ROBO&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=NOTEBOOK ASUS ZENBOOK 13 OLED&cantidad=1                                                &valor=3361470&destino=REPOSICIÓN ROBO&codigo=CDNCU04006                                                &id_bien=41&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=134 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">NOTEBOOK ZENBOOK 13 OLED UX325E 13.3 FHD</td>
+                            <td style=font-size:80%>N/A REPOSICION ROBO</td>
+                            <td style=font-size:80%>CDNCU04008</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 88</td>
+                            <td style="font-size:80%; text-align: center; ">$2.620.000</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=N/A REPOSICION ROBO&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=NOTEBOOK ZENBOOK 13 OLED UX325E 13.3 FHD&cantidad=1                                                &valor=2620000&destino=&codigo=CDNCU04008                                                &id_bien=42&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=88 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">CLIMATIZADOR 12.000 BTU </td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04009</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 881</td>
+                            <td style="font-size:80%; text-align: center; ">$420.058</td>
+                            <td style="font-size:80%; width: 20%;">JA CLIMATIZACION SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=JA CLIMATIZACION SPA&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=CLIMATIZADOR 12.000 BTU &cantidad=1                                                &valor=420058&destino=&codigo=CDNCU04009                                                &id_bien=45&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=881 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">NOTEBOOK ASUS ULTRALIVIANO 14'' X409F</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04011</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 68</td>
+                            <td style="font-size:80%; text-align: center; ">$2.940.000</td>
+                            <td style="font-size:80%; width: 20%;">EAR INGENIERIA SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">4</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=EAR INGENIERIA SPA&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=NOTEBOOK ASUS ULTRALIVIANO 14'' X409F&cantidad=4                                                &valor=2940000&destino=&codigo=CDNCU04011                                                &id_bien=44&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=68 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04012</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$925.000</td>
+                            <td style="font-size:80%; width: 20%;">INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°1</td>
+                            <td style="font-size:80%; text-align: center; ">37</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°1&proveedor=INACAP&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=SILLAS ACOLCHADAS&cantidad=37                                                &valor=925000&destino=&codigo=CDNCU04012                                                &id_bien=31&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">CUERPOS DE SILLAS DE 3 PERSONAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04013</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$120.000</td>
+                            <td style="font-size:80%; width: 20%;">INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°1</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°1&proveedor=INACAP&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=CUERPOS DE SILLAS DE 3 PERSONAS&cantidad=1                                                &valor=120000&destino=&codigo=CDNCU04013                                                &id_bien=32&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">PIZARRA DE CORCHO</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04015</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 200</td>
+                            <td style="font-size:80%; text-align: center; ">$583.100</td>
+                            <td style="font-size:80%; width: 20%;">SOCIEDAD INNOVA CHILE LIMITADA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SOCIEDAD INNOVA CHILE LIMITADA&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=PIZARRA DE CORCHO&cantidad=1                                                &valor=583100&destino=&codigo=CDNCU04015                                                &id_bien=47&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=200 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">MESA PUPITRE INDIVIDUALES COLOR CAFÉ</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04016</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$665.000</td>
+                            <td style="font-size:80%; width: 20%;">INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°1</td>
+                            <td style="font-size:80%; text-align: center; ">19</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°1&proveedor=INACAP&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=MESA PUPITRE INDIVIDUALES COLOR CAFÉ&cantidad=19                                                &valor=665000&destino=&codigo=CDNCU04016                                                &id_bien=33&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">MESA 2 CUERPOS PC DE 1.7 MT</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04017</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$270.000</td>
+                            <td style="font-size:80%; width: 20%;">INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°1</td>
+                            <td style="font-size:80%; text-align: center; ">3</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°1&proveedor=INACAP&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=MESA 2 CUERPOS PC DE 1.7 MT&cantidad=3                                                &valor=270000&destino=&codigo=CDNCU04017                                                &id_bien=34&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">NOTEBOOK ACER ASPIRE 5</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU04018</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 34</td>
+                            <td style="font-size:80%; text-align: center; ">$523.600</td>
+                            <td style="font-size:80%; width: 20%;">EAR INGENIERIA SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=EAR INGENIERIA SPA&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=NOTEBOOK ACER ASPIRE 5&cantidad=1                                                &valor=523600&destino=&codigo=CDNCU04018                                                &id_bien=43&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=34 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">UNIDAD SSD 240GB SATA3 2,5''</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU04019</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 63</td>
+                            <td style="font-size:80%; text-align: center; ">$76.106</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=UNIDAD SSD 240GB SATA3 2,5''&cantidad=1                                                &valor=76106&destino=&codigo=CDNCU04019                                                &id_bien=38&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=63 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">MEMORIA NOTEBOOK 8 GB SODIMM DDR3 1600MHZ VALUE RAM</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU04020</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 62</td>
+                            <td style="font-size:80%; text-align: center; ">$76.329</td>
+                            <td style="font-size:80%; width: 20%;">DISTRIBUIDORA KALEUCHE SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISTRIBUIDORA KALEUCHE SPA&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=MEMORIA NOTEBOOK 8 GB SODIMM DDR3 1600MHZ VALUE RAM&cantidad=1                                                &valor=76329&destino=&codigo=CDNCU04020                                                &id_bien=39&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=62 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU04021</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$510.080</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">16</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=SILLAS ACOLCHADAS AZUL&cantidad=16                                                &valor=510080&destino=&codigo=CDNCU04021                                                &id_bien=37&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">EXHIBIDOR MURAL INFORMATIVO</td>
+                            <td style=font-size:80%>PUBLICIDAD</td>
+                            <td style=font-size:80%>CDNCU04022</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 36</td>
+                            <td style="font-size:80%; text-align: center; ">$238.000</td>
+                            <td style="font-size:80%; width: 20%;">SOCIEDAD INNOVA CHILE LIMITADA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SOCIEDAD INNOVA CHILE LIMITADA&item_gasto=PUBLICIDAD&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=EXHIBIDOR MURAL INFORMATIVO&cantidad=1                                                &valor=238000&destino=&codigo=CDNCU04022                                                &id_bien=49&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=36 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+
+
+                </tbody>
+            </table>
+
+        </div>
+        
+
+    </div>
+    <div class="invisible">
+        <input name="bienes" value="261" required class="invisible"></input>
+        <input name="num" value="50" required class="invisible"></input>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+<!doctype html>
+
+
+
+<script>
+    var bienes = parseInt(document.querySelector("input[name='bienes']").value);
+    var num = parseInt(document.querySelector("input[name='num']").value)
+
+
+
+
+    window.onload = function() {
+        var pos = window.name || 0;
+        window.scrollTo(0, pos);
+        var contenedor = document.getElementById('cargando');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity= '0';
+    }
+    window.onunload = function() {
+        window.name = self.pageYOffset || (document.documentElement.scrollTop + document.body.scrollTop);
+    }
+
+
+    $(window).on("scroll", function() {
+
+        let userInput = document.getElementsByName('money-amount');
+        inputNum = parseInt(userInput.value);
+
+        console.log(inputNum)
+
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        if (((scrollHeight - scrollPosition) / scrollHeight === 0 && bienes > num)) {
+
+            location.replace("../View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&limit=50&reporte=no seleccionado");
+
+        }
+    });
+
+    $btnOficina = document.querySelector("#btnOficina");
+
+    $btnOficina.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/oficina.php?reporte=oficina");
+    });
+
+
+
+
+    $btnRobo = document.querySelector("#btnRobo");
+
+    $btnRobo.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/robo.php?reporte=robo");
+    });
+
+    $btnBaja = document.querySelector("#btnBaja");
+
+    $btnBaja.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/baja.php?reporte=baja");
+    });
+    $btnIncorporacion = document.querySelector("#btnIncorporacion");
+
+    $btnIncorporacion.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/incorporacion.php?reporte=incorporacion");
+    });
+
+    $btnFiltro = document.querySelector("#btnFiltro");
+
+    $btnFiltro.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/todo_filtro.php?reporte=todo_filtro");
+    });
+
+
+    // Llamada desde la hija
+</script>

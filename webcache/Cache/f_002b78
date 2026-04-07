@@ -1,0 +1,3035 @@
+
+
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+
+    <div class="sticky-top  sticky-offset">
+  <nav class="navbar   navbar-expand-lg " style="background-color:#002da7;">
+
+
+    <button style="color: white;" onclick="history.back()" class="btn btn-lg"><i class="bi bi-arrow-left-circle"></i>
+    </button>
+
+    <a style="color: white;" class="navbar-brand" href="/View/index.php">Inicio</a>
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+      <ul class="navbar-nav mr-auto">
+
+
+
+
+        <li class="nav-item dropdown">
+          <a style="color: white;" class="nav-link nav-item active dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Bienes
+          </a>
+          <div class="dropdown-menu">
+
+
+
+            <a class="dropdown-item" href="/View/Bien.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA">TODOS</a>
+            <div class="dropdown-divider"></div>
+
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=1&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES CURICO&comunatodos=1">CURICO</a>
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=2&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES LICANTEN&comunatodos=2">LICANTEN</a>
+            
+
+
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&reporte=no seleccionado&buscar=nada">Reportes <span class="sr-only"></span></a>
+        </li>
+
+      </ul>
+      
+
+
+
+
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href=" /View/Administracion.php?">Administracion <span class="sr-only"></span></a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+</div>
+
+</head>
+
+
+<label></label>
+
+
+<body   style="overflow: hidden;"  >
+
+    <div class="form-row col">
+
+
+
+
+
+        <div class="col">
+            <form method="post" action="../Controller/AddComunaController.php">
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for="">  Centro de negocios</label>
+                        <input type="text" name="comuna" required class="form-control">
+                    </div>
+
+                </div>
+                <label> </label>
+                <div>
+
+                    <button type="submit" class="btn btn-outline-primary">Agregar</button>
+
+                </div>
+                <label> </label>
+
+
+            </form>
+
+            <div class="overflow-auto"    style="height: 66vh ;" >
+                <table class="table table-sm">
+
+                    <tbody>
+                                                    <tr>
+                                <td style=font-size:90%>CURICO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#c1" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="c1">
+                                        <form method="post" action="../Controller/EditComunaController.php?id_comuna=1">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" required name="comuna" value="CURICO" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>LICANTEN</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#c2" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="c2">
+                                        <form method="post" action="../Controller/EditComunaController.php?id_comuna=2">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" required name="comuna" value="LICANTEN" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                            </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="col">
+            <form method="post" action="../Controller/AddUbicacionController.php">
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for=""> Ubicacion (CDN)</label>
+                        <input type="text" name="ubicacion" required class="form-control">
+                    </div>
+
+                </div>
+                <div class="">
+                    <label for=""> Centro de negocios</label>
+                    <select name="comuna" required class="form-control" id="inputGroupSelect02">
+                        <option value="UBICACION.ID_UBICACION" selected></option>
+                                                    <option value="1 "> CURICO </option>
+
+                                                    <option value="2 "> LICANTEN </option>
+
+                        
+                    </select>
+                </div>
+                <label> </label>
+                <div>
+
+                    <button type="submit" class="btn btn-outline-primary">Agregar</button>
+
+                </div>
+                <label> </label>
+
+
+            </form>
+
+            <div class="overflow-auto"    style="height: 66vh ;" >
+                <table class="table table-sm">
+
+                    <tbody>
+                                                    <tr>
+                                <td style=font-size:90%>1- EXTERIOR DEL CENTRO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u1" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u1">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=1">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="1- EXTERIOR DEL CENTRO" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>1.1. ENTRETECHO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u2" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u2">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=2">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="1.1. ENTRETECHO" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>2. RECEPCIÓN</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u3" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u3">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=3">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="2. RECEPCIÓN" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>3. SALA DE REUNIONES</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u4" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u4">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=4">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="3. SALA DE REUNIONES" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>4. SALA DE TECNOLOGÍA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u5" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u5">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=5">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="4. SALA DE TECNOLOGÍA" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>5. OFICINA DIRECTOR DEL CENTRO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u6" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u6">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=6">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="5. OFICINA DIRECTOR DEL CENTRO" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>6. OFICINA ASESORIA N° 1</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u7" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u7">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=7">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="6. OFICINA ASESORIA N° 1" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>7. COCINA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u8" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u8">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=8">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="7. COCINA" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>8. OFICINA ASESORIA N° 2 </td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u9" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u9">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=9">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="8. OFICINA ASESORIA N° 2 " class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>9. OFICINA ASESORIA N° 3</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u10" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u10">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=10">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="9. OFICINA ASESORIA N° 3" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>10 OFICINA ASESORIA N° 4</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u11" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u11">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=11">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="10 OFICINA ASESORIA N° 4" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>11. OFICINA ASESORIA N° 5</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u12" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u12">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=12">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="11. OFICINA ASESORIA N° 5" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u13" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u13">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=13">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="12. OFICINA ASISTENTE ADMINISTRATIVO" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>13. PASILLO INTERIOR</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u14" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u14">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=14">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="13. PASILLO INTERIOR" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>14. COWORK</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u15" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u15">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=15">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="14. COWORK" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>15. SALA PROTOTIPADO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u16" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u16">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=16">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="15. SALA PROTOTIPADO" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>16. SERVICIOS HIGIENICOS DAMAS</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u17" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u17">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=17">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="16. SERVICIOS HIGIENICOS DAMAS" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>17. SERVICIOS HIGIENICOS DISCAPACITADOS</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u18" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u18">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=18">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="17. SERVICIOS HIGIENICOS DISCAPACITADOS" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>18. SERVICIOS HIGIENICOS VARONES</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u19" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u19">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=19">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="18. SERVICIOS HIGIENICOS VARONES" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>19. SERVICIOS HIGIENICOS EQUIPO CDN</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u20" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u20">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=20">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="19. SERVICIOS HIGIENICOS EQUIPO CDN" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>20. BODEGA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u21" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u21">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=21">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="20. BODEGA" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>21. ZONA INFANTIL</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u22" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u22">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=22">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="21. ZONA INFANTIL" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>OFICINA MODULAR LICANTEN</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#u23" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="u23">
+                                        <form method="post" action="../Controller/EditUbicacionController.php?id_ubicacion=23">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="ubicacion" value="OFICINA MODULAR LICANTEN" class="form-control">
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                            </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="col">
+            <form method="post" action="../Controller/AddProveedorController.php">
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for=""> Proveedor</label>
+                        <input type="text" name="proveedor" required class="form-control">
+                    </div>
+
+                </div>
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for=""> Rut</label>
+                        <input type="text" name="rut" required class="form-control">
+                    </div>
+
+                </div>
+                <label> </label>
+                <div>
+
+                    <button type="submit" class="btn btn-outline-primary">Agregar</button>
+
+                </div>
+                <label> </label>
+
+
+            </form>
+
+            <div class="overflow-auto"    style="height: 66vh ;" >
+                <table class="table table-sm">
+
+                    <tbody>
+                                                    <tr>
+                                <td style=font-size:90%>CEC GENERACION</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p1" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p1">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=1">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="CEC GENERACION" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>COMERCIAL GAVATIC SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p34" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p34">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=34">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="COMERCIAL GAVATIC SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="77.176.387- 1" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>COMERCIAL INFOLAND LIMITADA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p2" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p2">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=2">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="COMERCIAL INFOLAND LIMITADA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>COMERCIAL LUDUEÑA SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p3" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p3">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=3">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="COMERCIAL LUDUEÑA SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>COMUNICACIONES Y TECNOLOGIA S.A</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p4" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p4">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=4">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="COMUNICACIONES Y TECNOLOGIA S.A" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p5" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p5">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=5">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="CORPORACION INSTITUTO PROFESIONAL INACAP" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p6" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p6">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=6">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="DEBORA JANETT DEL CARMEN GAJARDO DURAN" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p7" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p7">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=7">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>DISTRIBUIDORA KALEUCHE SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p8" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p8">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=8">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="DISTRIBUIDORA KALEUCHE SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>DISTRIBUIDORA MULTIHOGAR S.A</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p9" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p9">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=9">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="DISTRIBUIDORA MULTIHOGAR S.A" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>EAR INGENIERIA SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p10" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p10">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=10">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="EAR INGENIERIA SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>EMPRESAS LA POLAR S.A.</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p11" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p11">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=11">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="EMPRESAS LA POLAR S.A." class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>EVENTOS, MARKETING Y PUBLICIDAD LA OVEJA SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p12" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p12">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=12">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="EVENTOS, MARKETING Y PUBLICIDAD LA OVEJA SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p13" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p13">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=13">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>IMPORTADORA Y DISTRIBUIDORA UDENIO LTDA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p14" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p14">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=14">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="IMPORTADORA Y DISTRIBUIDORA UDENIO LTDA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>INACAP</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p15" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p15">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=15">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="INACAP" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p16" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p16">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=16">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>INVERSIONES LMC SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p33" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p33">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=33">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="INVERSIONES LMC SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="77.804.885- K" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>JA CLIMATIZACION SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p17" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p17">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=17">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="JA CLIMATIZACION SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>JORGE ROBERTO VELIZ INOSTROZA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p18" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p18">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=18">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="JORGE ROBERTO VELIZ INOSTROZA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>JOSE GUILLERMO RIVERA BELTRAN</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p19" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p19">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=19">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="JOSE GUILLERMO RIVERA BELTRAN" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>JOSE PUERTAS PONS Y CIA.</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p20" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p20">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=20">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="JOSE PUERTAS PONS Y CIA." class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p21" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p21">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=21">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="MANUEL EDUARDO GONZALEZ BRAVO" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>MARIO NELSON LOPEZ LAZO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p22" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p22">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=22">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="MARIO NELSON LOPEZ LAZO" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>MARLENE DEL PILAR URIBE GAJARDO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p23" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p23">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=23">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="MARLENE DEL PILAR URIBE GAJARDO" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>MELNIX SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p24" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p24">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=24">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="MELNIX SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>PABLO ANDRES HERRERA PARRAGUEZ</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p25" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p25">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=25">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="PABLO ANDRES HERRERA PARRAGUEZ" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p26" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p26">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=26">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>SERVICIOS INDUSTRIALES NATALY ANGELICA LLANCA EIRL</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p27" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p27">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=27">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="SERVICIOS INDUSTRIALES NATALY ANGELICA LLANCA EIRL" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>SIN REGISTRAR</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p28" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p28">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=28">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>SKOLL COMPANY SPA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p29" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p29">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=29">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="SKOLL COMPANY SPA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>SOCIEDAD DE INVERSIONES DYD LTDA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p30" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p30">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=30">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="SOCIEDAD DE INVERSIONES DYD LTDA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p31" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p31">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=31">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="SOCIEDAD INNOVA CHILE LIMITADA" class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>TELEFONICA MOVILES CHILE S.A.</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#p32" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="p32">
+                                        <form method="post" action="../Controller/EditProveedorController.php?id_proveedor=32">
+                                          
+                                            <div  class="form-row mb-2">
+
+
+
+                                                <input type="text" name="proveedor" value="TELEFONICA MOVILES CHILE S.A." class="form-control">
+
+
+                                            </div>
+                                            
+                                            <div class="form-row mb-2">
+
+
+
+                                                <input type="text" name="rut" value="SIN REGISTRAR" class="form-control">
+
+
+                                            </div>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                            </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="col">
+            <form method="post" action="../Controller/AddItemGastoController.php">
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for=""> Item gasto</label>
+                        <input type="text" name="item_gasto" required class="form-control">
+                    </div>
+
+                </div>
+                <label> </label>
+                <div>
+
+                    <button type="submit" class="btn btn-outline-primary">Agregar</button>
+
+                </div>
+                <label> </label>
+
+
+            </form>
+
+            <div class="overflow-auto"    style="height: 66vh ;" >
+                <table class="table table-sm">
+
+                    <tbody>
+                                                    <tr>
+                                <td style=font-size:90%>HABILITACION</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i1" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i1">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=1">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="HABILITACION" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>OPERACIÓN</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i2" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i2">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=2">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="OPERACIÓN" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>REPARACION Y MANTENCION</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i3" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i3">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=3">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="REPARACION Y MANTENCION" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>N/A</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i4" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i4">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=4">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="N/A" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>N/A  DONACION</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i5" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i5">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=5">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="N/A  DONACION" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>N/A REPOSICION</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i6" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i6">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=6">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="N/A REPOSICION" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>N/A REPOSICION ROBO</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i7" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i7">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=7">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="N/A REPOSICION ROBO" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>ACTIVOS POR RENOVACION</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i8" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i8">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=8">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="ACTIVOS POR RENOVACION" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>PUBLICIDAD</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i9" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i9">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=9">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="PUBLICIDAD" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>MATERIALES DE OFICINA</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#i10" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="i10">
+                                        <form method="post" action="../Controller/EditItemGastoController.php?id_item_gasto=10">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="item_gasto" value="MATERIALES DE OFICINA" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                            </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="col">
+            <form method="post" action="../Controller/AddObservacionController.php">
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for=""> Observacion</label>
+                        <input type="text" name="observacion" required class="form-control">
+                    </div>
+
+                </div>
+                <label> </label>
+                <div>
+
+                    <button type="submit" class="btn btn-outline-primary">Agregar</button>
+
+                </div>
+                <label> </label>
+
+
+            </form>
+
+            <div class="overflow-auto"    style="height: 66vh ;" >
+                <table class="table table-sm">
+
+                    <tbody>
+                                                    <tr>
+                                <td style=font-size:90%>UTILIZABLE</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#o1" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="o1">
+                                        <form method="post" action="../Controller/EditObservacionController.php?id_observacion=1">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="observacion" value="UTILIZABLE" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>NO UTILIZABLE</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#o2" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="o2">
+                                        <form method="post" action="../Controller/EditObservacionController.php?id_observacion=2">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" name="observacion" value="NO UTILIZABLE" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                            </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col">
+            <form method="post" action="../Controller/AddOrigenController.php">
+                <div class="form-row">
+
+                    <div class="col">
+                        <label for=""> Origen</label>
+                        <input type="text" name="origen" required class="form-control">
+                    </div>
+
+                </div>
+                <label> </label>
+                <div>
+
+                    <button type="submit" class="btn btn-outline-primary">Agregar</button>
+
+                </div>
+                <label> </label>
+
+
+            </form>
+
+            <div class="overflow-auto"    style="height: 66vh ;" >
+                <table class="table table-sm">
+
+                    <tbody>
+                                                    <tr>
+                                <td style=font-size:90%>ADQUISICION</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#or1" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="or1">
+                                        <form method="post" action="../Controller/EditOrigenController.php?id_origen=1">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" required name="origen" value="ADQUISICION" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>ACTA DONACION N°1</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#or2" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="or2">
+                                        <form method="post" action="../Controller/EditOrigenController.php?id_origen=2">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" required name="origen" value="ACTA DONACION N°1" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>ACTA DONACION N°2</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#or3" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="or3">
+                                        <form method="post" action="../Controller/EditOrigenController.php?id_origen=3">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" required name="origen" value="ACTA DONACION N°2" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>ACTA DONACION N°3</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#or4" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="or4">
+                                        <form method="post" action="../Controller/EditOrigenController.php?id_origen=4">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" required name="origen" value="ACTA DONACION N°3" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                                    <tr>
+                                <td style=font-size:90%>ACTA DONACION N°4</td>
+                                <td style=font-size:90%> <button class="btn" type="button" data-toggle="collapse" data-target="#or5" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-pen-fill"></i>
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td style=font-size:90% colspan="2">
+                                    <div class="collapsing " style="height:0" id="or5">
+                                        <form method="post" action="../Controller/EditOrigenController.php?id_origen=5">
+                                            <div class="form-row">
+
+
+
+                                                <input type="text" required name="origen" value="ACTA DONACION N°4" class="form-control" ITEM_GASTO>
+
+
+                                            </div>
+                                            <label> </label>
+                                            <div>
+
+                                                <button type="submit" class="btn btn-outline-primary"> guardar</button>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                                            </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <label for=""> </label>
+
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

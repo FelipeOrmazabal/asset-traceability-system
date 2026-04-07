@@ -1,0 +1,1201 @@
+
+
+
+<!doctype html>
+<html class="panel-body" lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js"></script>
+  <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+
+
+  <div class="sticky-top  sticky-offset">
+  <nav class="navbar   navbar-expand-lg " style="background-color:#0000e3;">
+
+
+    <button style="color: white;" onclick="history.back()" class="btn btn-lg"><i class="bi bi-arrow-left-circle"></i>
+    </button>
+
+    <a style="color: white;" class="navbar-brand" href="/View/index.php">Inicio</a>
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+      <ul class="navbar-nav mr-auto">
+
+
+
+
+        <li class="nav-item dropdown">
+          <a style="color: white;" class="nav-link nav-item active dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Bienes
+          </a>
+          <div class="dropdown-menu">
+
+
+
+            <a class="dropdown-item" href="/View/Bien.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA">TODOS</a>
+            <div class="dropdown-divider"></div>
+
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=1&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES CURICO CARMEN&comunatodos=1">CURICO CARMEN</a>
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=2&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES LICANTEN&comunatodos=2">LICANTEN</a>
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=3&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES HUALAñE&comunatodos=3">HUALAñE</a>
+            
+
+
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&reporte=no seleccionado&buscar=nada">Reportes <span class="sr-only"></span></a>
+        </li>
+
+      </ul>
+      
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a style="color: white; font-weight: bold;" class="nav-link"> TODOS LOS BIENES <span class="sr-only"></span></a>
+          </li>
+        </ul>
+
+
+
+      
+
+
+
+
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href=" /View/Administracion.php?">Administracion <span class="sr-only"></span></a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+</div></head>
+
+
+<body>
+
+<div id="cargando"  style="  background-color: white; z-index: 1000; height: 100%; width: 100%; position: fixed;   " role="status">
+
+<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;"  class="spinner-border text-primary  " role="status">
+    <span   class="sr-only">Loading...</span>
+  </div>
+</div>
+  
+
+  <div class="accordion " aria-multiselectable="true" id="accordionExample">
+
+
+
+    <div class="row col  panel-body  ">
+      <div class=" col panel-body " id="headingOne">
+        <label> </label>
+        <p class="panel-body ">
+          <button class=" panel-body btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+            Agregar Bien
+          </button>
+        </p>
+      </div>
+
+      <div style="padding-right: 220px;" class="col row panel-body  ">
+        <form method="post" class="form-inline" action="../Controller/BuscarBienController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=&pagina=bienes&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA&limit=50">
+          <input style="width: 250px;" required name="buscar" class=" panel-body  form-control mr-sm-2" type="search" placeholder="Buscar: Codigo/Nombre" aria-label="Buscar">
+          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+        </form>
+      </div>
+
+
+      <div class="panel-body " id="headingTwo">
+        <label> </label>
+        <p>
+          <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+            Filtrar
+          </button>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div id="collapseTwo" style="z-index: 2;" class="collapse  col position-absolute" data-parent="#accordionExample">
+
+
+      
+
+<div style="padding: 4px;" class="card border border-2 border-dark  ">
+  <div style="background-color: #0000ff;" class="card border border-2 border-dark">
+    <div class="card-body">
+
+
+
+
+
+      <form method="post" action="../Controller/FiltroBienController.php?comuna=COMUNA.ID_COMUNA&buscar=&pagina=bienes&reporte=<br />
+<b>Notice</b>:  Undefined index: reporte in <b>C:\Users\felip\OneDrive\Escritorio\CDN-Inventario\www\View\Modules\Filtro.php</b> on line <b>11</b><br />
+&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA&limit=50">
+        <div class="form-row font-weight-bold">
+
+
+
+
+
+          <div class="col">
+            <label style="color: white;" for=""> Ubicacion</label>
+            <select name="ubicacion" required class="form-control" id="inputGroupSelect02">
+              <option value="UBICACION.ID_UBICACION" selected> TODOS</option>
+                              <option value="1 "> 1- EXTERIOR DEL CENTRO </option>
+
+                              <option value="2 "> 1.1. ENTRETECHO </option>
+
+                              <option value="3 "> 2. RECEPCIÓN </option>
+
+                              <option value="4 "> 3. SALA DE REUNIONES </option>
+
+                              <option value="5 "> 4. SALA DE TECNOLOGÍA </option>
+
+                              <option value="6 "> 5. OFICINA DIRECTOR DEL CENTRO </option>
+
+                              <option value="7 "> 6. OFICINA ASESORIA N° 1 </option>
+
+                              <option value="8 "> 7. COCINA </option>
+
+                              <option value="9 "> 8. OFICINA ASESORIA N° 2  </option>
+
+                              <option value="10 "> 9. OFICINA ASESORIA N° 3 </option>
+
+                              <option value="11 "> 10 OFICINA ASESORIA N° 4 </option>
+
+                              <option value="12 "> 11. OFICINA ASESORIA N° 5 </option>
+
+                              <option value="13 "> 12. OFICINA ASISTENTE ADMINISTRATIVO </option>
+
+                              <option value="14 "> 13. PASILLO INTERIOR </option>
+
+                              <option value="15 "> 14. COWORK </option>
+
+                              <option value="16 "> 15. SALA PROTOTIPADO </option>
+
+                              <option value="17 "> 16. SERVICIOS HIGIENICOS DAMAS </option>
+
+                              <option value="18 "> 17. SERVICIOS HIGIENICOS DISCAPACITADOS </option>
+
+                              <option value="19 "> 18. SERVICIOS HIGIENICOS VARONES </option>
+
+                              <option value="20 "> 19. SERVICIOS HIGIENICOS EQUIPO CDN </option>
+
+                              <option value="21 "> 20. BODEGA </option>
+
+                              <option value="22 "> 21. ZONA INFANTIL </option>
+
+                              <option value="23 "> OFICINA MODULAR LICANTEN </option>
+
+              
+            </select>
+          </div>
+
+          <div class="col">
+            <label style="color: white;" for=""> Item gasto</label>
+            <select name="item_gasto" required class="form-control" id="inputGroupSelect02">
+              <option value="ITEM_GASTO.ID_ITEM_GASTO" selected>TODOS</option>
+                              <option value="1 "> HABILITACION </option>
+
+                              <option value="2 "> OPERACIÓN </option>
+
+                              <option value="3 "> REPARACION Y MANTENCION </option>
+
+                              <option value="4 "> N/A </option>
+
+                              <option value="5 "> N/A  DONACION </option>
+
+                              <option value="6 "> N/A REPOSICION </option>
+
+                              <option value="7 "> N/A REPOSICION ROBO </option>
+
+                              <option value="8 "> ACTIVOS POR RENOVACION </option>
+
+                              <option value="9 "> PUBLICIDAD </option>
+
+                              <option value="10 "> MATERIALES DE OFICINA </option>
+
+              
+            </select>
+          </div>
+
+          <div class="col">
+            <label style="color: white;" for=""> Proveedor</label>
+            <select name="proveedor" required class="form-control" id="inputGroupSelect02">
+              <option value="PROVEEDOR.ID_PROVEEDOR" selected>TODOS</option>
+                              <option value="1 "> CEC GENERACION </option>
+
+                              <option value="34 "> COMERCIAL GAVATIC SPA </option>
+
+                              <option value="2 "> COMERCIAL INFOLAND LIMITADA </option>
+
+                              <option value="3 "> COMERCIAL LUDUEÑA SPA </option>
+
+                              <option value="4 "> COMUNICACIONES Y TECNOLOGIA S.A </option>
+
+                              <option value="5 "> CORPORACION INSTITUTO PROFESIONAL INACAP </option>
+
+                              <option value="6 "> DEBORA JANETT DEL CARMEN GAJARDO DURAN </option>
+
+                              <option value="7 "> DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL </option>
+
+                              <option value="8 "> DISTRIBUIDORA KALEUCHE SPA </option>
+
+                              <option value="9 "> DISTRIBUIDORA MULTIHOGAR S.A </option>
+
+                              <option value="10 "> EAR INGENIERIA SPA </option>
+
+                              <option value="11 "> EMPRESAS LA POLAR S.A. </option>
+
+                              <option value="12 "> EVENTOS, MARKETING Y PUBLICIDAD LA OVEJA SPA </option>
+
+                              <option value="13 "> GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS </option>
+
+                              <option value="14 "> IMPORTADORA Y DISTRIBUIDORA UDENIO LTDA </option>
+
+                              <option value="15 "> INACAP </option>
+
+                              <option value="16 "> ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL </option>
+
+                              <option value="33 "> INVERSIONES LMC SPA </option>
+
+                              <option value="17 "> JA CLIMATIZACION SPA </option>
+
+                              <option value="18 "> JORGE ROBERTO VELIZ INOSTROZA </option>
+
+                              <option value="19 "> JOSE GUILLERMO RIVERA BELTRAN </option>
+
+                              <option value="20 "> JOSE PUERTAS PONS Y CIA. </option>
+
+                              <option value="35 "> LOS PALITOS </option>
+
+                              <option value="21 "> MANUEL EDUARDO GONZALEZ BRAVO </option>
+
+                              <option value="22 "> MARIO NELSON LOPEZ LAZO </option>
+
+                              <option value="23 "> MARLENE DEL PILAR URIBE GAJARDO </option>
+
+                              <option value="24 "> MELNIX SPA </option>
+
+                              <option value="25 "> PABLO ANDRES HERRERA PARRAGUEZ </option>
+
+                              <option value="26 "> SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA </option>
+
+                              <option value="27 "> SERVICIOS INDUSTRIALES NATALY ANGELICA LLANCA EIRL </option>
+
+                              <option value="28 "> SIN REGISTRAR </option>
+
+                              <option value="29 "> SKOLL COMPANY SPA </option>
+
+                              <option value="30 "> SOCIEDAD DE INVERSIONES DYD LTDA </option>
+
+                              <option value="31 "> SOCIEDAD INNOVA CHILE LIMITADA </option>
+
+                              <option value="32 "> TELEFONICA MOVILES CHILE S.A. </option>
+
+              
+            </select>
+          </div>
+          <div class="col">
+            <label style="color: white;" for=""> Origen</label>
+            <select name="origen" required class="form-control" id="inputGroupSelect02">
+              <option value="ORIGEN.ID_ORIGEN" selected>TODOS</option>
+                              <option value="1 "> ADQUISICION </option>
+
+                              <option value="2 "> ACTA DONACION N°1 </option>
+
+                              <option value="3 "> ACTA DONACION N°2 </option>
+
+                              <option value="4 "> ACTA DONACION N°3 </option>
+
+                              <option value="5 "> ACTA DONACION N°4 </option>
+
+              
+            </select>
+          </div>
+
+          <div class="col">
+            <label style="color: white;" for=""> Observacion</label>
+            <select name="observacion" required class="form-control" id="inputGroupSelect02">
+              <option value="OBSERVACION.ID_OBSERVACION" selected>TODOS</option>
+                              <option value="1 "> UTILIZABLE </option>
+
+                              <option value="2 "> NO UTILIZABLE </option>
+
+              
+            </select>
+          </div>
+
+                              
+       
+
+
+          <div class="" style="padding-top:31px;">
+            <label style="color: white;" for=""></label>
+            <button type="submit" class="btn btn-outline-light">Aplicar</button>
+
+          </div>
+
+
+        </div>
+        <div class="row col mt-4">
+          <div style="margin-left: 10px;" class="row  ">
+            <label style="font-weight: bold; color: white; margin-right: 50;" for=""> Fecha de compra:</label>
+            <label style="font-weight: bold; color: white; " for=""> Desde:</label>
+            <div class="col ">
+
+              <input  name="desde" id="datepicker" width="250" />
+              <script>
+                $('#datepicker').datepicker({
+                  uiLibrary: 'bootstrap4',
+                  format: 'dd-mm-yyyy',
+                  locale: 'es-es',
+
+
+                });
+              </script>
+            </div>
+          </div>
+          <div style="margin-left: 10px;" class="row  ">
+            <label style="font-weight: bold; color: white;" for=""> Hasta:</label>
+
+            <div class="col ">
+
+              <input  name="hasta" id="datepicker2" width="250" />
+              <script>
+                $('#datepicker2').datepicker({
+                  uiLibrary: 'bootstrap4',
+                  format: 'dd-mm-yyyy',
+                  locale: 'es-es',
+
+
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+        <label> </label>
+
+      </form>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<label for=""> </label>
+
+    </div>
+
+    <div id="collapseOne" style="z-index: 2;" class="collapse position-absolute col" data-parent="#accordionExample">
+
+      <div style="padding: 4px;" class="card border border-2 border-dark  ">
+        <div style="background-color: #0000ff;" class="card border border-2 border-dark">
+          <div class="card-body">
+            <form method="post" action="../Controller/AddBienController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=CDNCU01001&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA&limit=50" enctype="multipart/form-data">
+              <div class="form-row font-weight-bold">
+
+
+                <div class="">
+                  <label style="color: white;" for=""> Comuna</label>
+                  <div class="dropdown  ">
+                    <button style="background-color: white;width: 155px; " class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                      COMUNA                    </button>
+                    <div class="dropdown-menu">
+                                              <a href="/View/Bien.php?comunau=1&comunan=CURICO CARMEN&comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=CDNCU01001&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA&limit=50" class="dropdown-item"> CURICO CARMEN </a>
+                                              <a href="/View/Bien.php?comunau=2&comunan=LICANTEN&comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=CDNCU01001&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA&limit=50" class="dropdown-item"> LICANTEN </a>
+                                              <a href="/View/Bien.php?comunau=3&comunan=HUALAñE&comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=CDNCU01001&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA&limit=50" class="dropdown-item"> HUALAñE </a>
+                                          </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <label style="color: white;" for=""> Ubicacion</label>
+                  <select disabled name="ubicacion" required class="form-control" id="inputGroupSelect02">
+                                          <option value="1 "> 1- EXTERIOR DEL CENTRO </option>
+
+                                          <option value="2 "> 1.1. ENTRETECHO </option>
+
+                                          <option value="3 "> 2. RECEPCIÓN </option>
+
+                                          <option value="4 "> 3. SALA DE REUNIONES </option>
+
+                                          <option value="5 "> 4. SALA DE TECNOLOGÍA </option>
+
+                                          <option value="6 "> 5. OFICINA DIRECTOR DEL CENTRO </option>
+
+                                          <option value="7 "> 6. OFICINA ASESORIA N° 1 </option>
+
+                                          <option value="8 "> 7. COCINA </option>
+
+                                          <option value="9 "> 8. OFICINA ASESORIA N° 2  </option>
+
+                                          <option value="10 "> 9. OFICINA ASESORIA N° 3 </option>
+
+                                          <option value="11 "> 10 OFICINA ASESORIA N° 4 </option>
+
+                                          <option value="12 "> 11. OFICINA ASESORIA N° 5 </option>
+
+                                          <option value="13 "> 12. OFICINA ASISTENTE ADMINISTRATIVO </option>
+
+                                          <option value="14 "> 13. PASILLO INTERIOR </option>
+
+                                          <option value="15 "> 14. COWORK </option>
+
+                                          <option value="16 "> 15. SALA PROTOTIPADO </option>
+
+                                          <option value="17 "> 16. SERVICIOS HIGIENICOS DAMAS </option>
+
+                                          <option value="18 "> 17. SERVICIOS HIGIENICOS DISCAPACITADOS </option>
+
+                                          <option value="19 "> 18. SERVICIOS HIGIENICOS VARONES </option>
+
+                                          <option value="20 "> 19. SERVICIOS HIGIENICOS EQUIPO CDN </option>
+
+                                          <option value="21 "> 20. BODEGA </option>
+
+                                          <option value="22 "> 21. ZONA INFANTIL </option>
+
+                    
+                  </select>
+                </div>
+                <div class="col">
+                  <label style="color: white;" for=""> Nombre</label>
+                  <input readonly type="text" name="nombre" required class="form-control">
+                </div>
+
+                <div class="col">
+                  <label style="color: white;" for=""> Item gasto</label>
+                  <select disabled name="item_gasto" required class="form-control" id="inputGroupSelect02">
+                                          <option value="1 "> HABILITACION </option>
+
+                                          <option value="2 "> OPERACIÓN </option>
+
+                                          <option value="3 "> REPARACION Y MANTENCION </option>
+
+                                          <option value="4 "> N/A </option>
+
+                                          <option value="5 "> N/A  DONACION </option>
+
+                                          <option value="6 "> N/A REPOSICION </option>
+
+                                          <option value="7 "> N/A REPOSICION ROBO </option>
+
+                                          <option value="8 "> ACTIVOS POR RENOVACION </option>
+
+                                          <option value="9 "> PUBLICIDAD </option>
+
+                                          <option value="10 "> MATERIALES DE OFICINA </option>
+
+                    
+                  </select>
+                </div>
+
+                <div class="col ">
+                  <label style="color: white;" for=""> Codigo</label>
+                  <input readonly type="text" name="codigo" id="lala" required class="form-control  ">
+                </div>
+
+
+                <div style="max-width: 90px;" class=" col ">
+                  <label style="color: white;" for=""> N° factura</label>
+                  <input readonly type="text" name="factura" required class="form-control">
+                </div>
+
+                <div style="max-width: 120px;" class=" col ">
+                  <label style="color: white;" for=""> Valor</label>
+                  <input readonly type="number" name="valor" min="0" required class="form-control">
+                </div>
+
+
+
+
+
+                <div class="col">
+                  <label style="color: white;" for=""> Proveedor</label>
+                  <select disabled name="proveedor" required class="form-control" id="inputGroupSelect02">
+                                          <option value="1 "> CEC GENERACION </option>
+
+                                          <option value="34 "> COMERCIAL GAVATIC SPA </option>
+
+                                          <option value="2 "> COMERCIAL INFOLAND LIMITADA </option>
+
+                                          <option value="3 "> COMERCIAL LUDUEÑA SPA </option>
+
+                                          <option value="4 "> COMUNICACIONES Y TECNOLOGIA S.A </option>
+
+                                          <option value="5 "> CORPORACION INSTITUTO PROFESIONAL INACAP </option>
+
+                                          <option value="6 "> DEBORA JANETT DEL CARMEN GAJARDO DURAN </option>
+
+                                          <option value="7 "> DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL </option>
+
+                                          <option value="8 "> DISTRIBUIDORA KALEUCHE SPA </option>
+
+                                          <option value="9 "> DISTRIBUIDORA MULTIHOGAR S.A </option>
+
+                                          <option value="10 "> EAR INGENIERIA SPA </option>
+
+                                          <option value="11 "> EMPRESAS LA POLAR S.A. </option>
+
+                                          <option value="12 "> EVENTOS, MARKETING Y PUBLICIDAD LA OVEJA SPA </option>
+
+                                          <option value="13 "> GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS </option>
+
+                                          <option value="14 "> IMPORTADORA Y DISTRIBUIDORA UDENIO LTDA </option>
+
+                                          <option value="15 "> INACAP </option>
+
+                                          <option value="16 "> ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL </option>
+
+                                          <option value="33 "> INVERSIONES LMC SPA </option>
+
+                                          <option value="17 "> JA CLIMATIZACION SPA </option>
+
+                                          <option value="18 "> JORGE ROBERTO VELIZ INOSTROZA </option>
+
+                                          <option value="19 "> JOSE GUILLERMO RIVERA BELTRAN </option>
+
+                                          <option value="20 "> JOSE PUERTAS PONS Y CIA. </option>
+
+                                          <option value="35 "> LOS PALITOS </option>
+
+                                          <option value="21 "> MANUEL EDUARDO GONZALEZ BRAVO </option>
+
+                                          <option value="22 "> MARIO NELSON LOPEZ LAZO </option>
+
+                                          <option value="23 "> MARLENE DEL PILAR URIBE GAJARDO </option>
+
+                                          <option value="24 "> MELNIX SPA </option>
+
+                                          <option value="25 "> PABLO ANDRES HERRERA PARRAGUEZ </option>
+
+                                          <option value="26 "> SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA </option>
+
+                                          <option value="27 "> SERVICIOS INDUSTRIALES NATALY ANGELICA LLANCA EIRL </option>
+
+                                          <option value="28 "> SIN REGISTRAR </option>
+
+                                          <option value="29 "> SKOLL COMPANY SPA </option>
+
+                                          <option value="30 "> SOCIEDAD DE INVERSIONES DYD LTDA </option>
+
+                                          <option value="31 "> SOCIEDAD INNOVA CHILE LIMITADA </option>
+
+                                          <option value="32 "> TELEFONICA MOVILES CHILE S.A. </option>
+
+                    
+                  </select>
+                </div>
+                <div class="col">
+                  <label style="color: white;" for=""> Origen</label>
+                  <select disabled name="origen" required class="form-control" id="inputGroupSelect02">
+                                          <option value="1 "> ADQUISICION </option>
+
+                                          <option value="2 "> ACTA DONACION N°1 </option>
+
+                                          <option value="3 "> ACTA DONACION N°2 </option>
+
+                                          <option value="4 "> ACTA DONACION N°3 </option>
+
+                                          <option value="5 "> ACTA DONACION N°4 </option>
+
+                    
+                  </select>
+                </div>
+
+
+                <div style="max-width: 80px;" class=" col ">
+                  <label style="color: white;" for=""> Cantidad</label>
+                  <input readonly type="number" name="cantidad" min="1" required class="form-control">
+                </div>
+
+
+
+
+
+
+                <div class="col">
+                  <label style="color: white;" for=""> Observacion</label>
+                  <select disabled name="observacion" required class="form-control" id="inputGroupSelect02">
+                                          <option value="1 "> UTILIZABLE </option>
+
+                                          <option value="2 "> NO UTILIZABLE </option>
+
+                    
+                  </select>
+                </div>
+
+                <div class="col">
+                  <label style="color: white;" for=""> Destino</label>
+                  <input readonly type="numbre" name="destino" class="form-control">
+                </div>
+
+
+
+
+
+              </div>
+              <label> </label>
+
+              <div class="form-row d-flex justify-content-between align-items-center ">
+
+                <div style="margin-left: 10px;" class="row  ">
+                  <label style="font-weight: bold; color: white;" for=""> Fecha compra:</label>
+
+                  <div class="col ">
+
+                    <input required name="fecha_compra" id="datepicker3" width="250" />
+                    <script>
+                      $('#datepicker3').datepicker({
+                        uiLibrary: 'bootstrap4',
+                        format: 'dd-mm-yyyy',
+                        locale: 'es-es',
+
+
+                      });
+                    </script>
+                  </div>
+                </div>
+
+                
+                <div class="row">
+                  <div class="" style="padding-right:20px;">
+                    <div>
+                      <div class="custom-file">
+                        <input readonly type="file" class="custom-file-input" name="archivos[]" multiple id="customFileLang" lang="es">
+                        <label class="custom-file-label" for="customFileLang">Subir Archivo</label>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+
+
+
+                  <div style="padding-right:20px;">
+
+                    <button type="submit" disabled class="btn btn-outline-light">Guardar</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <label for=""> </label>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div style="  height: 100%;
+  position: relative;" class="col panel-body">
+
+    <div class="accordion panel-body " id="accordionExample2">
+      <table class="panel-body  table table-sm  ">
+
+
+        <thead class="panel-body" style="position: sticky; top: 63px; background-color: #ff0000;">
+          <tr class="panel-body">
+
+            <th class="panel-body" style="color: white;" scope="col">UBICACION</th>
+            <th class="panel-body" style="color: white;" scope="col">BIEN</th>
+            <th class="panel-body" style="color: white;" scope="col">ITEM GASTO</th>
+            <th class="panel-body" style="color: white;" scope="col ">CODIGO</th>
+            <th class="panel-body" style="color: white;" scope="col">N° FACTURA</th>
+            <th class="panel-body" style="color: white;" scope="col">VALOR</th>
+            <th class="panel-body" style="color: white;" scope="col">PROVEEDOR</th>
+            <th class="panel-body" style="color: white;" scope="col">ORIGEN</th>
+            <th class="panel-body" style="color: white;" scope="col">CANTIDAD</th>
+            <th class="panel-body" style="color: white;" scope="col">OBSERVACION</th>
+            <th class="panel-body" style="color: white;" scope="col">HISTORIAL</th>
+            <th class="panel-body" style="color: white;" scope="col">EDITAR</th>
+
+          </tr>
+        </thead>
+
+
+
+        <tbody>
+
+
+
+          
+            <tr class="panel-body" style="background-color:">
+              <td class="panel-body" style="font-size:80%; width: 10%;">1- EXTERIOR DEL CENTRO</td>
+              <td class="panel-body" style="font-size:80%; width: 20%;">LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)</td>
+              <td class="panel-body" style=font-size:80%>HABILITACION</td>
+              <td class="panel-body" style=font-size:80%>CDNCU01001</td>
+              <td class="panel-body" style="font-size:80%; width: 9%; text-align: center; "> 813</td>
+              <td class="panel-body" style="font-size:80%; text-align: center; ">$333.200</td>
+              <td class="panel-body" style="font-size:80%; width: 20%;">DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+              <td class="panel-body" style=font-size:80%>ADQUISICION</td>
+              <td class="panel-body" style="font-size:80%; text-align: center; ">1</td>
+              <td class="panel-body" style=font-size:80%>UTILIZABLE</td>
+
+
+
+
+              <td class="panel-body" style="text-align: center;">
+                <a href="/View/DetallesBien.php?comuna=CURICO CARMEN&observacion=UTILIZABLE&origen=ADQUISICION&proveedor=DEBORA JANETT DEL CARMEN GAJARDO DURAN&item_gasto=HABILITACION&ubicacion=1- EXTERIOR DEL CENTRO&nombre=LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)&cantidad=1&valor=333200&destino=&codigo=CDNCU01001&id_bien=4&fecha=2020-10-01&bien_cambio=NO CAMBIO&fecha_compra=2020-10-01&numero_factura=813">
+                  <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+              </td>
+
+              <td class="panel-body" style="text-align: center;"> <a href="#lala4" data-toggle="collapse" aria-controls="collapseExample">
+
+
+                  <i style="color: black;" class="panel-body bi bi-pen-fill"></i>
+                </a></td>
+
+
+
+
+
+            </tr>
+
+
+
+            
+
+<tr class=" panel-body">
+
+  <td  class="col  panel-body" colspan="12">
+
+ 
+  <div  class="collapse position-absolute col "  id="lala4">
+
+      <div style="padding: 4px;" class="card border border-2 border-dark  ">
+        <div style="background-color: #0000ff;" class="card border border-2 border-dark ">
+          <div class="card-body ">
+
+
+
+            <form method="post" action="../Controller/EditBienController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&comunaH=1&observacionH=1&origenH=1&proveedorH=6&item_gastoH=1&ubicacionH=1&nombreH=LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)&destinoH=&codigoH=CDNCU01001&buscar=CDNCU01001&bien_cambio=NO CAMBIO&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA&limit=50" enctype="multipart/form-data">
+              <div class="form-row font-weight-bold">
+
+
+                <div class="invisible " style="width: 0px;">
+
+                  <input type="text" name="id_bien" value="4" class="form-control">
+                </div>
+                <div class="invisible " style="width: 0px;">
+
+                  <input type="text" name="fecha_compra" value="2020-10-01" class="form-control">
+                </div>
+                <div class="col">
+                  <label style="color: white;" for=""> Ubicacion</label>
+                  <select name="ubicacion" required class="form-control" value="1" id="inputGroupSelect02">
+                    <option value="1">1- EXTERIOR DEL CENTRO</option>
+                    
+                      <option value="1 "> 1- EXTERIOR DEL CENTRO </option>
+
+
+
+                    
+                      <option value="2 "> 1.1. ENTRETECHO </option>
+
+
+
+                    
+                      <option value="3 "> 2. RECEPCIÓN </option>
+
+
+
+                    
+                      <option value="4 "> 3. SALA DE REUNIONES </option>
+
+
+
+                    
+                      <option value="5 "> 4. SALA DE TECNOLOGÍA </option>
+
+
+
+                    
+                      <option value="6 "> 5. OFICINA DIRECTOR DEL CENTRO </option>
+
+
+
+                    
+                      <option value="7 "> 6. OFICINA ASESORIA N° 1 </option>
+
+
+
+                    
+                      <option value="8 "> 7. COCINA </option>
+
+
+
+                    
+                      <option value="9 "> 8. OFICINA ASESORIA N° 2  </option>
+
+
+
+                    
+                      <option value="10 "> 9. OFICINA ASESORIA N° 3 </option>
+
+
+
+                    
+                      <option value="11 "> 10 OFICINA ASESORIA N° 4 </option>
+
+
+
+                    
+                      <option value="12 "> 11. OFICINA ASESORIA N° 5 </option>
+
+
+
+                    
+                      <option value="13 "> 12. OFICINA ASISTENTE ADMINISTRATIVO </option>
+
+
+
+                    
+                      <option value="14 "> 13. PASILLO INTERIOR </option>
+
+
+
+                    
+                      <option value="15 "> 14. COWORK </option>
+
+
+
+                    
+                      <option value="16 "> 15. SALA PROTOTIPADO </option>
+
+
+
+                    
+                      <option value="17 "> 16. SERVICIOS HIGIENICOS DAMAS </option>
+
+
+
+                    
+                      <option value="18 "> 17. SERVICIOS HIGIENICOS DISCAPACITADOS </option>
+
+
+
+                    
+                      <option value="19 "> 18. SERVICIOS HIGIENICOS VARONES </option>
+
+
+
+                    
+                      <option value="20 "> 19. SERVICIOS HIGIENICOS EQUIPO CDN </option>
+
+
+
+                    
+                      <option value="21 "> 20. BODEGA </option>
+
+
+
+                    
+                      <option value="22 "> 21. ZONA INFANTIL </option>
+
+
+
+                    
+                      <option value="23 "> OFICINA MODULAR LICANTEN </option>
+
+
+
+                    
+
+                  </select>
+                </div>
+                <div class="col">
+                  <label style="color: white;" for=""> Nombre</label>
+                  <input type="text" name="nombre" value="LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)" required class="form-control">
+                </div>
+
+
+                <div class="col">
+                  <label style="color: white;" for=""> Item gasto</label>
+                  <select name="item_gasto" required class="form-control" id="inputGroupSelect02">
+                    <option value="1" selected>HABILITACION</option>
+                                          <option value="1 "> HABILITACION </option>
+
+                                          <option value="2 "> OPERACIÓN </option>
+
+                                          <option value="3 "> REPARACION Y MANTENCION </option>
+
+                                          <option value="4 "> N/A </option>
+
+                                          <option value="5 "> N/A  DONACION </option>
+
+                                          <option value="6 "> N/A REPOSICION </option>
+
+                                          <option value="7 "> N/A REPOSICION ROBO </option>
+
+                                          <option value="8 "> ACTIVOS POR RENOVACION </option>
+
+                                          <option value="9 "> PUBLICIDAD </option>
+
+                                          <option value="10 "> MATERIALES DE OFICINA </option>
+
+                    
+                  </select>
+                </div>
+
+
+
+
+
+                <div class="col">
+                  <label style="color: white;" for=""> Codigo</label>
+                  <input type="text" name="codigo" value="CDNCU01001" class="form-control">
+                </div>
+                <div style="max-width: 90px;" class=" col ">
+                  <label style="color: white;" for=""> N° Factura</label>
+                  <input style="max-width: 120px; background-color: white;" readonly="readonly" type="text" name="numero_factura" value="813" required class="form-control">
+                </div>
+                <div style="max-width: 120px;" class=" col ">
+                  <label style="color: white;" for=""> Valor</label>
+                  <input style="max-width: 120px; background-color: white;" readonly="readonly" type="number" min="1" name="valor" value="333200" required class="form-control">
+                </div>
+
+                <div class="col">
+                  <label style="color: white;" for=""> Origen</label>
+                  <select name="origen" required class="form-control" id="inputGroupSelect02">
+                    <option value="1" selected>ADQUISICION...</option>
+                                          <option value="1 "> ADQUISICION </option>
+
+                                          <option value="2 "> ACTA DONACION N°1 </option>
+
+                                          <option value="3 "> ACTA DONACION N°2 </option>
+
+                                          <option value="4 "> ACTA DONACION N°3 </option>
+
+                                          <option value="5 "> ACTA DONACION N°4 </option>
+
+                    
+                  </select>
+                </div>
+
+
+
+                <div style="max-width: 80px;" class=" col ">
+                  <label style="color: white;" for=""> Cantidad</label>
+                  <input style="max-width: 75px; background-color: white;" readonly type="number" min="1" name="cantidad" value="1" required class="form-control">
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="invisible " style="width: 0px;">
+                  <input type="text" name="proveedor" value="6" class="form-control">
+                </div>
+
+
+
+
+
+                <div class="col">
+                  <label style="color: white;" for=""> Observacion</label>
+                  <select name="observacion" required class="form-control" id="inputGroupSelect02">
+                    <option value="1" selected>UTILIZABLE...</option>
+                                          <option value="1 "> UTILIZABLE </option>
+
+                                          <option value="2 "> NO UTILIZABLE </option>
+
+                    
+                  </select>
+                </div>
+
+
+
+                <div class="col">
+                  <label style="color: white;" for=""> Destino</label>
+                  <input type="text" name="destino" value="" class="form-control">
+                </div>
+
+
+              </div>
+              <label> </label>
+
+              <div class="form-row ">
+                <div class="col ">
+
+
+                  <input type="text" required name="descripcion" placeholder="Descripcion de Cambio" class="form-control">
+
+                </div>
+
+                
+
+
+                  <input class="invisible" type="number" name="cantidad_cambio" value="-1" class="form-control">
+
+
+
+
+                
+
+                <div class="" style="padding-right:10px;">
+                  <div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" name="archivos[]" multiple id="customFileLang" lang="es">
+                      <label class="custom-file-label" for="customFileLang">Subir Archivo</label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="">
+
+                  <button type="submit" class="btn btn-outline-light">Guardar</button>
+
+                </div>
+
+
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </td>
+
+</tr>
+
+
+          
+
+
+        </tbody>
+
+      </table>
+
+
+
+    </div>
+  </div>
+  <div class="invisible">
+    <input name="bienes" value="1" required class="invisible"></input>
+    <input name="num" value="50" required class="invisible"></input>
+  </div>
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+
+</html>
+<script>
+  var bienes = parseInt(document.querySelector("input[name='bienes']").value);
+  var num = parseInt(document.querySelector("input[name='num']").value)
+
+
+
+
+  window.onload = function() {
+    var pos = window.name || 0;
+    window.scrollTo(0, pos);
+
+    var contenedor = document.getElementById('cargando');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity= '0';
+
+  }
+  window.onunload = function() {
+    window.name = self.pageYOffset || (document.documentElement.scrollTop + document.body.scrollTop);
+  }
+
+  $(document).click(function(e) {
+    if ($(e.target).is('.panel-body')) {
+      $('.collapse').collapse('hide');
+    }
+  });
+
+
+  $(window).on("scroll", function() {
+
+    let userInput = document.getElementsByName('money-amount');
+    inputNum = parseInt(userInput.value);
+
+    console.log(inputNum)
+
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + $(window).scrollTop();
+    if (((scrollHeight - scrollPosition) / scrollHeight === 0 && bienes > num)) {
+
+      location.replace("../View/Bien.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=CDNCU01001&limit=50&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA");
+
+    }
+  });
+</script>

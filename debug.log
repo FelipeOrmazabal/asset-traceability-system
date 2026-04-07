@@ -1,0 +1,135 @@
+- 17:05:25.000 INFO: --------------------------------------------------------
+- 17:05:25.000 INFO: Started application
+- 17:05:25.000 INFO: Logging to: C:\Users\felipe\Desktop\CDN-Inventario\debug.log
+- 17:05:25.000 INFO: Log level = DEBUG4
+- 17:05:25.000 INFO: Starting Mongoose 3.9c web server
+- 17:05:25.000 INFO: WWW directory: C:\Users\felipe\Desktop\CDN-Inventario\www
+- 17:05:25.000 INFO: Index files: index.html,View/index.php
+- 17:05:25.000 INFO: CGI interpreter: C:\Users\felipe\Desktop\CDN-Inventario\php\php-cgi.exe
+- 17:05:25.000 INFO: CGI pattern: **.php$
+- 17:05:25.000 INFO: Hide files patterns: 
+- 17:05:25.000 INFO: CGI environment variables set: TMP=C:\Users\felipe\AppData\Local\Temp\,TEMP=C:\Users\felipe\AppData\Local\Temp\,TMPDIR=C:\Users\felipe\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 17:05:25.000 INFO: Web server url: http://127.0.0.1:59906/
+- 17:05:25.000 INFO: remote_debugging_port = 59925
+- 17:05:25.016 DEBUG: Command line string for the browser process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --no-sandbox --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --remote-debugging-port=59925
+- 17:05:26.281 DEBUG: App::OnContextInitialized()
+- 17:05:26.281 INFO: DPI, window enlarged by 25% new width/height = 2125/1113
+- 17:05:26.281 DEBUG: Window max width/height = 1842/984
+- 17:05:26.281 DEBUG: Window max size exceeded, new width/height = 1842/984
+- 17:05:26.297 DEBUG: GetBrowserWindow(): not found, hwnd = 263954
+- 17:05:26.297 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:05:26.297 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:05:26.297 DEBUG: StoreBrowserWindow(): hwnd = 263954
+- 17:05:26.000 DEBUG: Command line string for the gpu-process process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3e9b --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8729 --gpu-driver-date=10-12-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1c8d --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --service-request-channel-token=42242514B32C257F3BDF5F9C43438ECD --mojo-platform-channel-handle=1816 /prefetch:2
+- 17:05:26.344 DEBUG: ClientHandler::OnAfterCreated()
+- 17:05:26.344 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:05:26.359 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:05:26.000 DEBUG: Command line string for the renderer process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --type=renderer --no-sandbox --primordial-pipe-token=C50E0B08C8FA55262BC1067809C3CCF6 --lang=en-US --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=C50E0B08C8FA55262BC1067809C3CCF6 --renderer-client-id=3 --mojo-platform-channel-handle=2400 /prefetch:1
+- 17:05:26.031 DEBUG: OnBrowserCreated()
+[0407/170526.969:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 17:05:28.984 INFO: GET 200 /
+- 17:05:28.000 DEBUG: WM_DESTROY
+- 17:05:28.000 DEBUG: RemoveBrowserWindow(): hwnd = 263954
+- 17:05:28.000 INFO: Stopping Mongoose web server
+- 17:05:28.000 DEBUG: Mongoose webserver stopped immediately
+- 17:05:28.000 DEBUG: OnBeforeClose() hwnd=263960
+- 17:05:28.000 DEBUG: RemoveBrowserWindow(): hwnd = 263960
+- 17:05:28.000 DEBUG: GetBrowserWindow(): not found, hwnd = 263960
+- 17:05:28.000 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:05:28.000 DEBUG: Calling CefQuitMessageLoop()
+- 17:05:28.625 DEBUG: OnBrowserDestroyed()
+- 17:05:28.047 INFO: Ended application
+- 17:05:28.047 INFO: --------------------------------------------------------
+- 17:05:33.000 INFO: --------------------------------------------------------
+- 17:05:33.000 INFO: Started application
+- 17:05:33.000 INFO: Logging to: C:\Users\felipe\Desktop\CDN-Inventario\debug.log
+- 17:05:33.000 INFO: Log level = DEBUG4
+- 17:05:33.000 INFO: Starting Mongoose 3.9c web server
+- 17:05:33.000 INFO: WWW directory: C:\Users\felipe\Desktop\CDN-Inventario\www
+- 17:05:33.000 INFO: Index files: index.html,View/index.php
+- 17:05:33.000 INFO: CGI interpreter: C:\Users\felipe\Desktop\CDN-Inventario\php\php-cgi.exe
+- 17:05:33.000 INFO: CGI pattern: **.php$
+- 17:05:33.000 INFO: Hide files patterns: 
+- 17:05:33.000 INFO: CGI environment variables set: TMP=C:\Users\felipe\AppData\Local\Temp\,TEMP=C:\Users\felipe\AppData\Local\Temp\,TMPDIR=C:\Users\felipe\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 17:05:33.015 INFO: Web server url: http://127.0.0.1:59908/
+- 17:05:33.015 INFO: remote_debugging_port = 58505
+- 17:05:33.015 DEBUG: Command line string for the browser process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --no-sandbox --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --remote-debugging-port=58505
+- 17:05:34.062 DEBUG: App::OnContextInitialized()
+- 17:05:34.062 INFO: DPI, window enlarged by 25% new width/height = 2125/1113
+- 17:05:34.062 DEBUG: Window max width/height = 1842/984
+- 17:05:34.062 DEBUG: Window max size exceeded, new width/height = 1842/984
+- 17:05:34.062 DEBUG: GetBrowserWindow(): not found, hwnd = 329492
+- 17:05:34.062 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:05:34.062 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:05:34.062 DEBUG: StoreBrowserWindow(): hwnd = 329492
+- 17:05:34.000 DEBUG: Command line string for the gpu-process process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3e9b --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8729 --gpu-driver-date=10-12-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1c8d --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --service-request-channel-token=FE0A9C5E2C48505C5E3FB18E32BF855A --mojo-platform-channel-handle=1768 /prefetch:2
+- 17:05:34.140 DEBUG: ClientHandler::OnAfterCreated()
+- 17:05:34.140 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:05:34.156 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:05:34.000 DEBUG: Command line string for the renderer process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --type=renderer --no-sandbox --primordial-pipe-token=1BACBF16F532FD433094F8FDC368E067 --lang=en-US --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=1BACBF16F532FD433094F8FDC368E067 --renderer-client-id=3 --mojo-platform-channel-handle=2368 /prefetch:1
+[0407/170534.167:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 17:05:34.032 DEBUG: OnBrowserCreated()
+- 17:05:35.343 INFO: GET 200 /
+- 17:05:35.172 DEBUG: OnContextCreated()
+- 17:05:35.343 INFO: GET 200 /bootstrap-4.6.2-dist/css/bootstrap.min.css
+- 17:05:35.343 INFO: GET 200 /bootstrap-icons-1.11.3/font/bootstrap-icons.min.css
+- 17:05:35.390 INFO: GET 200 /bootstrap-icons-1.11.3/font/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6
+- 17:05:35.406 INFO: GET 200 /bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js
+- 17:05:35.484 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59908/
+- 17:05:35.484 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:59908/
+- 17:05:35.391 DEBUG: OnContextCreated()
+- 17:05:35.578 INFO: GET 200 /bootstrap-4.6.2-dist/css/bootstrap.css
+- 17:05:35.593 INFO: GET 200 /View/Bien.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=TODOS%20LOS%20BIENES&comunatodos=ID_COMUNA
+- 17:05:35.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:59908/View/Bien.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=TODOS%20LOS%20BIENES&comunatodos=ID_COMUNA
+- 17:05:37.687 DEBUG: WM_DESTROY
+- 17:05:37.687 DEBUG: RemoveBrowserWindow(): hwnd = 329492
+- 17:05:37.687 INFO: Stopping Mongoose web server
+- 17:05:37.687 DEBUG: Mongoose webserver stopped immediately
+- 17:05:37.703 DEBUG: OnBeforeClose() hwnd=329496
+- 17:05:37.703 DEBUG: RemoveBrowserWindow(): hwnd = 329496
+- 17:05:37.703 DEBUG: GetBrowserWindow(): not found, hwnd = 329496
+- 17:05:37.703 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:05:37.703 DEBUG: Calling CefQuitMessageLoop()
+- 17:05:37.718 INFO: Ended application
+- 17:05:37.718 INFO: --------------------------------------------------------
+- 17:06:03.015 INFO: --------------------------------------------------------
+- 17:06:03.015 INFO: Started application
+- 17:06:03.015 INFO: Logging to: C:\Users\felipe\Desktop\CDN-Inventario\debug.log
+- 17:06:03.015 INFO: Log level = DEBUG4
+- 17:06:03.015 INFO: Starting Mongoose 3.9c web server
+- 17:06:03.015 INFO: WWW directory: C:\Users\felipe\Desktop\CDN-Inventario\www
+- 17:06:03.015 INFO: Index files: index.html,View/index.php
+- 17:06:03.015 INFO: CGI interpreter: C:\Users\felipe\Desktop\CDN-Inventario\php\php-cgi.exe
+- 17:06:03.015 INFO: CGI pattern: **.php$
+- 17:06:03.015 INFO: Hide files patterns: 
+- 17:06:03.015 INFO: CGI environment variables set: TMP=C:\Users\felipe\AppData\Local\Temp\,TEMP=C:\Users\felipe\AppData\Local\Temp\,TMPDIR=C:\Users\felipe\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 17:06:03.015 INFO: Web server url: http://127.0.0.1:59916/
+- 17:06:03.015 INFO: remote_debugging_port = 65268
+- 17:06:03.015 DEBUG: Command line string for the browser process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --no-sandbox --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --remote-debugging-port=65268
+- 17:06:03.062 DEBUG: App::OnContextInitialized()
+- 17:06:03.062 INFO: DPI, window enlarged by 25% new width/height = 2125/1113
+- 17:06:03.062 DEBUG: Window max width/height = 1842/984
+- 17:06:03.062 DEBUG: Window max size exceeded, new width/height = 1842/984
+- 17:06:03.062 DEBUG: GetBrowserWindow(): not found, hwnd = 263966
+- 17:06:03.062 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 17:06:03.062 DEBUG: BrowserWindow::CreateBrowserControl()
+- 17:06:03.062 DEBUG: StoreBrowserWindow(): hwnd = 263966
+- 17:06:03.000 DEBUG: Command line string for the gpu-process process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x3e9b --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=27.20.100.8729 --gpu-driver-date=10-12-2020 --gpu-secondary-vendor-ids=0x10de --gpu-secondary-device-ids=0x1c8d --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --service-request-channel-token=2362E133B5905C3B9BE4FE3E7D18623B --mojo-platform-channel-handle=1764 /prefetch:2
+- 17:06:03.125 DEBUG: ClientHandler::OnAfterCreated()
+- 17:06:03.125 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 17:06:03.125 DEBUG: OnLoadingStateChange: loading=1, url=
+- 17:06:03.000 DEBUG: Command line string for the renderer process: "C:\Users\felipe\Desktop\CDN-Inventario\cdnInventario.exe" --type=renderer --no-sandbox --primordial-pipe-token=1828CE715275A84D7C47C0EE3A9C83E3 --lang=en-US --lang=en-US --log-file="C:\Users\felipe\Desktop\CDN-Inventario\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=1828CE715275A84D7C47C0EE3A9C83E3 --renderer-client-id=3 --mojo-platform-channel-handle=2368 /prefetch:1
+[0407/170603.920:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 17:06:03.031 DEBUG: OnBrowserCreated()
+- 17:06:04.219 DEBUG: WM_DESTROY
+- 17:06:04.219 DEBUG: RemoveBrowserWindow(): hwnd = 263966
+- 17:06:04.219 INFO: Stopping Mongoose web server
+- 17:06:04.219 DEBUG: Mongoose webserver stopped immediately
+- 17:06:04.219 DEBUG: OnBeforeClose() hwnd=263762
+- 17:06:04.219 DEBUG: RemoveBrowserWindow(): hwnd = 263762
+- 17:06:04.219 DEBUG: GetBrowserWindow(): not found, hwnd = 263762
+- 17:06:04.219 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 17:06:04.219 DEBUG: Calling CefQuitMessageLoop()
+- 17:06:04.063 DEBUG: OnBrowserDestroyed()
+- 17:06:05.265 INFO: Ended application
+- 17:06:05.265 INFO: --------------------------------------------------------

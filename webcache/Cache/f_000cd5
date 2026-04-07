@@ -1,0 +1,1697 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap CSS -->
+
+
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/messages/messages.es-es.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <title>Inventario Oficina</title>
+    <div class="sticky-top  sticky-offset">
+  <nav class="navbar   navbar-expand-lg " style="background-color:#0000e3;">
+
+
+    <button style="color: white;" onclick="history.back()" class="btn btn-lg"><i class="bi bi-arrow-left-circle"></i>
+    </button>
+
+    <a style="color: white;" class="navbar-brand" href="/View/index.php">Inicio</a>
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+      <ul class="navbar-nav mr-auto">
+
+
+
+
+        <li class="nav-item dropdown">
+          <a style="color: white;" class="nav-link nav-item active dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Bienes
+          </a>
+          <div class="dropdown-menu">
+
+
+
+            <a class="dropdown-item" href="/View/Bien.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=TODOS LOS BIENES&comunatodos=ID_COMUNA">TODOS</a>
+            <div class="dropdown-divider"></div>
+
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=1&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES CURICO&comunatodos=1">CURICO</a>
+                          <a class="dropdown-item" href="/View/Bien.php?comuna=2&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&comunahead=BIENES LICANTEN&comunatodos=2">LICANTEN</a>
+            
+
+
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&reporte=no seleccionado&buscar=nada">Reportes <span class="sr-only"></span></a>
+        </li>
+
+      </ul>
+      
+
+
+
+
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a style="color: white;" class="nav-link" href=" /View/Administracion.php?">Administracion <span class="sr-only"></span></a>
+        </li>
+      </ul>
+
+
+    </div>
+  </nav>
+
+</div></head>
+
+
+
+<body>
+    
+  <div id="cargando"  style="  background-color: white; z-index: 1000; height: 100%; width: 100%; position: fixed;   " role="status">
+
+<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;"  class="spinner-border text-primary  " role="status">
+    <span   class="sr-only">Loading...</span>
+  </div>
+</div>
+
+
+
+    <div style="padding-bottom: 20px; padding-top: 20px; " class="form-row col d-flex justify-content-between align-items-center ">
+        <div style="padding-left: 21px;" class="col row">
+            <div class="dropdown  ">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    Tipo de reporte
+                </button>
+                <div class="dropdown-menu">
+
+                    <a id="btnOficina" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=oficina" class="dropdown-item"> Inventario por ubicacion</a>
+
+
+
+                    <a id="btnRobo" class="dropdown-item" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=robo">Informe de robo </a>
+
+
+                    <a id="btnBaja" class="dropdown-item" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=baja">Informe de baja / donacion </a>
+
+
+
+                    <a id="btnIncorporacion" class="dropdown-item" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=incorporacion">Incorporacion de activos </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="../ViewReporte/todo.php">Exportar todo </a>
+                    <a id="btnFiltro" class="dropdown-item" href="/View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=nada&reporte=todo_filtro">Exportar todo con filtro </a>
+
+                </div>
+
+            </div>
+            <div class="col mt-1"><label for="">
+                    Informe de robo
+
+                </label></div>
+
+        </div>
+        <div style="padding-right: 220px; " class="col row">
+
+            <form method="post" class="form-inline" action="../Controller/BuscarBienController.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=silla&pagina=reportes&reporte=robo">
+                <input style="width: 250px;" required name="buscar" class="form-control mr-sm-2" type="search" placeholder="Buscar: Codigo/Nombre" aria-label="Buscar">
+                <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+            </form>
+        </div>
+
+
+        <div class="" id="headingTwo">
+            <label> </label>
+            <p>
+
+            </p>
+        </div>
+    </div>
+
+    <div class="col">
+
+
+
+        
+
+<div style="padding: 4px;" class="card border border-2 border-dark  ">
+  <div style="background-color: #0000ff;" class="card border border-2 border-dark">
+    <div class="card-body">
+
+
+
+
+
+      <form method="post" action="../Controller/FiltroBienController.php?comuna=COMUNA.ID_COMUNA&buscar=&pagina=reporte&reporte=robo&comunahead=<br />
+<b>Notice</b>:  Undefined index: comunahead in <b>C:\Users\felip\OneDrive\Escritorio\CDN-Inventario\www\View\Modules\Filtro.php</b> on line <b>11</b><br />
+&comunatodos=<br />
+<b>Notice</b>:  Undefined index: comunatodos in <b>C:\Users\felip\OneDrive\Escritorio\CDN-Inventario\www\View\Modules\Filtro.php</b> on line <b>11</b><br />
+&limit=60">
+        <div class="form-row font-weight-bold">
+
+
+
+
+
+          <div class="col">
+            <label style="color: white;" for=""> Ubicacion</label>
+            <select name="ubicacion" required class="form-control" id="inputGroupSelect02">
+              <option value="UBICACION.ID_UBICACION" selected> TODOS</option>
+                              <option value="1 "> 1- EXTERIOR DEL CENTRO </option>
+
+                              <option value="2 "> 1.1. ENTRETECHO </option>
+
+                              <option value="3 "> 2. RECEPCIÓN </option>
+
+                              <option value="4 "> 3. SALA DE REUNIONES </option>
+
+                              <option value="5 "> 4. SALA DE TECNOLOGÍA </option>
+
+                              <option value="6 "> 5. OFICINA DIRECTOR DEL CENTRO </option>
+
+                              <option value="7 "> 6. OFICINA ASESORIA N° 1 </option>
+
+                              <option value="8 "> 7. COCINA </option>
+
+                              <option value="9 "> 8. OFICINA ASESORIA N° 2  </option>
+
+                              <option value="10 "> 9. OFICINA ASESORIA N° 3 </option>
+
+                              <option value="11 "> 10 OFICINA ASESORIA N° 4 </option>
+
+                              <option value="12 "> 11. OFICINA ASESORIA N° 5 </option>
+
+                              <option value="13 "> 12. OFICINA ASISTENTE ADMINISTRATIVO </option>
+
+                              <option value="14 "> 13. PASILLO INTERIOR </option>
+
+                              <option value="15 "> 14. COWORK </option>
+
+                              <option value="16 "> 15. SALA PROTOTIPADO </option>
+
+                              <option value="17 "> 16. SERVICIOS HIGIENICOS DAMAS </option>
+
+                              <option value="18 "> 17. SERVICIOS HIGIENICOS DISCAPACITADOS </option>
+
+                              <option value="19 "> 18. SERVICIOS HIGIENICOS VARONES </option>
+
+                              <option value="20 "> 19. SERVICIOS HIGIENICOS EQUIPO CDN </option>
+
+                              <option value="21 "> 20. BODEGA </option>
+
+                              <option value="22 "> 21. ZONA INFANTIL </option>
+
+                              <option value="23 "> OFICINA MODULAR LICANTEN </option>
+
+              
+            </select>
+          </div>
+
+          <div class="col">
+            <label style="color: white;" for=""> Item gasto</label>
+            <select name="item_gasto" required class="form-control" id="inputGroupSelect02">
+              <option value="ITEM_GASTO.ID_ITEM_GASTO" selected>TODOS</option>
+                              <option value="1 "> HABILITACION </option>
+
+                              <option value="2 "> OPERACIÓN </option>
+
+                              <option value="3 "> REPARACION Y MANTENCION </option>
+
+                              <option value="4 "> N/A </option>
+
+                              <option value="5 "> N/A  DONACION </option>
+
+                              <option value="6 "> N/A REPOSICION </option>
+
+                              <option value="7 "> N/A REPOSICION ROBO </option>
+
+                              <option value="8 "> ACTIVOS POR RENOVACION </option>
+
+                              <option value="9 "> PUBLICIDAD </option>
+
+                              <option value="10 "> MATERIALES DE OFICINA </option>
+
+              
+            </select>
+          </div>
+
+          <div class="col">
+            <label style="color: white;" for=""> Proveedor</label>
+            <select name="proveedor" required class="form-control" id="inputGroupSelect02">
+              <option value="PROVEEDOR.ID_PROVEEDOR" selected>TODOS</option>
+                              <option value="1 "> CEC GENERACION </option>
+
+                              <option value="34 "> COMERCIAL GAVATIC SPA </option>
+
+                              <option value="2 "> COMERCIAL INFOLAND LIMITADA </option>
+
+                              <option value="3 "> COMERCIAL LUDUEÑA SPA </option>
+
+                              <option value="4 "> COMUNICACIONES Y TECNOLOGIA S.A </option>
+
+                              <option value="5 "> CORPORACION INSTITUTO PROFESIONAL INACAP </option>
+
+                              <option value="6 "> DEBORA JANETT DEL CARMEN GAJARDO DURAN </option>
+
+                              <option value="7 "> DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL </option>
+
+                              <option value="8 "> DISTRIBUIDORA KALEUCHE SPA </option>
+
+                              <option value="9 "> DISTRIBUIDORA MULTIHOGAR S.A </option>
+
+                              <option value="10 "> EAR INGENIERIA SPA </option>
+
+                              <option value="11 "> EMPRESAS LA POLAR S.A. </option>
+
+                              <option value="12 "> EVENTOS, MARKETING Y PUBLICIDAD LA OVEJA SPA </option>
+
+                              <option value="13 "> GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS </option>
+
+                              <option value="14 "> IMPORTADORA Y DISTRIBUIDORA UDENIO LTDA </option>
+
+                              <option value="15 "> INACAP </option>
+
+                              <option value="16 "> ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL </option>
+
+                              <option value="33 "> INVERSIONES LMC SPA </option>
+
+                              <option value="17 "> JA CLIMATIZACION SPA </option>
+
+                              <option value="18 "> JORGE ROBERTO VELIZ INOSTROZA </option>
+
+                              <option value="19 "> JOSE GUILLERMO RIVERA BELTRAN </option>
+
+                              <option value="20 "> JOSE PUERTAS PONS Y CIA. </option>
+
+                              <option value="21 "> MANUEL EDUARDO GONZALEZ BRAVO </option>
+
+                              <option value="22 "> MARIO NELSON LOPEZ LAZO </option>
+
+                              <option value="23 "> MARLENE DEL PILAR URIBE GAJARDO </option>
+
+                              <option value="24 "> MELNIX SPA </option>
+
+                              <option value="25 "> PABLO ANDRES HERRERA PARRAGUEZ </option>
+
+                              <option value="26 "> SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA </option>
+
+                              <option value="27 "> SERVICIOS INDUSTRIALES NATALY ANGELICA LLANCA EIRL </option>
+
+                              <option value="28 "> SIN REGISTRAR </option>
+
+                              <option value="29 "> SKOLL COMPANY SPA </option>
+
+                              <option value="30 "> SOCIEDAD DE INVERSIONES DYD LTDA </option>
+
+                              <option value="31 "> SOCIEDAD INNOVA CHILE LIMITADA </option>
+
+                              <option value="32 "> TELEFONICA MOVILES CHILE S.A. </option>
+
+              
+            </select>
+          </div>
+          <div class="col">
+            <label style="color: white;" for=""> Origen</label>
+            <select name="origen" required class="form-control" id="inputGroupSelect02">
+              <option value="ORIGEN.ID_ORIGEN" selected>TODOS</option>
+                              <option value="1 "> ADQUISICION </option>
+
+                              <option value="2 "> ACTA DONACION N°1 </option>
+
+                              <option value="3 "> ACTA DONACION N°2 </option>
+
+                              <option value="4 "> ACTA DONACION N°3 </option>
+
+                              <option value="5 "> ACTA DONACION N°4 </option>
+
+              
+            </select>
+          </div>
+
+          <div class="col">
+            <label style="color: white;" for=""> Observacion</label>
+            <select name="observacion" required class="form-control" id="inputGroupSelect02">
+              <option value="OBSERVACION.ID_OBSERVACION" selected>TODOS</option>
+                              <option value="1 "> UTILIZABLE </option>
+
+                              <option value="2 "> NO UTILIZABLE </option>
+
+              
+            </select>
+          </div>
+
+                       
+                  <div class="col">
+            <label style="color: white;" for=""> Comuna</label>
+            <select name="comuna" required class="form-control" id="inputGroupSelect02">
+              <option value="COMUNA.ID_COMUNA" selected>TODOS</option>
+                              <option value="1 "> CURICO </option>
+
+                              <option value="2 "> LICANTEN </option>
+
+              
+            </select>
+          </div>
+                                
+       
+
+
+          <div class="" style="padding-top:31px;">
+            <label style="color: white;" for=""></label>
+            <button type="submit" class="btn btn-outline-light">Aplicar</button>
+
+          </div>
+
+
+        </div>
+        <div class="row col mt-4">
+          <div style="margin-left: 10px;" class="row  ">
+            <label style="font-weight: bold; color: white; margin-right: 50;" for=""> Fecha de compra:</label>
+            <label style="font-weight: bold; color: white; " for=""> Desde:</label>
+            <div class="col ">
+
+              <input  name="desde" id="datepicker" width="250" />
+              <script>
+                $('#datepicker').datepicker({
+                  uiLibrary: 'bootstrap4',
+                  format: 'dd-mm-yyyy',
+                  locale: 'es-es',
+
+
+                });
+              </script>
+            </div>
+          </div>
+          <div style="margin-left: 10px;" class="row  ">
+            <label style="font-weight: bold; color: white;" for=""> Hasta:</label>
+
+            <div class="col ">
+
+              <input  name="hasta" id="datepicker2" width="250" />
+              <script>
+                $('#datepicker2').datepicker({
+                  uiLibrary: 'bootstrap4',
+                  format: 'dd-mm-yyyy',
+                  locale: 'es-es',
+
+
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+        <label> </label>
+
+      </form>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<label for=""> </label>
+
+
+        <div class="">
+
+
+            <table class=" table table-sm  ">
+
+
+                <thead style="background-color: #ff0000;">
+                    <tr>
+                        <th style="color: white;" scope="col">UBICACION</th>
+                        <th style="color: white;" scope="col">BIEN</th>
+                        <th style="color: white;" scope="col">ITEM GASTO</th>
+                        <th style="color: white;" scope="col ">CODIGO</th>
+                        <th style="color: white;" scope="col">N° FACTURA</th>
+                        <th style="color: white;" scope="col">VALOR</th>
+                        <th style="color: white;" scope="col">PROVEEDOR</th>
+                        <th style="color: white;" scope="col">ORIGEN</th>
+                        <th style="color: white;" scope="col">CANTIDAD</th>
+                        <th style="color: white;" scope="col">OBSERVACION</th>
+                        <th style="color: white;" scope="col">Historial</th>
+
+                        
+
+                            <th style="color: white;" scope="col">
+                                <a style="color: white;" href="../Controller/AddAllReporteController.php?buscar=silla&reporte=robo&comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&desde=&hasta=">
+                                    Agregar todos
+                                </a>
+                            </th>
+
+                        
+                    </tr>
+                </thead>
+
+
+
+                <tbody>
+
+
+
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">2. RECEPCIÓN</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU02014</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 281</td>
+                            <td style="font-size:80%; text-align: center; ">$147.679</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=2. RECEPCIÓN&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=147679&destino=&codigo=CDNCU02014                                                &id_bien=11&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=281 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU02014&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=147679&observacion=UTILIZABLE&ubicacion=2. RECEPCIÓN&factura=281&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">3. SALA DE REUNIONES</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS BLANCAS</td>
+                            <td style=font-size:80%>OPERACIÓN</td>
+                            <td style=font-size:80%>CDNCU03005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 86</td>
+                            <td style="font-size:80%; text-align: center; ">$847.500</td>
+                            <td style="font-size:80%; width: 20%;">EAR INGENIERIA SPA</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">16</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=EAR INGENIERIA SPA&item_gasto=OPERACIÓN&
+                                                ubicacion=3. SALA DE REUNIONES&nombre=SILLAS BLANCAS&cantidad=16                                                &valor=847500&destino=&codigo=CDNCU03005                                                &id_bien=29&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=86 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS BLANCAS&codigo=CDNCU03005&cantidad=16&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=EAR INGENIERIA SPA&valor=847500&observacion=UTILIZABLE&ubicacion=3. SALA DE REUNIONES&factura=86&item_gasto=OPERACIÓN&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04012</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$925.000</td>
+                            <td style="font-size:80%; width: 20%;">INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°1</td>
+                            <td style="font-size:80%; text-align: center; ">37</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°1&proveedor=INACAP&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=SILLAS ACOLCHADAS&cantidad=37                                                &valor=925000&destino=&codigo=CDNCU04012                                                &id_bien=31&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS&codigo=CDNCU04012&cantidad=37&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=INACAP&valor=925000&observacion=UTILIZABLE&ubicacion=4. SALA DE TECNOLOGÍA&factura=CARTA DE TRASPASO&item_gasto=HABILITACION&origen=ACTA DONACION N°1&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">CUERPOS DE SILLAS DE 3 PERSONAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU04013</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$120.000</td>
+                            <td style="font-size:80%; width: 20%;">INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°1</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°1&proveedor=INACAP&item_gasto=HABILITACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=CUERPOS DE SILLAS DE 3 PERSONAS&cantidad=1                                                &valor=120000&destino=&codigo=CDNCU04013                                                &id_bien=32&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=CUERPOS DE SILLAS DE 3 PERSONAS&codigo=CDNCU04013&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=INACAP&valor=120000&observacion=UTILIZABLE&ubicacion=4. SALA DE TECNOLOGÍA&factura=CARTA DE TRASPASO&item_gasto=HABILITACION&origen=ACTA DONACION N°1&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">4. SALA DE TECNOLOGÍA</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU04021</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$510.080</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">16</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=4. SALA DE TECNOLOGÍA&nombre=SILLAS ACOLCHADAS AZUL&cantidad=16                                                &valor=510080&destino=&codigo=CDNCU04021                                                &id_bien=37&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU04021&cantidad=16&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=510080&observacion=UTILIZABLE&ubicacion=4. SALA DE TECNOLOGÍA&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">5. OFICINA DIRECTOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU05003</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 54</td>
+                            <td style="font-size:80%; text-align: center; ">$116.025</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=5. OFICINA DIRECTOR DEL CENTRO&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=116025&destino=&codigo=CDNCU05003                                                &id_bien=53&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=54 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU05003&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=116025&observacion=UTILIZABLE&ubicacion=5. OFICINA DIRECTOR DEL CENTRO&factura=54&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">5. OFICINA DIRECTOR DEL CENTRO</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU05007</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=5. OFICINA DIRECTOR DEL CENTRO&nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU05007                                                &id_bien=54&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU05007&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=5. OFICINA DIRECTOR DEL CENTRO&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">6. OFICINA ASESORIA N° 1</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU06001</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 59</td>
+                            <td style="font-size:80%; text-align: center; ">$116.025</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=6. OFICINA ASESORIA N° 1&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=116025&destino=&codigo=CDNCU06001                                                &id_bien=67&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=59 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU06001&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=116025&observacion=UTILIZABLE&ubicacion=6. OFICINA ASESORIA N° 1&factura=59&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">6. OFICINA ASESORIA N° 1</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU06005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=6. OFICINA ASESORIA N° 1&nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU06005                                                &id_bien=68&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU06005&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=6. OFICINA ASESORIA N° 1&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">7. COCINA</td>
+                            <td style="font-size:80%; width: 20%;">SILLA MADERA METALICA COCINA</td>
+                            <td style=font-size:80%>N/A  DONACION</td>
+                            <td style=font-size:80%>CDNCU07011</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">5</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=N/A  DONACION&
+                                                ubicacion=7. COCINA&nombre=SILLA MADERA METALICA COCINA&cantidad=5                                                &valor=0&destino=&codigo=CDNCU07011                                                &id_bien=81&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA MADERA METALICA COCINA&codigo=CDNCU07011&cantidad=5&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&valor=0&observacion=UTILIZABLE&ubicacion=7. COCINA&factura=CARTA DE TRASPASO&item_gasto=N/A  DONACION&origen=ACTA DONACION N°2&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">7. COCINA</td>
+                            <td style="font-size:80%; width: 20%;">SILLA BLANCA MELAMINA</td>
+                            <td style=font-size:80%>N/A  DONACION</td>
+                            <td style=font-size:80%>CDNCU07012</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">3</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=N/A  DONACION&
+                                                ubicacion=7. COCINA&nombre=SILLA BLANCA MELAMINA&cantidad=3                                                &valor=0&destino=&codigo=CDNCU07012                                                &id_bien=82&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA BLANCA MELAMINA&codigo=CDNCU07012&cantidad=3&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&valor=0&observacion=UTILIZABLE&ubicacion=7. COCINA&factura=CARTA DE TRASPASO&item_gasto=N/A  DONACION&origen=ACTA DONACION N°2&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">8. OFICINA ASESORIA N° 2 </td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU08005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 52</td>
+                            <td style="font-size:80%; text-align: center; ">$116.025</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=8. OFICINA ASESORIA N° 2 &nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=116025&destino=&codigo=CDNCU08005                                                &id_bien=96&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=52 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU08005&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=116025&observacion=UTILIZABLE&ubicacion=8. OFICINA ASESORIA N° 2 &factura=52&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">8. OFICINA ASESORIA N° 2 </td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU08006</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=8. OFICINA ASESORIA N° 2 &nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU08006                                                &id_bien=97&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU08006&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=8. OFICINA ASESORIA N° 2 &factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">10 OFICINA ASESORIA N° 4</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU10005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=10 OFICINA ASESORIA N° 4&nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU10005                                                &id_bien=122&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU10005&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=10 OFICINA ASESORIA N° 4&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">10 OFICINA ASESORIA N° 4</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU10009</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 60</td>
+                            <td style="font-size:80%; text-align: center; ">$116.025</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=10 OFICINA ASESORIA N° 4&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=116025&destino=&codigo=CDNCU10009                                                &id_bien=121&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=60 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU10009&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=116025&observacion=UTILIZABLE&ubicacion=10 OFICINA ASESORIA N° 4&factura=60&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">11. OFICINA ASESORIA N° 5</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU11003</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 281</td>
+                            <td style="font-size:80%; text-align: center; ">$147.679</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=11. OFICINA ASESORIA N° 5&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=147679&destino=&codigo=CDNCU11003                                                &id_bien=131&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=281 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU11003&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=147679&observacion=UTILIZABLE&ubicacion=11. OFICINA ASESORIA N° 5&factura=281&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">11. OFICINA ASESORIA N° 5</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU11005</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=11. OFICINA ASESORIA N° 5&nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU11005                                                &id_bien=132&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU11005&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=11. OFICINA ASESORIA N° 5&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU12007</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 281</td>
+                            <td style="font-size:80%; text-align: center; ">$147.679</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=12. OFICINA ASISTENTE ADMINISTRATIVO&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=147679&destino=&codigo=CDNCU12007                                                &id_bien=141&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=281 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU12007&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=147679&observacion=UTILIZABLE&ubicacion=12. OFICINA ASISTENTE ADMINISTRATIVO&factura=281&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU12010</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=12. OFICINA ASISTENTE ADMINISTRATIVO&nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU12010                                                &id_bien=142&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU12010&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=12. OFICINA ASISTENTE ADMINISTRATIVO&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">14. COWORK</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS DE MADERA</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU14004</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 3</td>
+                            <td style="font-size:80%; text-align: center; ">$642.600</td>
+                            <td style="font-size:80%; width: 20%;">JOSE GUILLERMO RIVERA BELTRAN</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">9</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=JOSE GUILLERMO RIVERA BELTRAN&item_gasto=HABILITACION&
+                                                ubicacion=14. COWORK&nombre=SILLAS DE MADERA&cantidad=9                                                &valor=642600&destino=&codigo=CDNCU14004                                                &id_bien=165&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=3 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS DE MADERA&codigo=CDNCU14004&cantidad=9&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=JOSE GUILLERMO RIVERA BELTRAN&valor=642600&observacion=UTILIZABLE&ubicacion=14. COWORK&factura=3&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">20. BODEGA</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS PLEGABLES BLANCAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU20022</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 91</td>
+                            <td style="font-size:80%; text-align: center; ">$22.312</td>
+                            <td style="font-size:80%; width: 20%;">SIN REGISTRAR</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">3</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SIN REGISTRAR&item_gasto=HABILITACION&
+                                                ubicacion=20. BODEGA&nombre=SILLAS PLEGABLES BLANCAS&cantidad=3                                                &valor=22312&destino=&codigo=CDNCU20022                                                &id_bien=230&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=91 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS PLEGABLES BLANCAS&codigo=CDNCU20022&cantidad=3&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=SIN REGISTRAR&valor=22312&observacion=UTILIZABLE&ubicacion=20. BODEGA&factura=91&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">21. ZONA INFANTIL</td>
+                            <td style="font-size:80%; width: 20%;">SET DE JUEGOS ( 2 SILLAS + MESA INFANTIL )</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU21001</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> S/N</td>
+                            <td style="font-size:80%; text-align: center; ">$34.990</td>
+                            <td style="font-size:80%; width: 20%;">SIN REGISTRAR</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SIN REGISTRAR&item_gasto=HABILITACION&
+                                                ubicacion=21. ZONA INFANTIL&nombre=SET DE JUEGOS ( 2 SILLAS + MESA INFANTIL )&cantidad=1                                                &valor=34990&destino=&codigo=CDNCU21001                                                &id_bien=237&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=S/N ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SET DE JUEGOS ( 2 SILLAS + MESA INFANTIL )&codigo=CDNCU21001&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=SIN REGISTRAR&valor=34990&observacion=UTILIZABLE&ubicacion=21. ZONA INFANTIL&factura=S/N&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">21. ZONA INFANTIL</td>
+                            <td style="font-size:80%; width: 20%;">SILLA JUEGO INGANTIL</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU21002</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> S/N</td>
+                            <td style="font-size:80%; text-align: center; ">$26.670</td>
+                            <td style="font-size:80%; width: 20%;">SIN REGISTRAR</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">3</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=CURICO&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=SIN REGISTRAR&item_gasto=HABILITACION&
+                                                ubicacion=21. ZONA INFANTIL&nombre=SILLA JUEGO INGANTIL&cantidad=3                                                &valor=26670&destino=&codigo=CDNCU21002                                                &id_bien=238&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=S/N ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA JUEGO INGANTIL&codigo=CDNCU21002&cantidad=3&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=SIN REGISTRAR&valor=26670&observacion=UTILIZABLE&ubicacion=21. ZONA INFANTIL&factura=S/N&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:#fef9e7">
+                            <td style="font-size:80%; width: 10%;">OFICINA MODULAR LICANTEN</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU04021</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=LICANTEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=OFICINA MODULAR LICANTEN&nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU04021                                                &id_bien=255&fecha=2024-11-22&bien_cambio=CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU04021&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=OFICINA MODULAR LICANTEN&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">OFICINA MODULAR LICANTEN</td>
+                            <td style="font-size:80%; width: 20%;">SILLA ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU09002</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 53</td>
+                            <td style="font-size:80%; text-align: center; ">$116.025</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">1</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=LICANTEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=HABILITACION&
+                                                ubicacion=OFICINA MODULAR LICANTEN&nombre=SILLA ERGONOMICAS&cantidad=1                                                &valor=116025&destino=&codigo=CDNCU09002                                                &id_bien=110&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=53 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLA ERGONOMICAS&codigo=CDNCU09002&cantidad=1&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=116025&observacion=UTILIZABLE&ubicacion=OFICINA MODULAR LICANTEN&factura=53&item_gasto=HABILITACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">OFICINA MODULAR LICANTEN</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ACOLCHADAS AZUL</td>
+                            <td style=font-size:80%>ACTIVOS POR RENOVACION</td>
+                            <td style=font-size:80%>CDNCU09003</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> 169</td>
+                            <td style="font-size:80%; text-align: center; ">$63.760</td>
+                            <td style="font-size:80%; width: 20%;">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                            <td style=font-size:80%>ADQUISICION</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=LICANTEN&observacion=UTILIZABLE&
+                                                origen=ADQUISICION&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&item_gasto=ACTIVOS POR RENOVACION&
+                                                ubicacion=OFICINA MODULAR LICANTEN&nombre=SILLAS ACOLCHADAS AZUL&cantidad=2                                                &valor=63760&destino=&codigo=CDNCU09003                                                &id_bien=111&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=169 ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ACOLCHADAS AZUL&codigo=CDNCU09003&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL&valor=63760&observacion=UTILIZABLE&ubicacion=OFICINA MODULAR LICANTEN&factura=169&item_gasto=ACTIVOS POR RENOVACION&origen=ADQUISICION&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+                        <tr style="background-color:">
+                            <td style="font-size:80%; width: 10%;">OFICINA MODULAR LICANTEN</td>
+                            <td style="font-size:80%; width: 20%;">SILLAS ERGONOMICAS</td>
+                            <td style=font-size:80%>HABILITACION</td>
+                            <td style=font-size:80%>CDNCU15024</td>
+                            <td style="font-size:80%; width: 9%; text-align: center; "> CARTA DE TRASPASO</td>
+                            <td style="font-size:80%; text-align: center; ">$0</td>
+                            <td style="font-size:80%; width: 20%;">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                            <td style=font-size:80%>ACTA DONACION N°2</td>
+                            <td style="font-size:80%; text-align: center; ">2</td>
+                            <td style=font-size:80%>UTILIZABLE</td>
+
+                            <td style="text-align: center;">
+                                <a href="/View/DetallesBien.php?comuna=LICANTEN&observacion=UTILIZABLE&
+                                                origen=ACTA DONACION N°2&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&item_gasto=HABILITACION&
+                                                ubicacion=OFICINA MODULAR LICANTEN&nombre=SILLAS ERGONOMICAS&cantidad=2                                                &valor=0&destino=&codigo=CDNCU15024                                                &id_bien=176&fecha=2020-10-01&bien_cambio=NO CAMBIO                                                &fecha_compra=2020-10-01&numero_factura=CARTA DE TRASPASO ">
+                                    <i style="color: black;" class="bi bi-eye-fill"></i></a>
+
+
+
+                            </td>
+
+                                                            <td style="text-align: center;">
+
+                                    <a href="../Controller/AddReporteController.php?reporte=robo&nombre=SILLAS ERGONOMICAS&codigo=CDNCU15024&cantidad=2&fecha_compra=2020-10-01&rut=SIN REGISTRAR&proveedor=CORPORACION INSTITUTO PROFESIONAL INACAP&valor=0&observacion=UTILIZABLE&ubicacion=OFICINA MODULAR LICANTEN&factura=CARTA DE TRASPASO&item_gasto=HABILITACION&origen=ACTA DONACION N°2&destino=">
+                                        <i style="color: black;" class="bi bi-plus-circle"></i>
+                                    </a>
+                                </td>
+
+                            
+
+
+
+
+                        </tr>
+
+
+                        <tr style="height: 3px;">
+                            <td colspan="12"></td>
+                        </tr>
+                    
+
+
+                </tbody>
+            </table>
+
+        </div>
+        
+
+    </div>
+    <div class="invisible">
+        <input name="bienes" value="27" required class="invisible"></input>
+        <input name="num" value="60" required class="invisible"></input>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
+
+<!doctype html>
+
+
+
+<script>
+    var bienes = parseInt(document.querySelector("input[name='bienes']").value);
+    var num = parseInt(document.querySelector("input[name='num']").value)
+
+
+
+
+    window.onload = function() {
+        var pos = window.name || 0;
+        window.scrollTo(0, pos);
+        var contenedor = document.getElementById('cargando');
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity= '0';
+    }
+    window.onunload = function() {
+        window.name = self.pageYOffset || (document.documentElement.scrollTop + document.body.scrollTop);
+    }
+
+
+    $(window).on("scroll", function() {
+
+        let userInput = document.getElementsByName('money-amount');
+        inputNum = parseInt(userInput.value);
+
+        console.log(inputNum)
+
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        if (((scrollHeight - scrollPosition) / scrollHeight === 0 && bienes > num)) {
+
+            location.replace("../View/Reportes.php?comuna=COMUNA.ID_COMUNA&observacion=OBSERVACION.ID_OBSERVACION&origen=ORIGEN.ID_ORIGEN&proveedor=PROVEEDOR.ID_PROVEEDOR&item_gasto=ITEM_GASTO.ID_ITEM_GASTO&ubicacion=UBICACION.ID_UBICACION&buscar=silla&limit=60&reporte=robo");
+
+        }
+    });
+
+    $btnOficina = document.querySelector("#btnOficina");
+
+    $btnOficina.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/oficina.php?reporte=oficina");
+    });
+
+
+
+
+    $btnRobo = document.querySelector("#btnRobo");
+
+    $btnRobo.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/robo.php?reporte=robo");
+    });
+
+    $btnBaja = document.querySelector("#btnBaja");
+
+    $btnBaja.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/baja.php?reporte=baja");
+    });
+    $btnIncorporacion = document.querySelector("#btnIncorporacion");
+
+    $btnIncorporacion.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/incorporacion.php?reporte=incorporacion");
+    });
+
+    $btnFiltro = document.querySelector("#btnFiltro");
+
+    $btnFiltro.addEventListener("click", () => {
+        ventana = window.open("../ViewReporte/todo_filtro.php?reporte=todo_filtro");
+    });
+
+
+    // Llamada desde la hija
+</script>

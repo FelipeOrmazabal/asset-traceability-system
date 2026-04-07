@@ -1,0 +1,5072 @@
+
+
+
+
+<!doctype   html  >
+<html style="z-index: 5;"  onmouseleave="afuera()" onmouseenter="adentro()"  lang="es">
+
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    
+
+
+</head>
+
+
+<body     >
+
+
+    <div style="padding-top: 20px;" class="col">
+
+        <button style="margin-bottom:10px ;" onclick="exportTableToExcel('#tabla' , 'ReporteInventarioUbicacion.xlsx' )" id="btnExportar" class="btn btn-success">
+            <i class="fas fa-file-excel"></i> Exportar a Excel
+        </button>
+        <table id="tabla" class=" table table-sm  table-bordered ">
+
+
+            <thead >
+                <tr>
+
+                    <th id="col" >BIEN</th>
+                    <th id="col">CODIGO</th>
+                    <th id="col">CANTIDAD</th>
+                    <th id="col">OBSERVACIONES</th>
+
+                    <th >
+                        <a  href="../Controller/DeleteReporteController.php?reporte=oficina&id=<br />
+<b>Notice</b>:  Undefined variable: row in <b>C:\Users\felip\OneDrive\Escritorio\CDN-Inventario\www\ViewReporte\oficina.php</b> on line <b>70</b><br />
+&deleteall=1">
+                            Borrar todos
+
+                        </a>
+                    </th>
+
+
+
+                </tr>
+            </thead>
+
+
+
+            <tbody>
+                                    <tr>
+
+
+                        <td id="col" >LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)</td>
+                        <td id="col">CDNCU01001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.1199002&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >KIT 7 PANELES FOTOVOLTAICOS MODELO NETBILLING + 1 CONVERSOR</td>
+                        <td id="col">CDNCU01002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.1199003&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PORTON ELECTRICO VELOTI ACCESO SECUNDARIO</td>
+                        <td id="col">CDNCU01005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.1199006&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BICICLETERO</td>
+                        <td id="col">CDNCU01006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.1199007&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BANCA METAL MADERA</td>
+                        <td id="col">CDNCU01007</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.1199008&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CILINDRO DE GAS</td>
+                        <td id="col">CDNCU20027</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.1199009&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >HORARIO ACRILICO 40X50 CMS</td>
+                        <td id="col">OFSA01002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990010&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >RECEPTOR DE CAMARAS 8 CANALES</td>
+                        <td id="col">CDNCU11101</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990011&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESÓN DE RECEPCIÓN CON LOGO ADHESIVO DEL CENTRO + CAJONERA 2 PUERTAS Y REPISA MURAL 2 PUERTAS</td>
+                        <td id="col">CDNCU02001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990012&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TELEVISOR LED SANSUNG 40'</td>
+                        <td id="col">CDNCU02003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990013&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >COMPUTADOR ALL IN ONE HP 205 G8</td>
+                        <td id="col">CDNCU02005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990014&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SITIALES DE MADERA</td>
+                        <td id="col">CDNCU02006</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990015&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESTUFA A GAS GRX-4200 URSUS TROTTER</td>
+                        <td id="col">CDNCU02007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990016&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PORTAFOLLETOS CON LOGO ADHESIVO DEL CENTRO</td>
+                        <td id="col">CDNCU02008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990017&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EQUIPO DE AIRE ACONDICIONADO CLIMATIZADOR 18000 BTU</td>
+                        <td id="col">CDNCU02009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990018&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESTACIONES PARA EQUIPOS DE AUTOCONSULTA</td>
+                        <td id="col">CDNCU02010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990019&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CENTRAL TELEFONICA</td>
+                        <td id="col">CDNCU02011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990020&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LIMPIAPIES NOMAD CUSHION</td>
+                        <td id="col">CDNCU02012</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990021&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EXTINTOR POLVO QUIMICO</td>
+                        <td id="col">CDNCU02013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990022&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU02014</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990023&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MULTIFUNCIONAL BROTHER LASER MFC-L8900CDW.</td>
+                        <td id="col">CDNCU02015</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990024&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TELEFONO INALAMBRICO</td>
+                        <td id="col">CDNCU02016</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990025&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TELEVISOR LED SANSUNG 40'</td>
+                        <td id="col">CDNCU03002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990026&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA DE REUNION 3,60 X 1,25 MTS</td>
+                        <td id="col">CDNCU03003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990027&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO PORTATIL MIDEA 12000 BTU MPPD-12KHRN1</td>
+                        <td id="col">CDNCU03004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990028&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS BLANCAS</td>
+                        <td id="col">CDNCU03005</td>
+                        <td id="col">16</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990029&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >IMPRESORA MULTIFUNCIONAL BROTHER MFC J6720 DW</td>
+                        <td id="col">CDNCU03006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990030&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE TELEVISOR AZUL</td>
+                        <td id="col">CDNCU03007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990031&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LOGO ACRILICO CDN CURICÓ</td>
+                        <td id="col">CDNCU03008</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990032&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO</td>
+                        <td id="col">CDNCU03009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990033&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACCES POINT UBIQUITI</td>
+                        <td id="col">CDNCU03010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990034&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DATASHOW  EPSON POWERLITE 99WHXGA</td>
+                        <td id="col">CDNCU04001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990035&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PROYECTOR VIEWSONIC PA503</td>
+                        <td id="col">CDNCU04003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990036&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU04006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990037&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ZENBOOK 13 OLED UX325E 13.3 FHD</td>
+                        <td id="col">CDNCU04008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990038&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CLIMATIZADOR 12.000 BTU </td>
+                        <td id="col">CDNCU04009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990039&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ULTRALIVIANO 14' X409F</td>
+                        <td id="col">CDNCU04011</td>
+                        <td id="col">4</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990040&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS</td>
+                        <td id="col">CDNCU04012</td>
+                        <td id="col">37</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990041&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CUERPOS DE SILLAS DE 3 PERSONAS</td>
+                        <td id="col">CDNCU04013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990042&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA DE CORCHO</td>
+                        <td id="col">CDNCU04015</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990043&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA PUPITRE INDIVIDUALES COLOR CAFÉ</td>
+                        <td id="col">CDNCU04016</td>
+                        <td id="col">19</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990044&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA 2 CUERPOS PC DE 1.7 MT</td>
+                        <td id="col">CDNCU04017</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990045&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ACER ASPIRE 5</td>
+                        <td id="col">CDNCU04018</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990046&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >UNIDAD SSD 240GB SATA3 2,5'</td>
+                        <td id="col">CDNCU04019</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990047&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MEMORIA NOTEBOOK 8 GB SODIMM DDR3 1600MHZ VALUE RAM</td>
+                        <td id="col">CDNCU04020</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990048&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU04021</td>
+                        <td id="col">16</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990049&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EXHIBIDOR MURAL INFORMATIVO</td>
+                        <td id="col">CDNCU04022</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990050&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACRILICO GRAFICA CDN CURICO</td>
+                        <td id="col">CDNCU04024</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990051&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK LENOVO THINKPAD L450 S/N PF0DFH2G/PF0DFH2Y </td>
+                        <td id="col">CDNCU04025</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990052&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACCES POINT UBIQUITI</td>
+                        <td id="col">CDNCU04026</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990053&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MULTIFUNCIONAL BROTHER LASER DCPL2540</td>
+                        <td id="col">CDNCU03006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990054&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESTACIÓN DE TRABAJO PARA DIRECTOR + CAJONERA CON RUEDA</td>
+                        <td id="col">CDNCU05001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990055&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU05003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990056&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ARCHIVADOR KARDEX</td>
+                        <td id="col">CDNCU05004</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990057&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA MAGNÉTICA CHICA </td>
+                        <td id="col">CDNCU05005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990058&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">CDNCU05006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990059&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU05007</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990060&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB</td>
+                        <td id="col">CDNCU05008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990061&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TELEFONO FIJO ANEXO</td>
+                        <td id="col">CDNCU05009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990062&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >HP ENVY LAPTOP 13-AQ1002</td>
+                        <td id="col">CDNCU05010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990063&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACRILICO GRAFICA CDN CURICO</td>
+                        <td id="col">CDNCU05011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990064&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CARRO EXHIBIDOR TIPO A</td>
+                        <td id="col">CDNCU05012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990065&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO </td>
+                        <td id="col">CDNCU05013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990066&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MONITOR 20 HD PANEL TN</td>
+                        <td id="col">CDNCU05014</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990067&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB S6</td>
+                        <td id="col">CDNCU05015</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990068&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU06001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990069&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE ARCHIVADOR 190X150X40</td>
+                        <td id="col">CDNCU06002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990070&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ARCHIVADOR KARDEX</td>
+                        <td id="col">CDNCU06003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990071&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA MAGNÉTICA CHICA</td>
+                        <td id="col">CDNCU06004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990072&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU06005</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990073&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE CAJONERA</td>
+                        <td id="col">CDNCU06006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990074&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SOPORTE TELEVISOR</td>
+                        <td id="col">CDNCU06007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990075&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LED 43 LG UHD AI THINQ</td>
+                        <td id="col">CDNCU06008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990076&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO </td>
+                        <td id="col">CDNCU06010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990077&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU06011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990078&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB A8</td>
+                        <td id="col">CDNCU06012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990079&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">CDNCU06013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990080&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESCRITORIOS PARA COMPUTADOR 1400X600X750 MM</td>
+                        <td id="col">CDNCU06014</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990081&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CARRO EXHIBIDOR</td>
+                        <td id="col">CDNCU06015</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990082&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACRILICO GRAFICA CDN CURICO</td>
+                        <td id="col">CDNCU06016</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990083&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB S6</td>
+                        <td id="col">CDNCU06017</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990084&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >IMPRESORA ECOTANK L3210</td>
+                        <td id="col">OFSA02013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990085&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >REFRIGERADOR MIDEA 207L</td>
+                        <td id="col">CDNCU07001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990086&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >THERMO HERVIDOR 2,8 LITROS</td>
+                        <td id="col">CDNCU07002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990087&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >HERVIDOR THOMAS 3 LITROS TH4350</td>
+                        <td id="col">CDNCU07003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990088&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA DE CASINO</td>
+                        <td id="col">CDNCU07004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990089&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MICROONDAS THOMAS 20 LITROS TH-20S01</td>
+                        <td id="col">CDNCU07005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990090&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SMART TV 43' ANDROID FHD CAIXUN</td>
+                        <td id="col">CDNCU07006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990091&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MICROONDAS 20 LITROS MIDEA</td>
+                        <td id="col">CDNCU07007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990092&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >HORNO ELECTRICO 23 LITROS</td>
+                        <td id="col">CDNCU07008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990093&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >GABINETE METALICO 9U X 450 MM</td>
+                        <td id="col">CDNCU07009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990094&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA PLEGLABLE</td>
+                        <td id="col">CDNCU07010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990095&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA MADERA METALICA COCINA</td>
+                        <td id="col">CDNCU07011</td>
+                        <td id="col">5</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990096&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA BLANCA MELAMINA</td>
+                        <td id="col">CDNCU07012</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990097&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SENSOR DE MOVIMIENTO</td>
+                        <td id="col">CDNCU07013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990098&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAJONERA CON RUEDAS 73X45X46</td>
+                        <td id="col">CDNCU08001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.11990099&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE ARCHIVADOR 190X150X40</td>
+                        <td id="col">CDNCU08002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900100&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >IMPRESORA BROTHER DCPL2540DW</td>
+                        <td id="col">CDNCU08003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900101&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESCRITORIO SIMPLE 1,20 MT</td>
+                        <td id="col">CDNCU08004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900102&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU08005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900103&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU08006</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900104&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO</td>
+                        <td id="col">CDNCU08007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900105&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA MAGNÉTICA CHICA </td>
+                        <td id="col">CDNCU08008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900106&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TELEFONO FIJO ANEXO</td>
+                        <td id="col">CDNCU08009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900107&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB A8</td>
+                        <td id="col">CDNCU08010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900108&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">CDNCU08011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900109&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU08012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900110&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CARRO EXHIBIDOR</td>
+                        <td id="col">CDNCU08013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900111&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EQUIPO AIRE ACONDICIONADO SPLIT</td>
+                        <td id="col">CDNCU08014</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900112&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TELEFONO FIJO ANEXO</td>
+                        <td id="col">CDNCU09006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900113&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA MAGNÉTICA CHICA</td>
+                        <td id="col">CDNCU09007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900114&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU09008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900115&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">CDNCU09009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900116&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB</td>
+                        <td id="col">CDNCU09010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900117&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO</td>
+                        <td id="col">CDNCU09011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900118&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CARRO EXHIBIDOR</td>
+                        <td id="col">CDNCU09012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900119&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB</td>
+                        <td id="col">CDNCU10001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900120&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">CDNCU10002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900121&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU10003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900122&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MACETAS DE PINO RADIATA</td>
+                        <td id="col">CDNCU10004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900123&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU10005</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900124&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAJONERA CON RUEDAS 73X45X46</td>
+                        <td id="col">CDNCU10006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900125&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA MAGNETICA</td>
+                        <td id="col">CDNCU10007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900126&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ARCHIVADOR KARDEX</td>
+                        <td id="col">CDNCU10008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900127&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU10009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900128&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESCRITORIO SIMPLE 1,20 MT</td>
+                        <td id="col">CDNCU10010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900129&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO</td>
+                        <td id="col">CDNCU10011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900130&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CARRO EXHIBIDOR</td>
+                        <td id="col">CDNCU10012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900131&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAJONERA CON RUEDAS 73X45X46</td>
+                        <td id="col">CDNCU11001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900132&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABLET SAMSUNG GALAXY TAB A8</td>
+                        <td id="col">CDNCU11002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900133&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU11003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900134&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ARCHIVADOR KARDEX</td>
+                        <td id="col">CDNCU11004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900135&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU11005</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900136&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA MAGNÉTICA CHICA</td>
+                        <td id="col">CDNCU11006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900137&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU11008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900138&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">CDNCU11009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900139&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO</td>
+                        <td id="col">CDNCU11010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900140&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >IMPRESORA BROTHER DCPL2540DW</td>
+                        <td id="col">CDNCU12001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900141&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >COMPUTADOR ALL IN ONE HP</td>
+                        <td id="col">CDNCU12002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900142&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU12003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900143&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">CDNCU12004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900144&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAJONERA CON RUEDAS 73X45X46</td>
+                        <td id="col">CDNCU12006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900145&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU12007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900146&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESCRITORIO SIMPLE 1,20 MT</td>
+                        <td id="col">CDNCU12008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900147&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AIRE ACONDICIONADO</td>
+                        <td id="col">CDNCU12009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900148&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU12010</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900149&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE ARCHIVADOR 190X150X40</td>
+                        <td id="col">CDNCU12011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900150&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACRILICO GRAFICA CDN CURICO</td>
+                        <td id="col">CDNCU12012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900151&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA MAGNÉTICA CHICA</td>
+                        <td id="col">CDNCU12013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900152&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TELEFONO FIJO ANEXO</td>
+                        <td id="col">CDNCU12014</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900153&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EQUIPOS DE ILUMINACION EMERGENCIA 2400 L</td>
+                        <td id="col">CDNCU13002</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900154&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACRILICO GRAFICA CDN CURICO</td>
+                        <td id="col">CDNCU13004</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900155&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR DE AGUA PEDESTAL COMPRESOR</td>
+                        <td id="col">CDNCU13005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900156&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >STAND CURVO CON GRAFICA 93X200 MM </td>
+                        <td id="col">CDNCU13006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900157&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CARRO EXHIBIDOR</td>
+                        <td id="col">CDNCU13007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900158&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA PUPITRE INDIVIDUALES COLOR CAFÉ</td>
+                        <td id="col">CDNCU13008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900159&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACCES POINT UBIQUITI</td>
+                        <td id="col">CDNCU13009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900160&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EQUIPO DE AIRE ACONDICIONADO CLIMATIZADOR 18000 BTU</td>
+                        <td id="col">CDNCU14001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900161&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLON 3+1+1 AZUL</td>
+                        <td id="col">CDNCU14002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900162&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA 3 CUERPOS DE MADERA CON MACETA INCLUIDA</td>
+                        <td id="col">CDNCU14003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900163&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS DE MADERA</td>
+                        <td id="col">CDNCU14004</td>
+                        <td id="col">9</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900164&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MACETAS DE PINO RADIATA</td>
+                        <td id="col">CDNCU14005</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900165&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA DE CENTRO</td>
+                        <td id="col">CDNCU14006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900166&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESTUFA A GAS HIBRIDA GH-NH72 TOYOTOMI</td>
+                        <td id="col">CDNCU14007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900167&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LED 43 ' LG UHD AI ThinQ</td>
+                        <td id="col">CDNCU14008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900168&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESCRITORIO DE MADERA TIPO RUSTICO</td>
+                        <td id="col">CDNCU14009</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900169&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LAMPARA COLGANTE INDIVIDUAL</td>
+                        <td id="col">CDNCU14010</td>
+                        <td id="col">6</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900170&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LAMPARA DE 3 CUERPOS PARED</td>
+                        <td id="col">CDNCU14011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900171&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LAMPARA COLGANTE RUSTICO 6 LUCES</td>
+                        <td id="col">CDNCU14012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900172&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LOGO ACRILICO CDN CURICÓ</td>
+                        <td id="col">CDNCU14013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900173&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >COMPUTADOR ALL IN ONE HP 205 G8</td>
+                        <td id="col">CDNCU14014</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900174&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TV LCD 26' AOC</td>
+                        <td id="col">CDNCU14015</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900175&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ACCES POINT UBIQUITI</td>
+                        <td id="col">CDNCU14016</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900176&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ALARMA COMUNITARIA </td>
+                        <td id="col">OFSA01003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900177&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SENSOR DE MOVIMIENTO</td>
+                        <td id="col">OFSA07002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900178&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TABURETES</td>
+                        <td id="col">CDNCU15001</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900179&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESTANTE RACK METALICO 5 BANDEJAS</td>
+                        <td id="col">CDNCU15002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900180&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESAS DE TRABAJO 2500X900X850 MM</td>
+                        <td id="col">CDNCU15003</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900181&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESCRITORIOS PARA COMPUTADOR 1400X600X750 MM</td>
+                        <td id="col">CDNCU15004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900182&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >REPISA MURAL</td>
+                        <td id="col">CDNCU15005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900183&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PC ESCRITORIO</td>
+                        <td id="col">CDNCU15006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900184&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CREALITY IMPRESORA 3D ENDER 3</td>
+                        <td id="col">CDNCU15007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900185&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAJA DE LUZ PARA ESTUDIO FOTOGRAFICO 6 COLORES</td>
+                        <td id="col">CDNCU15008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900186&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TARJETA MICRO SD CON ADAPTADOR</td>
+                        <td id="col">CDNCU15009</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900187&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PENDRIVE 16 GB</td>
+                        <td id="col">CDNCU15010</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900188&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >KIT MAQUINA GRABADORA</td>
+                        <td id="col">CDNCU15011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900189&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >FRESADORA CNC</td>
+                        <td id="col">CDNCU15012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900190&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EXTRACTOR DE AIRE MURAL</td>
+                        <td id="col">CDNCU15013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900191&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAPSULA PROTECTORA </td>
+                        <td id="col">CDNCU15014</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900192&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >HERRAMIENTA MULTIPROPOSITO</td>
+                        <td id="col">CDNCU15015</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900193&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >EXTINTOR POLVO QUIMICO</td>
+                        <td id="col">CDNCU15016</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900194&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK LENOVO THINKPAD L450 S/N PF0DFH2G/PF0DFH2Y</td>
+                        <td id="col">CDNCU15017</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900195&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK LENOVO THINKPAD L460 S/N PF0DFH2G/PF0DFH2Y</td>
+                        <td id="col">CDNCU15018</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900196&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CALEFACTOR EEH-1300NG CLEAN HEAT SINDELEN</td>
+                        <td id="col">CDNCU15019</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900197&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ASPIRADORA DE ARRASTRE RECCO</td>
+                        <td id="col">CDNCU15020</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900198&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >COMPUTADOR ALL IN ONE HP 205 G8</td>
+                        <td id="col">CDNCU15021</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900199&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >LENOVO® NOTEBOOK S340 14 '</td>
+                        <td id="col">CDNCU15022</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900200&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA 2 CUERPOS PC DE 1.7 MT</td>
+                        <td id="col">CDNCU15023</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900201&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR DE JABON AUTOMATICO</td>
+                        <td id="col">CDNCU16001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900202&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL MANOS</td>
+                        <td id="col">CDNCU16002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900203&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL HIGIENICO</td>
+                        <td id="col">CDNCU16003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900204&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BASURERO TAPA VAIVEN</td>
+                        <td id="col">CDNCU16004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900205&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR DE JABON AUTOMATICO</td>
+                        <td id="col">CDNCU17001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900206&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL MANOS</td>
+                        <td id="col">CDNCU17002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900207&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL HIGIENICO</td>
+                        <td id="col">CDNCU17003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900208&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUDADOR</td>
+                        <td id="col">CDNCU17004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900209&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BASURERO TAPA VAIVEN</td>
+                        <td id="col">CDNCU17005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900210&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR DE JABON AUTOMATICO</td>
+                        <td id="col">CDNCU18001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900211&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL MANOS</td>
+                        <td id="col">CDNCU18002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900212&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL HIGIENICO</td>
+                        <td id="col">CDNCU18003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900213&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BASURERO TAPA VAIVEN</td>
+                        <td id="col">CDNCU18004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900214&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL MANOS</td>
+                        <td id="col">CDNCU19001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900215&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISEPENSADORES DE PAPEL HIGIENICO</td>
+                        <td id="col">CDNCU19002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900216&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BASURERO TAPA VAIVEN</td>
+                        <td id="col">CDNCU19003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900217&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PANEL ARAÑA 2,25X2,25 MT</td>
+                        <td id="col">CDNCU20001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900218&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >COFRE 2,5 HDD SATA USB 3,0 ANTISHOCK SP-G300</td>
+                        <td id="col">CDNCU20002</td>
+                        <td id="col">4</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900219&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >UNIDAD SSD 240GB SATA3 2,5</td>
+                        <td id="col">CDNCU20003</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900220&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISCO EXTERNO 1 TB 2,5 US</td>
+                        <td id="col">CDNCU20004</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900221&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAMARA ORDRO HDR-AC3 4K</td>
+                        <td id="col">CDNCU20005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900222&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAMARA NIKON D 5300 C/CLIENTE 18-55 MM AF-P BLACK</td>
+                        <td id="col">CDNCU20006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900223&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DATASHOW  EPSON POWERLITE 99WHXGA</td>
+                        <td id="col">CDNCU20007</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900224&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TV SAMSUNG 43 '</td>
+                        <td id="col">CDNCU20008</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900225&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MACETAS DE PINO RADIATA</td>
+                        <td id="col">CDNCU20009</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900226&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR PAPEL ABSORBENTE</td>
+                        <td id="col">CDNCU20011</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900227&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE DE COCINA 5 PUERTAS</td>
+                        <td id="col">CDNCU20012</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900228&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >FRIGOBAR 122 LITROS</td>
+                        <td id="col">CDNCU20013</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900229&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >HERVIDOR THOMAS TH-4212N</td>
+                        <td id="col">CDNCU20014</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900230&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR DE JABON AUTOMATICO</td>
+                        <td id="col">CDNCU20015</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900231&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR DE PAPEL ABSORBENTE</td>
+                        <td id="col">CDNCU20016</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900232&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENDADOR PAPEL HIGIENICO</td>
+                        <td id="col">CDNCU20017</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900233&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CAMARA FOTOGRAFICA CANON</td>
+                        <td id="col">CDNCU20018</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900234&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >HERVIDOR VENTUS 30 LITROS</td>
+                        <td id="col">CDNCU20019</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900235&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA PLEGLABLE BLANCA</td>
+                        <td id="col">CDNCU20021</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900236&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS PLEGABLES BLANCAS</td>
+                        <td id="col">CDNCU20022</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900237&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TRITURADORA DE PAPEL DS-7008A 10 HOJAS</td>
+                        <td id="col">CDNCU20023</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900238&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >TRIPODE</td>
+                        <td id="col">CDNCU20024</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900239&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 14</td>
+                        <td id="col">CDNCU20025</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900240&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >AUDIFONOS TIPO C</td>
+                        <td id="col">CDNCU20026</td>
+                        <td id="col">10</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900241&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SET DE JUEGOS ( 2 SILLAS + MESA INFANTIL )</td>
+                        <td id="col">CDNCU21001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900242&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA JUEGO INGANTIL</td>
+                        <td id="col">CDNCU21002</td>
+                        <td id="col">3</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900243&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BAUL PLASTICO COLOR</td>
+                        <td id="col">CDNCU21003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900244&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PIZARRA TIZA Y MAGNETICA CON PEDESTAL</td>
+                        <td id="col">CDNCU21004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900245&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >BASURERO DISEÑO INFANTIL</td>
+                        <td id="col">CDNCU21005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900246&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE ORGANIZADOR INFANTIL</td>
+                        <td id="col">CDNCU21006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900247&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                        <td id="col">CDNCU04006</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900248&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU04021</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900249&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MESA INDIVIDUAL PC CAPACITADORES 0,9 MT</td>
+                        <td id="col">CDNCU04023</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900250&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ESCRITORIO SIMPLE 1,20 MT</td>
+                        <td id="col">CDNCU09001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900251&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLA ERGONOMICAS</td>
+                        <td id="col">CDNCU09002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900252&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">CDNCU09003</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900253&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >ARCHIVADOR KARDEX</td>
+                        <td id="col">CDNCU09004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900254&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >MUEBLE CAJONERA</td>
+                        <td id="col">CDNCU09005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900255&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >SILLAS ERGONOMICAS</td>
+                        <td id="col">CDNCU15024</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900256&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PROYECTOR MULTIMEDIA</td>
+                        <td id="col">CDNLIC01001</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900257&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >IMPRESORA MULTIFUNCIONAL LASER</td>
+                        <td id="col">CDNLIC01002</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900258&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >PC ALL IN ONE LENOVO</td>
+                        <td id="col">CDNLIC01003</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900259&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >CILINDRO DE GAS</td>
+                        <td id="col">CDNLIC01004</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900260&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                                    <tr>
+
+
+                        <td id="col" >DISPENSADOR DE AGUA PURIFICADA</td>
+                        <td id="col">CDNLIC01005</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+
+
+                        <td >
+                            <a   href="../Controller/DeleteReporteController.php?reporte=oficina&id=11-26-2024 13:37:08.119900261&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+                    </tr>
+                    
+
+
+                
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+ 
+<input class=""  name="recarga" value="adentro">
+
+
+
+
+</html>
+
+
+
+<script >
+
+
+
+ function adentro(){
+
+
+ var recarga = parseInt(document.querySelector("input[name='recarga']").value)
+ if (recarga == "1" ) {
+     location.replace("../ViewReporte/oficina.php?reporte=oficina&recarga=adentro&reload=1");
+ }
+ }
+
+ function afuera(){
+
+ location.replace("../ViewReporte/oficina.php?reporte=oficina&recarga=1&reload=1");
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+function exportTableToExcel(tableElement, filename) {
+  const table = document.querySelector(tableElement);
+  const tableData = [];
+
+  // Extract table data
+  table.querySelectorAll('tr').forEach(row => {
+    const rowData = [];
+    row.querySelectorAll("th[id='col'], td[id='col'] ").forEach(cell => {
+      rowData.push(cell.textContent);
+        
+
+    });
+    tableData.push(rowData);
+  });
+
+  // Create worksheet
+  const worksheet = XLSX.utils.aoa_to_sheet(tableData);
+  
+  // Create workbook
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, 'Inventario');
+
+
+
+  // Export the workbook to Excel file
+  XLSX.writeFile(workbook, filename);
+  window.closed();
+}
+
+
+
+
+window.onload=function(){
+var pos=window.name || 0;
+window.scrollTo(0,pos);
+}
+window.onunload=function(){
+window.name=self.pageYOffset || (document.documentElement.scrollTop+document.body.scrollTop);
+}
+
+
+
+</script>
+
+
+
+
+
+

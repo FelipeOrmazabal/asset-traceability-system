@@ -1,0 +1,893 @@
+
+
+
+<html>
+
+
+
+
+
+<!doctype html>
+<html style="z-index: 5;" onclick="adentro()"   lang="es">
+
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+    <div style="padding-top: 20px;" class="col">
+
+        <button style="margin-bottom:10px ;" onclick="exportTableToExcel('#tabla', 'ExporteconFiltro.xlsx')" class="btn btn-outline-primary">
+            <i class="fas fa-file-excel"></i> Exportar a Excel
+        </button>
+        <table id="tabla" class=" table table-sm  table-bordered ">
+
+
+            <thead>
+                <tr>
+
+                    <th id="col">UBICACION</th>
+                    <th id="col">BIEN</th>
+                    <th id="col">ITEM GASTO</th>
+                    <th id="col">CODIGO</th>
+                    <th id="col">DOCUMENTO ADQUISICION / N° FACTURA</th>
+                    <th id="col">VALOR DE LA COMPRA</th>
+                    <th id="col">FECHA COMPRA</th>
+                    <th id="col">PROVEEDOR</th>
+                    <th id="col">RUT PROVEEDOR</th>
+                    <th id="col">ORIGEN (Transferencia - Adquisicion)</th>
+                    <th id="col">CANTIDAD</th>
+                    <th id="col">OBSERVACION</th>
+                    <th id="col">DESTINO NO UTILIZABLE</th>
+
+                    <th>
+                        <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=<br />
+<b>Notice</b>:  Undefined variable: row in <b>C:\Users\felip\OneDrive\Escritorio\CDN-Inventario\www\ViewReporte\todo_filtro.php</b> on line <b>64</b><br />
+&deleteall=1">
+                            Borrar todos
+
+                        </a>
+                    </th>
+
+
+
+                </tr>
+            </thead>
+
+
+
+            <tbody>
+                                    <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">MESÓN DE RECEPCIÓN CON LOGO ADHESIVO DEL CENTRO + CAJONERA 2 PUERTAS Y REPISA MURAL 2 PUERTAS</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02001</td>
+                        <td id="col">3</td>
+                        <td id="col">$ 289.999</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">MANUEL EDUARDO GONZALEZ BRAVO</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343001&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">TELEVISOR LED SANSUNG 40'</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02003</td>
+                        <td id="col">13146</td>
+                        <td id="col">$ 249.990</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISTRIBUIDORA MULTIHOGAR S.A</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343002&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">COMPUTADOR ALL IN ONE HP 205 G8</td>
+                        <td id="col">N/A REPOSICION ROBO</td>
+                        <td id="col">CDNCU02005</td>
+                        <td id="col">134</td>
+                        <td id="col">$ 2.221.981</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISTRIBUIDORA KALEUCHE SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col">REPOSICIÓN ROBO</td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343003&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">SITIALES DE MADERA</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02006</td>
+                        <td id="col">89</td>
+                        <td id="col">$ 220.000</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">EAR INGENIERIA SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343004&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">ESTUFA A GAS GRX-4200 URSUS TROTTER</td>
+                        <td id="col">MATERIALES DE OFICINA</td>
+                        <td id="col">CDNCU02007</td>
+                        <td id="col">132</td>
+                        <td id="col">$ 155.990</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISTRIBUIDORA KALEUCHE SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343005&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">PORTAFOLLETOS CON LOGO ADHESIVO DEL CENTRO</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02008</td>
+                        <td id="col">833</td>
+                        <td id="col">$ 90.440</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343006&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">EQUIPO DE AIRE ACONDICIONADO CLIMATIZADOR 18000 BTU</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02009</td>
+                        <td id="col">1097</td>
+                        <td id="col">$ 535.500</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343007&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">ESTACIONES PARA EQUIPOS DE AUTOCONSULTA</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02010</td>
+                        <td id="col">3</td>
+                        <td id="col">$ 79.999</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">MANUEL EDUARDO GONZALEZ BRAVO</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343008&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">CENTRAL TELEFONICA</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02011</td>
+                        <td id="col">146</td>
+                        <td id="col">$ 509.999</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.9343009&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">LIMPIAPIES NOMAD CUSHION</td>
+                        <td id="col">OPERACIÓN</td>
+                        <td id="col">CDNCU02012</td>
+                        <td id="col">102</td>
+                        <td id="col">$ 380.800</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">SOCIEDAD INNOVA CHILE LIMITADA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.93430010&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">EXTINTOR POLVO QUIMICO</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02013</td>
+                        <td id="col">3151</td>
+                        <td id="col">$ 42.840</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">JORGE ROBERTO VELIZ INOSTROZA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.93430011&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">SILLA ERGONOMICAS</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02014</td>
+                        <td id="col">281</td>
+                        <td id="col">$ 147.679</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.93430012&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">MULTIFUNCIONAL BROTHER LASER MFC-L8900CDW.</td>
+                        <td id="col">ACTIVOS POR RENOVACION</td>
+                        <td id="col">CDNCU02015</td>
+                        <td id="col">71</td>
+                        <td id="col">$ 744.024</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">EAR INGENIERIA SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.93430013&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">2. RECEPCIÓN</td>
+
+                        <td id="col">TELEFONO INALAMBRICO</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU02016</td>
+                        <td id="col">241</td>
+                        <td id="col">$ 39.497</td>
+                        <td id="col">21/11/2024</td>
+                        <td id="col">SKOLL COMPANY SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:12.93430014&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">MULTIFUNCIONAL BROTHER LASER DCPL2540</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU03006</td>
+                        <td id="col">82</td>
+                        <td id="col">$ 214.902</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">EAR INGENIERIA SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409001&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">ESTACIÓN DE TRABAJO PARA DIRECTOR + CAJONERA CON RUEDA</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU05001</td>
+                        <td id="col">5</td>
+                        <td id="col">$ 200.000</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">MANUEL EDUARDO GONZALEZ BRAVO</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409002&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">SILLA ERGONOMICAS</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU05003</td>
+                        <td id="col">54</td>
+                        <td id="col">$ 116.025</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409003&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">ARCHIVADOR KARDEX</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU05004</td>
+                        <td id="col">CARTA DE TRASPASO</td>
+                        <td id="col">$ 280.000</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">INACAP</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ACTA DONACION N°1</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409004&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">PIZARRA MAGNÉTICA CHICA </td>
+                        <td id="col">OPERACIÓN</td>
+                        <td id="col">CDNCU05005</td>
+                        <td id="col">57</td>
+                        <td id="col">$ 20.000</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISTRIBUIDORA KALEUCHE SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409005&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">CELULAR XIAOMI REDMI NOTE 10S</td>
+                        <td id="col">ACTIVOS POR RENOVACION</td>
+                        <td id="col">CDNCU05006</td>
+                        <td id="col">67177119</td>
+                        <td id="col">$ 12.500</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">TELEFONICA MOVILES CHILE S.A.</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409006&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">SILLAS ACOLCHADAS AZUL</td>
+                        <td id="col">ACTIVOS POR RENOVACION</td>
+                        <td id="col">CDNCU05007</td>
+                        <td id="col">169</td>
+                        <td id="col">$ 63.760</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">2</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409007&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">TABLET SAMSUNG GALAXY TAB</td>
+                        <td id="col">ACTIVOS POR RENOVACION</td>
+                        <td id="col">CDNCU05008</td>
+                        <td id="col">61</td>
+                        <td id="col">$ 513.266</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">EAR INGENIERIA SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409008&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">TELEFONO FIJO ANEXO</td>
+                        <td id="col">ACTIVOS POR RENOVACION</td>
+                        <td id="col">CDNCU05009</td>
+                        <td id="col">118</td>
+                        <td id="col">$ 25.000</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">EAR INGENIERIA SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.9409009&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">HP ENVY LAPTOP 13-AQ1002</td>
+                        <td id="col">ACTIVOS POR RENOVACION</td>
+                        <td id="col">CDNCU05010</td>
+                        <td id="col">62</td>
+                        <td id="col">$ 820.618</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">EAR INGENIERIA SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.94090010&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">ACRILICO GRAFICA CDN CURICO</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU05011</td>
+                        <td id="col">200</td>
+                        <td id="col">$ 583.100</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">SOCIEDAD INNOVA CHILE LIMITADA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.94090011&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">CARRO EXHIBIDOR TIPO A</td>
+                        <td id="col">OPERACIÓN</td>
+                        <td id="col">CDNCU05012</td>
+                        <td id="col">CARTA DE TRASPASO</td>
+                        <td id="col">$ 0</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ACTA DONACION N°3</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.94090012&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">AIRE ACONDICIONADO </td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU05013</td>
+                        <td id="col">CARTA DE TRASPASO</td>
+                        <td id="col">$ 0</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ACTA DONACION N°2</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.94090013&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">MONITOR 20 HD PANEL TN</td>
+                        <td id="col">MATERIALES DE OFICINA</td>
+                        <td id="col">CDNCU05014</td>
+                        <td id="col">155</td>
+                        <td id="col">$ 131.900</td>
+                        <td id="col">01/10/2020</td>
+                        <td id="col">DISTRIBUIDORA KALEUCHE SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.94090014&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                                        <tr>
+
+
+
+                        <td id='col' style="font-size:80%; ">5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                        <td id="col">TABLET SAMSUNG GALAXY TAB S6</td>
+                        <td id="col">HABILITACION</td>
+                        <td id="col">CDNCU05015</td>
+                        <td id="col">270</td>
+                        <td id="col">$ 294.118</td>
+                        <td id="col">18/10/2024</td>
+                        <td id="col">DISTRIBUIDORA KALEUCHE SPA</td>
+                        <td id="col">SIN REGISTRAR</td>
+                        <td id="col">ADQUISICION</td>
+                        <td id="col">1</td>
+                        <td id="col">UTILIZABLE</td>
+                        <td id="col"></td>
+
+                        <td>
+                            <a href="../Controller/DeleteReporteController.php?reporte=todo_filtro&id=11-26-2024 15:48:16.94090015&deleteall=0">
+                                🗑️
+                            </a>
+                        </td>
+
+
+                    
+                    </tr>
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+<input class="invisible" name="recarga" value="<br />
+<b>Notice</b>:  Undefined index: recarga in <b>C:\Users\felip\OneDrive\Escritorio\CDN-Inventario\www\ViewReporte\todo_filtro.php</b> on line <b>136</b><br />
+">
+
+</html>
+<script>
+function adentro(){
+
+location.reload()
+}
+
+
+
+    function exportTableToExcel(tableElement, filename) {
+        const table = document.querySelector(tableElement);
+        const tableData = [];
+
+        // Extract table data
+        table.querySelectorAll('tr').forEach(row => {
+            const rowData = [];
+            row.querySelectorAll("th[id='col'], td[id='col'] ").forEach(cell => {
+                rowData.push(cell.textContent);
+            });
+            tableData.push(rowData);
+        });
+
+        // Create worksheet
+        const worksheet = XLSX.utils.aoa_to_sheet(tableData);
+
+        // Create workbook
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, 'Inventario');
+
+        // Export the workbook to Excel file
+        XLSX.writeFile(workbook, filename);
+    }
+    window.onload = function() {
+        var pos = window.name || 0;
+        window.scrollTo(0, pos);
+    }
+    window.onunload = function() {
+        window.name = self.pageYOffset || (document.documentElement.scrollTop + document.body.scrollTop);
+    }
+</script>

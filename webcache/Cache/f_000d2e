@@ -1,0 +1,6327 @@
+
+
+
+<html>
+<link rel="stylesheet" href="../../bootstrap-4.6.2-dist/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+
+<div class="invisible">
+
+    <table id="tabla">
+
+
+        <thead>
+            <tr>
+                <th>UBICACION</th>
+                <th>BIEN</th>
+                <th>ITEM GASTO</th>
+                <th>CODIGO</th>
+                <th>DOCUMENTO ADQUISICION / N° FACTURA</th>
+                <th>VALOR DE LA COMPRA</th>
+                <th>FECHA COMPRA</th>
+                <th>PROVEEDOR</th>
+                <th>RUT PROVEEDOR</th>
+                <th>ORIGEN (Transferencia - Adquisicion)</th>
+                <th>CANTIDAD</th>
+                <th>OBSERVACION</th>
+                <th>DESTINO NO UTILIZABLE</th>
+
+            </tr>
+        </thead>
+
+
+
+        <tbody>
+                            <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>LETRERO EXTERIOR PRINCIPAL, PANAFLEX LUMINOSO+ACRÍLICO TRANSPARENTE (BACKLIGHT)</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU01001</td>
+                    <td>813</td>
+                    <td>$ 333.200</td>
+                    <td>01/10/2020</td> 
+                    <td>DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>KIT 7 PANELES FOTOVOLTAICOS MODELO NETBILLING + 1 CONVERSOR</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU01002</td>
+                    <td>83</td>
+                    <td>$ 2.860.800</td>
+                    <td>01/10/2020</td> 
+                    <td>CEC GENERACION</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>CAMARA DAHUA 2MP</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU01003</td>
+                    <td>48</td>
+                    <td>$ 104.000</td>
+                    <td>01/10/2020</td> 
+                    <td>MELNIX SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>CAMARA DAHUA 2MP</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU01004</td>
+                    <td>62</td>
+                    <td>$ 83.300</td>
+                    <td>01/10/2020</td> 
+                    <td>MELNIX SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>PORTON ELECTRICO VELOTI ACCESO SECUNDARIO</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU01005</td>
+                    <td>13</td>
+                    <td>$ 479.601</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD DE INVERSIONES DYD LTDA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>BICICLETERO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU01006</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>BANCA METAL MADERA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU01007</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>CILINDRO DE GAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20027</td>
+                    <td>246</td>
+                    <td>$ 54.612</td>
+                    <td>19/11/2024</td> 
+                    <td>INVERSIONES LMC SPA</td>
+                    <td>77.804.885- K</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1- EXTERIOR DEL CENTRO</td>
+
+                    <td>HORARIO ACRILICO 40X50 CMS</td>
+                    <td>HABILITACION</td>
+                    <td>OFSA01002</td>
+                    <td>201</td>
+                    <td>$ 80.920</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>1.1. ENTRETECHO</td>
+
+                    <td>RECEPTOR DE CAMARAS 8 CANALES</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU11101</td>
+                    <td>48</td>
+                    <td>$ 91.300</td>
+                    <td>01/10/2020</td> 
+                    <td>MELNIX SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>MESÓN DE RECEPCIÓN CON LOGO ADHESIVO DEL CENTRO + CAJONERA 2 PUERTAS Y REPISA MURAL 2 PUERTAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02001</td>
+                    <td>3</td>
+                    <td>$ 289.999</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>TELEVISOR LED SANSUNG 40''</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02003</td>
+                    <td>13146</td>
+                    <td>$ 249.990</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA MULTIHOGAR S.A</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>COMPUTADOR ALL IN ONE HP 205 G8</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU02005</td>
+                    <td>134</td>
+                    <td>$ 2.221.981</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>SITIALES DE MADERA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02006</td>
+                    <td>89</td>
+                    <td>$ 220.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>ESTUFA A GAS GRX-4200 URSUS TROTTER</td>
+                    <td>MATERIALES DE OFICINA</td>
+                    <td>CDNCU02007</td>
+                    <td>132</td>
+                    <td>$ 155.990</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>PORTAFOLLETOS CON LOGO ADHESIVO DEL CENTRO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02008</td>
+                    <td>833</td>
+                    <td>$ 90.440</td>
+                    <td>01/10/2020</td> 
+                    <td>DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>EQUIPO DE AIRE ACONDICIONADO CLIMATIZADOR 18000 BTU</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02009</td>
+                    <td>1097</td>
+                    <td>$ 535.500</td>
+                    <td>01/10/2020</td> 
+                    <td>GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>ESTACIONES PARA EQUIPOS DE AUTOCONSULTA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02010</td>
+                    <td>3</td>
+                    <td>$ 79.999</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>CENTRAL TELEFONICA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02011</td>
+                    <td>146</td>
+                    <td>$ 509.999</td>
+                    <td>01/10/2020</td> 
+                    <td>ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>LIMPIAPIES NOMAD CUSHION</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU02012</td>
+                    <td>102</td>
+                    <td>$ 380.800</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>EXTINTOR POLVO QUIMICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02013</td>
+                    <td>3151</td>
+                    <td>$ 42.840</td>
+                    <td>01/10/2020</td> 
+                    <td>JORGE ROBERTO VELIZ INOSTROZA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02014</td>
+                    <td>281</td>
+                    <td>$ 147.679</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>MULTIFUNCIONAL BROTHER LASER MFC-L8900CDW.</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU02015</td>
+                    <td>71</td>
+                    <td>$ 744.024</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>2. RECEPCIÓN</td>
+
+                    <td>TELEFONO INALAMBRICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU02016</td>
+                    <td>241</td>
+                    <td>$ 39.497</td>
+                    <td>21/11/2024</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>TELEVISOR LED SANSUNG 40''</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03002</td>
+                    <td>13146</td>
+                    <td>$ 249.990</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA MULTIHOGAR S.A</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>MESA DE REUNION 3,60 X 1,25 MTS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03003</td>
+                    <td>116</td>
+                    <td>$ 515.270</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>AIRE ACONDICIONADO PORTATIL MIDEA 12000 BTU MPPD-12KHRN1</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU03004</td>
+                    <td>88</td>
+                    <td>$ 499.990</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>SILLAS BLANCAS</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU03005</td>
+                    <td>86</td>
+                    <td>$ 847.500</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>16</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>IMPRESORA MULTIFUNCIONAL BROTHER MFC J6720 DW</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03006</td>
+                    <td>54345</td>
+                    <td>$ 210.500</td>
+                    <td>01/10/2020</td> 
+                    <td>COMERCIAL INFOLAND LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>MUEBLE TELEVISOR AZUL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03007</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>LOGO ACRILICO CDN CURICÓ</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03008</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>AIRE ACONDICIONADO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03009</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>3. SALA DE REUNIONES</td>
+
+                    <td>ACCES POINT UBIQUITI</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03010</td>
+                    <td>241</td>
+                    <td>$ 386.555</td>
+                    <td>21/11/2024</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>DATASHOW  EPSON POWERLITE 99WHXGA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04001</td>
+                    <td>41475</td>
+                    <td>$ 485.404</td>
+                    <td>01/10/2020</td> 
+                    <td>COMUNICACIONES Y TECNOLOGIA S.A</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>PROYECTOR VIEWSONIC PA503</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04003</td>
+                    <td>88</td>
+                    <td>$ 1.011.990</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU04006</td>
+                    <td>134</td>
+                    <td>$ 3.361.470</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>NOTEBOOK ZENBOOK 13 OLED UX325E 13.3 FHD</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU04008</td>
+                    <td>88</td>
+                    <td>$ 2.620.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>CLIMATIZADOR 12.000 BTU </td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04009</td>
+                    <td>881</td>
+                    <td>$ 420.058</td>
+                    <td>01/10/2020</td> 
+                    <td>JA CLIMATIZACION SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>NOTEBOOK ASUS ULTRALIVIANO 14'' X409F</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04011</td>
+                    <td>68</td>
+                    <td>$ 2.940.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>4</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>SILLAS ACOLCHADAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04012</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 925.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>37</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>CUERPOS DE SILLAS DE 3 PERSONAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04013</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 120.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>PIZARRA DE CORCHO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04015</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>MESA PUPITRE INDIVIDUALES COLOR CAFÉ</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04016</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 665.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>19</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>MESA 2 CUERPOS PC DE 1.7 MT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04017</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 270.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>NOTEBOOK ACER ASPIRE 5</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU04018</td>
+                    <td>34</td>
+                    <td>$ 523.600</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>UNIDAD SSD 240GB SATA3 2,5''</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU04019</td>
+                    <td>63</td>
+                    <td>$ 76.106</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>MEMORIA NOTEBOOK 8 GB SODIMM DDR3 1600MHZ VALUE RAM</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU04020</td>
+                    <td>62</td>
+                    <td>$ 76.329</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU04021</td>
+                    <td>169</td>
+                    <td>$ 510.080</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>16</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>EXHIBIDOR MURAL INFORMATIVO</td>
+                    <td>PUBLICIDAD</td>
+                    <td>CDNCU04022</td>
+                    <td>36</td>
+                    <td>$ 238.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>ACRILICO GRAFICA CDN CURICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04024</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>NOTEBOOK LENOVO THINKPAD L450 S/N PF0DFH2G/PF0DFH2Y </td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04025</td>
+                    <td>41476</td>
+                    <td>$ 578.188</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>4. SALA DE TECNOLOGÍA</td>
+
+                    <td>ACCES POINT UBIQUITI</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04026</td>
+                    <td>241</td>
+                    <td>$ 386.555</td>
+                    <td>21/11/2024</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>MULTIFUNCIONAL BROTHER LASER DCPL2540</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU03006</td>
+                    <td>82</td>
+                    <td>$ 214.902</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>ESTACIÓN DE TRABAJO PARA DIRECTOR + CAJONERA CON RUEDA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU05001</td>
+                    <td>5</td>
+                    <td>$ 200.000</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU05003</td>
+                    <td>54</td>
+                    <td>$ 116.025</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>ARCHIVADOR KARDEX</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU05004</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 280.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>PIZARRA MAGNÉTICA CHICA </td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU05005</td>
+                    <td>57</td>
+                    <td>$ 20.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>CELULAR XIAOMI REDMI NOTE 10S</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU05006</td>
+                    <td>67177119</td>
+                    <td>$ 12.500</td>
+                    <td>01/10/2020</td> 
+                    <td>TELEFONICA MOVILES CHILE S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU05007</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU05008</td>
+                    <td>61</td>
+                    <td>$ 513.266</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>TELEFONO FIJO ANEXO</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU05009</td>
+                    <td>118</td>
+                    <td>$ 25.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>HP ENVY LAPTOP 13-AQ1002</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU05010</td>
+                    <td>62</td>
+                    <td>$ 820.618</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>ACRILICO GRAFICA CDN CURICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU05011</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>CARRO EXHIBIDOR TIPO A</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU05012</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°3</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>AIRE ACONDICIONADO </td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU05013</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>MONITOR 20 HD PANEL TN</td>
+                    <td>MATERIALES DE OFICINA</td>
+                    <td>CDNCU05014</td>
+                    <td>155</td>
+                    <td>$ 131.900</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>5. OFICINA DIRECTOR DEL CENTRO</td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB S6</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU05015</td>
+                    <td>270</td>
+                    <td>$ 294.118</td>
+                    <td>18/10/2024</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06001</td>
+                    <td>59</td>
+                    <td>$ 116.025</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>MUEBLE ARCHIVADOR 190X150X40</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06002</td>
+                    <td>173</td>
+                    <td>$ 273.700</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>ARCHIVADOR KARDEX</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06003</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 140.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>PIZARRA MAGNÉTICA CHICA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06004</td>
+                    <td>158781</td>
+                    <td>$ 25.990</td>
+                    <td>01/10/2020</td> 
+                    <td>MARIO NELSON LOPEZ LAZO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU06005</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>MUEBLE CAJONERA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06006</td>
+                    <td>75</td>
+                    <td>$ 107.100</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>SOPORTE TELEVISOR</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06007</td>
+                    <td>10</td>
+                    <td>$ 119.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD DE INVERSIONES DYD LTDA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>LED 43 LG UHD AI THINQ</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU06008</td>
+                    <td>88</td>
+                    <td>$ 1.120.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>ROBO PARTE 566</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>AIRE ACONDICIONADO </td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06010</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU06011</td>
+                    <td>134</td>
+                    <td>$ 6.722.940</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB A8</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06012</td>
+                    <td>35</td>
+                    <td>$ 143.990</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>CELULAR XIAOMI REDMI NOTE 10S</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU06013</td>
+                    <td>67177119</td>
+                    <td>$ 12.500</td>
+                    <td>01/10/2020</td> 
+                    <td>TELEFONICA MOVILES CHILE S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>ESCRITORIOS PARA COMPUTADOR 1400X600X750 MM</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06014</td>
+                    <td>426</td>
+                    <td>$ 278.793</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>CARRO EXHIBIDOR</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU06015</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°3</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>ACRILICO GRAFICA CDN CURICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06016</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB S6</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU06017</td>
+                    <td>270</td>
+                    <td>$ 294.118</td>
+                    <td>18/10/2024</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>6. OFICINA ASESORIA N° 1</td>
+
+                    <td>IMPRESORA ECOTANK L3210</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>OFSA02013</td>
+                    <td>133</td>
+                    <td>$ 168.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>REFRIGERADOR MIDEA 207L</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU07001</td>
+                    <td>611497</td>
+                    <td>$ 209.990</td>
+                    <td>01/10/2020</td> 
+                    <td>EMPRESAS LA POLAR S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>THERMO HERVIDOR 2,8 LITROS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU07002</td>
+                    <td>191</td>
+                    <td>$ 29.999</td>
+                    <td>01/10/2020</td> 
+                    <td>DEBORA JANETT DEL CARMEN GAJARDO DURAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>HERVIDOR THOMAS 3 LITROS TH4350</td>
+                    <td>MATERIALES DE OFICINA</td>
+                    <td>CDNCU07003</td>
+                    <td>113</td>
+                    <td>$ 33.850</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>MESA DE CASINO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU07004</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 50.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>MICROONDAS THOMAS 20 LITROS TH-20S01</td>
+                    <td>MATERIALES DE OFICINA</td>
+                    <td>CDNCU07005</td>
+                    <td>113</td>
+                    <td>$ 82.104</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>SMART TV 43'' ANDROID FHD CAIXUN</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU07006</td>
+                    <td>102</td>
+                    <td>$ 146.895</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>MICROONDAS 20 LITROS MIDEA</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU07007</td>
+                    <td>133</td>
+                    <td>$ 69.990</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>HORNO ELECTRICO 23 LITROS</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU07008</td>
+                    <td>133</td>
+                    <td>$ 48.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>GABINETE METALICO 9U X 450 MM</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU07009</td>
+                    <td>135</td>
+                    <td>$ 157.080</td>
+                    <td>01/10/2020</td> 
+                    <td>ING. ELEC. RODRIGO ANTONIO CANDIA UMAÑA EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>MESA PLEGLABLE</td>
+                    <td>MATERIALES DE OFICINA</td>
+                    <td>CDNCU07010</td>
+                    <td>133</td>
+                    <td>$ 48.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>SILLA MADERA METALICA COCINA</td>
+                    <td>N/A  DONACION</td>
+                    <td>CDNCU07011</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>5</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>SILLA BLANCA MELAMINA</td>
+                    <td>N/A  DONACION</td>
+                    <td>CDNCU07012</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>7. COCINA</td>
+
+                    <td>SENSOR DE MOVIMIENTO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU07013</td>
+                    <td>7</td>
+                    <td>$ 30.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>CAJONERA CON RUEDAS 73X45X46</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU08001</td>
+                    <td>173</td>
+                    <td>$ 124.950</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>MUEBLE ARCHIVADOR 190X150X40</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU08002</td>
+                    <td>173</td>
+                    <td>$ 273.700</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>IMPRESORA BROTHER DCPL2540DW</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU08003</td>
+                    <td>63</td>
+                    <td>$ 220.293</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>ESCRITORIO SIMPLE 1,20 MT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU08004</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 100.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU08005</td>
+                    <td>52</td>
+                    <td>$ 116.025</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU08006</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>AIRE ACONDICIONADO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU08007</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>PIZARRA MAGNÉTICA CHICA </td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU08008</td>
+                    <td>57</td>
+                    <td>$ 20.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>TELEFONO FIJO ANEXO</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU08009</td>
+                    <td>118</td>
+                    <td>$ 25.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB A8</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU08010</td>
+                    <td>35</td>
+                    <td>$ 143.990</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>CELULAR XIAOMI REDMI NOTE 10S</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU08011</td>
+                    <td>67177119</td>
+                    <td>$ 12.500</td>
+                    <td>01/10/2020</td> 
+                    <td>TELEFONICA MOVILES CHILE S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU08012</td>
+                    <td>134</td>
+                    <td>$ 6.722.940</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>CARRO EXHIBIDOR</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU08013</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°3</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>8. OFICINA ASESORIA N° 2 </td>
+
+                    <td>EQUIPO AIRE ACONDICIONADO SPLIT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU08014</td>
+                    <td>2153</td>
+                    <td>$ 547.400</td>
+                    <td>30/09/2024</td> 
+                    <td>GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>9. OFICINA ASESORIA N° 3</td>
+
+                    <td>TELEFONO FIJO ANEXO</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU09006</td>
+                    <td>118</td>
+                    <td>$ 25.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>9. OFICINA ASESORIA N° 3</td>
+
+                    <td>PIZARRA MAGNÉTICA CHICA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU09007</td>
+                    <td>158781</td>
+                    <td>$ 25.990</td>
+                    <td>01/10/2020</td> 
+                    <td>MARIO NELSON LOPEZ LAZO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>9. OFICINA ASESORIA N° 3</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU09008</td>
+                    <td>134</td>
+                    <td>$ 6.722.940</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>9. OFICINA ASESORIA N° 3</td>
+
+                    <td>CELULAR XIAOMI REDMI NOTE 10S</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU09009</td>
+                    <td>67177119</td>
+                    <td>$ 12.500</td>
+                    <td>01/10/2020</td> 
+                    <td>TELEFONICA MOVILES CHILE S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>9. OFICINA ASESORIA N° 3</td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU09010</td>
+                    <td>61</td>
+                    <td>$ 513.266</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>9. OFICINA ASESORIA N° 3</td>
+
+                    <td>AIRE ACONDICIONADO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU09011</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>9. OFICINA ASESORIA N° 3</td>
+
+                    <td>CARRO EXHIBIDOR</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU09012</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°3</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU10001</td>
+                    <td>611498</td>
+                    <td>$ 209.990</td>
+                    <td>01/10/2020</td> 
+                    <td>EMPRESAS LA POLAR S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>CELULAR XIAOMI REDMI NOTE 10S</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU10002</td>
+                    <td>67177119</td>
+                    <td>$ 12.500</td>
+                    <td>01/10/2020</td> 
+                    <td>TELEFONICA MOVILES CHILE S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU10003</td>
+                    <td>134</td>
+                    <td>$ 6.722.940</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>MACETAS DE PINO RADIATA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU10004</td>
+                    <td>3</td>
+                    <td>$ 119.000</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE GUILLERMO RIVERA BELTRAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU10005</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>CAJONERA CON RUEDAS 73X45X46</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU10006</td>
+                    <td>173</td>
+                    <td>$ 124.950</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>PIZARRA MAGNETICA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU10007</td>
+                    <td>20</td>
+                    <td>$ 66.093</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>ARCHIVADOR KARDEX</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU10008</td>
+                    <td>75</td>
+                    <td>$ 130.900</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU10009</td>
+                    <td>60</td>
+                    <td>$ 116.025</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>ESCRITORIO SIMPLE 1,20 MT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU10010</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 100.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>AIRE ACONDICIONADO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU10011</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>10 OFICINA ASESORIA N° 4</td>
+
+                    <td>CARRO EXHIBIDOR</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU10012</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°3</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>CAJONERA CON RUEDAS 73X45X46</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU11001</td>
+                    <td>43</td>
+                    <td>$ 68.000</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>TABLET SAMSUNG GALAXY TAB A8</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU11002</td>
+                    <td>35</td>
+                    <td>$ 143.990</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU11003</td>
+                    <td>281</td>
+                    <td>$ 147.679</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>ARCHIVADOR KARDEX</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU11004</td>
+                    <td>75</td>
+                    <td>$ 130.900</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU11005</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>PIZARRA MAGNÉTICA CHICA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU11006</td>
+                    <td>158781</td>
+                    <td>$ 25.990</td>
+                    <td>01/10/2020</td> 
+                    <td>MARIO NELSON LOPEZ LAZO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>ROBO PARTE 566</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION</td>
+                    <td>CDNCU11008</td>
+                    <td>88</td>
+                    <td>$ 3.930.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>CELULAR XIAOMI REDMI NOTE 10S</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU11009</td>
+                    <td>67177119</td>
+                    <td>$ 12.500</td>
+                    <td>01/10/2020</td> 
+                    <td>TELEFONICA MOVILES CHILE S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>11. OFICINA ASESORIA N° 5</td>
+
+                    <td>AIRE ACONDICIONADO</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU11010</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>IMPRESORA BROTHER DCPL2540DW</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU12001</td>
+                    <td>41</td>
+                    <td>$ 180.285</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>COMPUTADOR ALL IN ONE HP</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU12002</td>
+                    <td>85</td>
+                    <td>$ 689.595</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU12003</td>
+                    <td>88</td>
+                    <td>$ 3.930.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>CELULAR XIAOMI REDMI NOTE 10S</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU12004</td>
+                    <td>67177119</td>
+                    <td>$ 12.500</td>
+                    <td>01/10/2020</td> 
+                    <td>TELEFONICA MOVILES CHILE S.A.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>ACTA DE ENTREGA DE BIENES DONADOS N°3</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>CAJONERA CON RUEDAS 73X45X46</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU12006</td>
+                    <td>43</td>
+                    <td>$ 68.000</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU12007</td>
+                    <td>281</td>
+                    <td>$ 147.679</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>ESCRITORIO SIMPLE 1,20 MT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU12008</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 100.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>AIRE ACONDICIONADO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU12009</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU12010</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>MUEBLE ARCHIVADOR 190X150X40</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU12011</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>ACRILICO GRAFICA CDN CURICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU12012</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>PIZARRA MAGNÉTICA CHICA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU12013</td>
+                    <td>158781</td>
+                    <td>$ 25.990</td>
+                    <td>01/10/2020</td> 
+                    <td>MARIO NELSON LOPEZ LAZO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>12. OFICINA ASISTENTE ADMINISTRATIVO</td>
+
+                    <td>TELEFONO FIJO ANEXO</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU12014</td>
+                    <td>118</td>
+                    <td>$ 25.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>ACTA DE ENTREGA DE BIENES DONADOS N°3</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>13. PASILLO INTERIOR</td>
+
+                    <td>EQUIPOS DE ILUMINACION EMERGENCIA 2400 L</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU13002</td>
+                    <td>152</td>
+                    <td>$ 714.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SERVICIOS INDUSTRIALES NATALY ANGELICA LLANCA EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td>ACTA DE ENTREGA DE BIENES DONADOS N°3</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>13. PASILLO INTERIOR</td>
+
+                    <td>ACRILICO GRAFICA CDN CURICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU13004</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>13. PASILLO INTERIOR</td>
+
+                    <td>DISPENSADOR DE AGUA PEDESTAL COMPRESOR</td>
+                    <td>MATERIALES DE OFICINA</td>
+                    <td>CDNCU13005</td>
+                    <td>19486</td>
+                    <td>$ 131.989</td>
+                    <td>01/10/2020</td> 
+                    <td>COMERCIAL LUDUEÑA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>13. PASILLO INTERIOR</td>
+
+                    <td>STAND CURVO CON GRAFICA 93X200 MM </td>
+                    <td>PUBLICIDAD</td>
+                    <td>CDNCU13006</td>
+                    <td>1195</td>
+                    <td>$ 279.650</td>
+                    <td>01/10/2020</td> 
+                    <td>PABLO ANDRES HERRERA PARRAGUEZ</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>13. PASILLO INTERIOR</td>
+
+                    <td>CARRO EXHIBIDOR</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU13007</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°3</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>13. PASILLO INTERIOR</td>
+
+                    <td>MESA PUPITRE INDIVIDUALES COLOR CAFÉ</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU13008</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 35.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>13. PASILLO INTERIOR</td>
+
+                    <td>ACCES POINT UBIQUITI</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU13009</td>
+                    <td>241</td>
+                    <td>$ 386.555</td>
+                    <td>21/11/2024</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>EQUIPO DE AIRE ACONDICIONADO CLIMATIZADOR 18000 BTU</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14001</td>
+                    <td>1097</td>
+                    <td>$ 464.100</td>
+                    <td>01/10/2020</td> 
+                    <td>GRUPO ABM CLIMATIZACION Y DISTRIBUCION ALDO ANDRES BURGOS</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>SILLON 3+1+1 AZUL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14002</td>
+                    <td>89</td>
+                    <td>$ 550.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>MESA 3 CUERPOS DE MADERA CON MACETA INCLUIDA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14003</td>
+                    <td>3</td>
+                    <td>$ 392.700</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE GUILLERMO RIVERA BELTRAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>SILLAS DE MADERA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14004</td>
+                    <td>3</td>
+                    <td>$ 642.600</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE GUILLERMO RIVERA BELTRAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>9</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>MACETAS DE PINO RADIATA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14005</td>
+                    <td>3</td>
+                    <td>$ 119.000</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE GUILLERMO RIVERA BELTRAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>MESA DE CENTRO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14006</td>
+                    <td>4</td>
+                    <td>$ 71.400</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE GUILLERMO RIVERA BELTRAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>ESTUFA A GAS HIBRIDA GH-NH72 TOYOTOMI</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU14007</td>
+                    <td>101</td>
+                    <td>$ 412.894</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>LED 43 '' LG UHD AI ThinQ</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU14008</td>
+                    <td>88</td>
+                    <td>$ 1.120.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>ESCRITORIO DE MADERA TIPO RUSTICO</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU14009</td>
+                    <td>32</td>
+                    <td>$ 452.200</td>
+                    <td>01/10/2020</td> 
+                    <td>MARLENE DEL PILAR URIBE GAJARDO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>LAMPARA COLGANTE INDIVIDUAL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14010</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>6</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>LAMPARA DE 3 CUERPOS PARED</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14011</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>LAMPARA COLGANTE RUSTICO 6 LUCES</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14012</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>LOGO ACRILICO CDN CURICÓ</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14013</td>
+                    <td>200</td>
+                    <td>$ 583.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>COMPUTADOR ALL IN ONE HP 205 G8</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU14014</td>
+                    <td>134</td>
+                    <td>$ 2.221.981</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>TV LCD 26'' AOC</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU14015</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>EVENTOS, MARKETING Y PUBLICIDAD LA OVEJA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°4</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>ACCES POINT UBIQUITI</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU14016</td>
+                    <td>241</td>
+                    <td>$ 386.555</td>
+                    <td>21/11/2024</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>ALARMA COMUNITARIA </td>
+                    <td>HABILITACION</td>
+                    <td>OFSA01003</td>
+                    <td>7</td>
+                    <td>$ 80.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>14. COWORK</td>
+
+                    <td>SENSOR DE MOVIMIENTO</td>
+                    <td>HABILITACION</td>
+                    <td>OFSA07002</td>
+                    <td>7</td>
+                    <td>$ 30.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>TABURETES</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15001</td>
+                    <td>6</td>
+                    <td>$ 60.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>ESTANTE RACK METALICO 5 BANDEJAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15002</td>
+                    <td>426</td>
+                    <td>$ 176.955</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>MESAS DE TRABAJO 2500X900X850 MM</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15003</td>
+                    <td>426</td>
+                    <td>$ 488.485</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>ESCRITORIOS PARA COMPUTADOR 1400X600X750 MM</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15004</td>
+                    <td>426</td>
+                    <td>$ 278.793</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>REPISA MURAL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15005</td>
+                    <td>426</td>
+                    <td>$ 56.375</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>PC ESCRITORIO</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU15006</td>
+                    <td>17</td>
+                    <td>$ 735.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>CREALITY IMPRESORA 3D ENDER 3</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15007</td>
+                    <td>18</td>
+                    <td>$ 345.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>CAJA DE LUZ PARA ESTUDIO FOTOGRAFICO 6 COLORES</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15008</td>
+                    <td>18</td>
+                    <td>$ 75.907</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>TARJETA MICRO SD CON ADAPTADOR</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15009</td>
+                    <td>20</td>
+                    <td>$ 16.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>PENDRIVE 16 GB</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15010</td>
+                    <td>20</td>
+                    <td>$ 6.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>KIT MAQUINA GRABADORA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15011</td>
+                    <td>24</td>
+                    <td>$ 653.001</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>FRESADORA CNC</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15012</td>
+                    <td>24</td>
+                    <td>$ 485.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>EXTRACTOR DE AIRE MURAL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15013</td>
+                    <td>24</td>
+                    <td>$ 66.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>CAPSULA PROTECTORA </td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15014</td>
+                    <td>24</td>
+                    <td>$ 194.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>HERRAMIENTA MULTIPROPOSITO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15015</td>
+                    <td>24</td>
+                    <td>$ 117.601</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>EXTINTOR POLVO QUIMICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15016</td>
+                    <td>3151</td>
+                    <td>$ 30.940</td>
+                    <td>01/10/2020</td> 
+                    <td>JORGE ROBERTO VELIZ INOSTROZA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>NOTEBOOK LENOVO THINKPAD L450 S/N PF0DFH2G/PF0DFH2Y</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15017</td>
+                    <td>41476</td>
+                    <td>$ 578.188</td>
+                    <td>01/10/2020</td> 
+                    <td>COMUNICACIONES Y TECNOLOGIA S.A</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>NOTEBOOK LENOVO THINKPAD L460 S/N PF0DFH2G/PF0DFH2Y</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15018</td>
+                    <td>41476</td>
+                    <td>$ 578.188</td>
+                    <td>01/10/2020</td> 
+                    <td>COMUNICACIONES Y TECNOLOGIA S.A</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>CALEFACTOR EEH-1300NG CLEAN HEAT SINDELEN</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU15019</td>
+                    <td>133</td>
+                    <td>$ 48.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>ASPIRADORA DE ARRASTRE RECCO</td>
+                    <td>MATERIALES DE OFICINA</td>
+                    <td>CDNCU15020</td>
+                    <td>70</td>
+                    <td>$ 26.010</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>COMPUTADOR ALL IN ONE HP 205 G8</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU15021</td>
+                    <td>134</td>
+                    <td>$ 2.221.981</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>LENOVO® NOTEBOOK S340 14 ''</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU15022</td>
+                    <td>72</td>
+                    <td>$ 820.000</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>15. SALA PROTOTIPADO</td>
+
+                    <td>MESA 2 CUERPOS PC DE 1.7 MT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15023</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 90.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>TRASLADO PREMANENTE PUNTO MOVIL LICANTEN</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>16. SERVICIOS HIGIENICOS DAMAS</td>
+
+                    <td>DISPENSADOR DE JABON AUTOMATICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU16001</td>
+                    <td>28</td>
+                    <td>$ 89.250</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>16. SERVICIOS HIGIENICOS DAMAS</td>
+
+                    <td>DISEPENSADORES DE PAPEL MANOS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU16002</td>
+                    <td>9879</td>
+                    <td>$ 32.130</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>16. SERVICIOS HIGIENICOS DAMAS</td>
+
+                    <td>DISEPENSADORES DE PAPEL HIGIENICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU16003</td>
+                    <td>9879</td>
+                    <td>$ 10.365</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>16. SERVICIOS HIGIENICOS DAMAS</td>
+
+                    <td>BASURERO TAPA VAIVEN</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU16004</td>
+                    <td>1931042</td>
+                    <td>$ 6.400</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE PUERTAS PONS Y CIA.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>17. SERVICIOS HIGIENICOS DISCAPACITADOS</td>
+
+                    <td>DISPENSADOR DE JABON AUTOMATICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU17001</td>
+                    <td>28</td>
+                    <td>$ 89.250</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>17. SERVICIOS HIGIENICOS DISCAPACITADOS</td>
+
+                    <td>DISEPENSADORES DE PAPEL MANOS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU17002</td>
+                    <td>9879</td>
+                    <td>$ 32.130</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>17. SERVICIOS HIGIENICOS DISCAPACITADOS</td>
+
+                    <td>DISEPENSADORES DE PAPEL HIGIENICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU17003</td>
+                    <td>9879</td>
+                    <td>$ 10.365</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>17. SERVICIOS HIGIENICOS DISCAPACITADOS</td>
+
+                    <td>MUDADOR</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU17004</td>
+                    <td>3</td>
+                    <td>$ 39.999</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>17. SERVICIOS HIGIENICOS DISCAPACITADOS</td>
+
+                    <td>BASURERO TAPA VAIVEN</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU17005</td>
+                    <td>1931042</td>
+                    <td>$ 6.400</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE PUERTAS PONS Y CIA.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>18. SERVICIOS HIGIENICOS VARONES</td>
+
+                    <td>DISPENSADOR DE JABON AUTOMATICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU18001</td>
+                    <td>28</td>
+                    <td>$ 89.250</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>18. SERVICIOS HIGIENICOS VARONES</td>
+
+                    <td>DISEPENSADORES DE PAPEL MANOS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU18002</td>
+                    <td>9879</td>
+                    <td>$ 32.130</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>18. SERVICIOS HIGIENICOS VARONES</td>
+
+                    <td>DISEPENSADORES DE PAPEL HIGIENICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU18003</td>
+                    <td>9879</td>
+                    <td>$ 10.365</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>18. SERVICIOS HIGIENICOS VARONES</td>
+
+                    <td>BASURERO TAPA VAIVEN</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU18004</td>
+                    <td>1931042</td>
+                    <td>$ 6.400</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE PUERTAS PONS Y CIA.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>19. SERVICIOS HIGIENICOS EQUIPO CDN</td>
+
+                    <td>DISEPENSADORES DE PAPEL MANOS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU19001</td>
+                    <td>9879</td>
+                    <td>$ 32.130</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>19. SERVICIOS HIGIENICOS EQUIPO CDN</td>
+
+                    <td>DISEPENSADORES DE PAPEL HIGIENICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU19002</td>
+                    <td>9879</td>
+                    <td>$ 10.365</td>
+                    <td>01/10/2020</td> 
+                    <td>SERGIO ZUÑIGA CAMPOS Y COMPAÑÍA LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>19. SERVICIOS HIGIENICOS EQUIPO CDN</td>
+
+                    <td>BASURERO TAPA VAIVEN</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU19003</td>
+                    <td>1931042</td>
+                    <td>$ 6.400</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE PUERTAS PONS Y CIA.</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>PANEL ARAÑA 2,25X2,25 MT</td>
+                    <td>PUBLICIDAD</td>
+                    <td>CDNCU20001</td>
+                    <td>1195</td>
+                    <td>$ 380.800</td>
+                    <td>01/10/2020</td> 
+                    <td>PABLO ANDRES HERRERA PARRAGUEZ</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>COFRE 2,5 HDD SATA USB 3,0 ANTISHOCK SP-G300</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU20002</td>
+                    <td>63</td>
+                    <td>$ 70.600</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>4</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>UNIDAD SSD 240GB SATA3 2,5</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU20003</td>
+                    <td>62</td>
+                    <td>$ 261.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>DISCO EXTERNO 1 TB 2,5 US</td>
+                    <td>N/A</td>
+                    <td>CDNCU20004</td>
+                    <td>88</td>
+                    <td>$ 239.969</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>CAMARA ORDRO HDR-AC3 4K</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU20005</td>
+                    <td>76</td>
+                    <td>$ 292.324</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>CAMARA NIKON D 5300 C/CLIENTE 18-55 MM AF-P BLACK</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU20006</td>
+                    <td>16045</td>
+                    <td>$ 435.901</td>
+                    <td>01/10/2020</td> 
+                    <td>IMPORTADORA Y DISTRIBUIDORA UDENIO LTDA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>DATASHOW  EPSON POWERLITE 99WHXGA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20007</td>
+                    <td>41475</td>
+                    <td>$ 485.404</td>
+                    <td>01/10/2020</td> 
+                    <td>COMUNICACIONES Y TECNOLOGIA S.A</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>TV SAMSUNG 43 ''</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20008</td>
+                    <td>100</td>
+                    <td>$ 1.299.317</td>
+                    <td>01/10/2020</td> 
+                    <td>EAR INGENIERIA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>MACETAS DE PINO RADIATA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20009</td>
+                    <td>3</td>
+                    <td>$ 119.000</td>
+                    <td>01/10/2020</td> 
+                    <td>JOSE GUILLERMO RIVERA BELTRAN</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>ACTA DE ENTREGA DE BIENES DONADOS N°3</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>DISPENSADOR PAPEL ABSORBENTE</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU20011</td>
+                    <td>244</td>
+                    <td>$ 53.550</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>MUEBLE DE COCINA 5 PUERTAS</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU20012</td>
+                    <td>133</td>
+                    <td>$ 79.989</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>FRIGOBAR 122 LITROS</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU20013</td>
+                    <td>133</td>
+                    <td>$ 149.000</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>HERVIDOR THOMAS TH-4212N</td>
+                    <td>REPARACION Y MANTENCION</td>
+                    <td>CDNCU20014</td>
+                    <td>133</td>
+                    <td>$ 22.981</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>DISPENSADOR DE JABON AUTOMATICO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20015</td>
+                    <td>28</td>
+                    <td>$ 59.500</td>
+                    <td>01/10/2020</td> 
+                    <td>SKOLL COMPANY SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>DISPENSADOR DE PAPEL ABSORBENTE</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU20016</td>
+                    <td>243</td>
+                    <td>$ 107.100</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>DISPENDADOR PAPEL HIGIENICO</td>
+                    <td>OPERACIÓN</td>
+                    <td>CDNCU20017</td>
+                    <td>244</td>
+                    <td>$ 35.700</td>
+                    <td>01/10/2020</td> 
+                    <td>SOCIEDAD INNOVA CHILE LIMITADA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>CAMARA FOTOGRAFICA CANON</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20018</td>
+                    <td>54346</td>
+                    <td>$ 67.991</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>HERVIDOR VENTUS 30 LITROS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20019</td>
+                    <td>14232</td>
+                    <td>$ 75.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>MESA PLEGLABLE BLANCA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20021</td>
+                    <td>91</td>
+                    <td>$ 71.400</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>SILLAS PLEGABLES BLANCAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20022</td>
+                    <td>91</td>
+                    <td>$ 22.312</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>TRITURADORA DE PAPEL DS-7008A 10 HOJAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20023</td>
+                    <td>3</td>
+                    <td>$ 142.800</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>TRIPODE</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20024</td>
+                    <td>21</td>
+                    <td>$ 101.150</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 14</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20025</td>
+                    <td>270</td>
+                    <td>$ 2.221.849</td>
+                    <td>18/11/2024</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>20. BODEGA</td>
+
+                    <td>AUDIFONOS TIPO C</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU20026</td>
+                    <td>270</td>
+                    <td>$ 83.950</td>
+                    <td>18/11/2024</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>10</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>21. ZONA INFANTIL</td>
+
+                    <td>SET DE JUEGOS ( 2 SILLAS + MESA INFANTIL )</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU21001</td>
+                    <td>S/N</td>
+                    <td>$ 34.990</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>21. ZONA INFANTIL</td>
+
+                    <td>SILLA JUEGO INGANTIL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU21002</td>
+                    <td>S/N</td>
+                    <td>$ 26.670</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>3</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>21. ZONA INFANTIL</td>
+
+                    <td>BAUL PLASTICO COLOR</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU21003</td>
+                    <td>S/N</td>
+                    <td>$ 15.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>21. ZONA INFANTIL</td>
+
+                    <td>PIZARRA TIZA Y MAGNETICA CON PEDESTAL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU21004</td>
+                    <td>S/N</td>
+                    <td>$ 26.790</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>21. ZONA INFANTIL</td>
+
+                    <td>BASURERO DISEÑO INFANTIL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU21005</td>
+                    <td>S/N</td>
+                    <td>$ 70.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>21. ZONA INFANTIL</td>
+
+                    <td>MUEBLE ORGANIZADOR INFANTIL</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU21006</td>
+                    <td>3</td>
+                    <td>$ 90.000</td>
+                    <td>01/10/2020</td> 
+                    <td>SIN REGISTRAR</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>NOTEBOOK ASUS ZENBOOK 13 OLED</td>
+                    <td>N/A REPOSICION ROBO</td>
+                    <td>CDNCU04006</td>
+                    <td>134</td>
+                    <td>$ 3.361.470</td>
+                    <td>01/10/2020</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td>REPOSICIÓN ROBO</td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU04021</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>MESA INDIVIDUAL PC CAPACITADORES 0,9 MT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU04023</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 35.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>ESCRITORIO SIMPLE 1,20 MT</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU09001</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 100.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>SILLA ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU09002</td>
+                    <td>53</td>
+                    <td>$ 116.025</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>SILLAS ACOLCHADAS AZUL</td>
+                    <td>ACTIVOS POR RENOVACION</td>
+                    <td>CDNCU09003</td>
+                    <td>169</td>
+                    <td>$ 63.760</td>
+                    <td>01/10/2020</td> 
+                    <td>DISEÑO Y ARQ SEBASTIAN SIEL BRUNET EIRL</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>ARCHIVADOR KARDEX</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU09004</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 140.000</td>
+                    <td>01/10/2020</td> 
+                    <td>INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°1</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>MUEBLE CAJONERA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU09005</td>
+                    <td>75</td>
+                    <td>$ 107.100</td>
+                    <td>01/10/2020</td> 
+                    <td>MANUEL EDUARDO GONZALEZ BRAVO</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>SILLAS ERGONOMICAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNCU15024</td>
+                    <td>CARTA DE TRASPASO</td>
+                    <td>$ 0</td>
+                    <td>01/10/2020</td> 
+                    <td>CORPORACION INSTITUTO PROFESIONAL INACAP</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ACTA DONACION N°2</td>
+                    <td>2</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>PROYECTOR MULTIMEDIA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNLIC01001</td>
+                    <td>270</td>
+                    <td>$ 460.504</td>
+                    <td>18/10/2024</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>IMPRESORA MULTIFUNCIONAL LASER</td>
+                    <td>HABILITACION</td>
+                    <td>CDNLIC01002</td>
+                    <td>270</td>
+                    <td>$ 269.336</td>
+                    <td>18/10/2024</td> 
+                    <td>DISTRIBUIDORA KALEUCHE SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>PC ALL IN ONE LENOVO</td>
+                    <td>HABILITACION</td>
+                    <td>CDNLIC01003</td>
+                    <td>164</td>
+                    <td>$ 855.000</td>
+                    <td>20/11/2024</td> 
+                    <td>COMERCIAL GAVATIC SPA</td>
+                    <td>77.176.387- 1</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>CILINDRO DE GAS</td>
+                    <td>HABILITACION</td>
+                    <td>CDNLIC01004</td>
+                    <td>246</td>
+                    <td>$ 54.622</td>
+                    <td>19/11/2024</td> 
+                    <td>INVERSIONES LMC SPA</td>
+                    <td>77.804.885- K</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                                <tr>
+
+
+                    <td>OFICINA MODULAR LICANTEN</td>
+
+                    <td>DISPENSADOR DE AGUA PURIFICADA</td>
+                    <td>HABILITACION</td>
+                    <td>CDNLIC01005</td>
+                    <td>23037</td>
+                    <td>$ 131.989</td>
+                    <td>22/10/2024</td> 
+                    <td>COMERCIAL LUDUEÑA SPA</td>
+                    <td>SIN REGISTRAR</td> 
+                    <td>ADQUISICION</td>
+                    <td>1</td>
+                    <td>UTILIZABLE</td>
+                    <td></td>
+
+
+
+
+
+
+
+                
+
+
+
+        </tbody>
+    </table>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+<script>
+    function exportTableToExcel(tableElement, filename) {
+        const table = document.querySelector(tableElement);
+        const tableData = [];
+
+        // Extract table data
+        table.querySelectorAll('tr').forEach(row => {
+            const rowData = [];
+            row.querySelectorAll('th, td').forEach(cell => {
+                rowData.push(cell.textContent);
+            });
+            tableData.push(rowData);
+        });
+
+        // Create worksheet
+        const worksheet = XLSX.utils.aoa_to_sheet(tableData);
+
+        // Create workbook
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, 'Inventario');
+
+        // Export the workbook to Excel file
+        XLSX.writeFile(workbook, filename);
+    }
+
+
+
+    exportTableToExcel('#tabla', 'ExporteTodo.xlsx');
+
+    history.back();
+</script>
+
+</html>
