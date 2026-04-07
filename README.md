@@ -76,9 +76,9 @@ El sistema cuenta con interfaz gráfica que permite:
 
 Screenshots
 
-![HomeDashboard](screenshots/HomeDashboard.png)
-![Trasabilidad](screenshots/Informacion-Trasabilidad-Documentos.png)
-![Reportes](screenshots/Exportar-Reportes.png)
+![HomeDashboard](screenshots/HomeDashboard.PNG)
+![Trasabilidad](screenshots/Informacion-Trasabilidad-Documentos.PNG)
+![Reportes](screenshots/Exportar-Reportes.PNG)
 
 
  Instalación y ejecución
