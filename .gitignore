@@ -1,0 +1,19 @@
+# logs
+*.log
+
+# cache
+webcache/
+
+# base de datos
+*.db
+
+# archivos temporales
+*.tmp
+*.cache
+
+# documentos
+*.pdf
+
+# sistema
+.DS_Store
+Thumbs.db
