@@ -1,6 +1,6 @@
  Asset Tracking & Inventory Management System
 
-Sistema de gestión y trazabilidad de inventario desarrollado para SERCOTEC Curicó, orientado al seguimiento histórico de activos y control de su ubicación en el tiempo.
+Sistema de gestión y trazabilidad de inventario desarrollado para SERCOTEC Curicó, orientado al seguimiento histórico de activos, control de su ubicación en el tiempo, generar reportes y  exportar datos.
 
 ---
 
@@ -74,15 +74,18 @@ El sistema cuenta con interfaz gráfica que permite:
 - Visualización de historial
 - Generación de reportes
 
+Screenshots
 
+![Dashboard](screenshots/HomeDashboard.png)
+![Dashboard](screenshots/Informacion-Trasabilidad-Documentos.png)
+![Dashboard](screenshots/Exportar-Reportes.png)
 
----
 
  Instalación y ejecución
 
 bash
 # Clonar repositorio
-git clone https://github.com/TU_USUARIO/nombre-del-repo.git
+git clone https://github.com/FelipeOrmazabal/asset-traceability-system.git
 
 # Acceder al proyecto
 cd nombre-del-repo
